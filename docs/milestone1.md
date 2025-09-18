@@ -1,4 +1,4 @@
-### Step 1: Technologies & Software
+### Technologies & Software
 
 
 Choose the technologies & software that you will use. Several technologies you may want to consider include:
@@ -15,3 +15,20 @@ Choose the technologies & software that you will use. Several technologies you m
 1. **Backup and Restore Solution** (Duplicati)
 1. **DHCP Server** (OPNSense)
 1. **Metric Server** (Node exporter, Prometheus, Grafana)
+
+
+
+### Network Diagram
+![Alt text](physical_network.png "a title")
+![Alt text](logical_network.png "a title")
+
+We wanted to provide seperate network switches for the VMs and the physical workstations. The VLANs are based on use cases such as servers, IT and Execs, and regualr employees. 
+
+
+
+### Disaster Recovery
+* We will do daily incremental backups onsite
+* We will do weekly differentialy backups onsite and offsite
+* We will do monthly full backups onsite and offsite
+* We will do weekly VM snapshots onsite and offsite
+* We have a backup AD, 
