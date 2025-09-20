@@ -49,6 +49,8 @@ For remote work, we’d make sure that all employees connect through a secure VP
 To enforce privacy regulations like GDPR and CCPA, we’d focus on controlling access to personal data and making sure it’s always protected. This would mean using encryption for both stored and transmitted data, and logging who accesses sensitive information. We’d also create automated processes so that if someone requests their data or asks for it to be deleted, we can respond quickly and consistently. Finally, our incident response plan would include the required breach notification steps so we stay compliant even if something goes wrong.
 #### Security Incident Response Plan
 To make our incident response plan effective, we’d put monitoring tools in place from a SIEM to collect logs and flag suspicious activity. We’d also write out playbooks that explain step-by-step what to do in common scenarios such as a malware infection or a phishing attack. Regular drills would help the team practice, so that in a real incident, people don’t waste time figuring out roles or next steps. After each incident, we’d hold a quick review to see what went well and what we can improve.
+
+
 ### Hardware Planning
 
 #### Physical Workstations & Peripherals
@@ -58,6 +60,7 @@ To make our incident response plan effective, we’d put monitoring tools in pla
     * Minimum 8GB RAM, 256GB SSD, i5/Ryzen 5
     * Must have ethernet NIC
     * MFF if possible
+    * 4 or more thumbdrives for OS installers
 
 * 7 Monitors, mice, keyboards
     * 7 Display Port cables
@@ -90,27 +93,16 @@ To make our incident response plan effective, we’d put monitoring tools in pla
     * Additional storage: 512GB
 
 #### Networking 
-* 2 gigabit switches with minimum 6 ports
+* 2 gigabit switches with minimum 6 ports each
+* 1 desktop to use as router
+    * Power cable
+    * Minimum 8GB RAM, 256GB SSD, i5/Ryzen 5
+    * Must have 2 ethernet NICs
+* 1 Wireless AP
+* 15 ethernet cables
+* Label maker or tape & pen
 
+#### Backup
+* Main backup server is Win2 as noted above
+* Offsite backup (another location in CSRL, but connected over WAN)
 
-
-Switches, outers, access points, and patch cables.
-
-
-
-
-On-site backup storage capacity and redundancy.
-Plan for offsite backup if required for compliance or disaster recovery.
-
-Other like thumb drives for installers, our own laptops for interfacing?
-
-
-Networking Hardware:
-Switches, routers, access points, and patch cables.
-Include labeling for ports and cable runs for maintainability.
-
-Backup and Recovery Hardware:
-On-site backup storage capacity and redundancy.
-Plan for offsite backup if required for compliance or disaster recovery.
-
-add ethernet cables
