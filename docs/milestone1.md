@@ -62,11 +62,11 @@ To make our incident response plan effective, we’d put monitoring tools in pla
     * MFF if possible
     * 4 or more thumbdrives for OS installers
 
-* 7 Monitors, mice, keyboards
+* 2 Monitors, mice, keyboards
     * 7 Display Port cables
-    * 7 power cables
+    * 2 power cables
     * 1080 or higher resolution
-    * (For the sake of the class, we will be using KVMs and less monitors, mice, and keyboards. Number will depend on availiable KVM solution)
+    * KVM 8 to 2
 
 #### VM Specifications
 * Total RAM: 64
@@ -93,16 +93,13 @@ To make our incident response plan effective, we’d put monitoring tools in pla
     * Additional storage: 512GB
 
 #### Networking 
-* 2 gigabit switches with minimum 6 ports each
-* 1 desktop to use as router
-    * Power cable
-    * Minimum 8GB RAM, 256GB SSD, i5/Ryzen 5
-    * Must have 2 ethernet NICs
+* 1 gigabit switch with minimum 12 ports
 * 1 Wireless AP
 * 15 ethernet cables
 * Label maker or tape & pen
 
 #### Backup
 * Main backup server is Win2 as noted above
+* 1 Server or larger desktop with high drive capacity
 * Offsite backup (another location in CSRL, but connected over WAN)
 
