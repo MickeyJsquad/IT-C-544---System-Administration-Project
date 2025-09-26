@@ -1,4 +1,4 @@
-# Milesonte 1
+# Milestone 1
 
 ## Technologies & Software
 
