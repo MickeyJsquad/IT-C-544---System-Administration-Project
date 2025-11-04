@@ -38,43 +38,44 @@ No updates to Technologies and Softwares as defined in the previous Milestone.
 | delta-4        | DHCP  | 202   | Ben Anderson        | admin      | Installed |
 
 ### Installation Proof
-#### Delta 0
-![Alt Text](delta-0.png "Delta 0")
-#### Delta 1
-![Alt Text](delta-1.png "Delta 1")
-#### Delta 2
-![Alt Text](delta-2.png "Delta 2")
-#### Delta 3
-![Alt Text](delta-3.png "Delta 3")
-#### Delta 4
-![Alt Text](delta-4.png "Delta 4")
-#### Gamma 0
+#### alpha-0
+![Alt Text](alpha-0.png "Gamma 0")
+#### alpha-1
+![Alt Text](alpha-1.png "Gamma 0")
+#### alpha-2
+![Alt Text](alpha-2.png "Gamma 0")
+#### alpha-3
+![Alt Text](alpha-3.png "Gamma 0")
+#### alpha-4
+![Alt Text](alpha-4.png "Gamma 0")
+#### alpha-5
+![Alt Text](alpha-5.png "Gamma 0")
+#### beta-0
+![Alt Text](beta-0.png "Gamma 0")
+#### beta-1
+![Alt Text](beta-1.png "Gamma 0")
+#### beta-2
+![Alt Text](beta-2.png "Gamma 0")
+#### beta-3
+![Alt Text](beta-3.png "Gamma 0")
+#### gamma-0
 ![Alt Text](gamma-0.png "Gamma 0")
-#### Gamma 1
+#### gamma-1
 ![Alt Text](gamma-1.png "Gamma 1")
+#### delta-0
+![Alt Text](delta-0.png "Delta 0")
+#### delta-1
+![Alt Text](delta-1.png "Delta 1")
+#### delta-2
+![Alt Text](delta-2.png "Delta 2")
+#### delta-3
+![Alt Text](delta-3.png "Delta 3")
+#### delta-4
+![Alt Text](delta-4.png "Delta 4")
+
 
 
 ## Router
-* Router role:
-Edge routing and DHCP relay
-* WAN interface configuration: 
-Static IP: 172.16.40.21/21
-Gateway: 172.16.40.1
-DNS: Temporarily using 8.8.8.8
-* Internal interface configurations:
-![Alt text](vlans.png "VLAN configurations")
-See routing table below.
-* Routing protocol setup:
-N/A
-
-* NAT configuration: 
-Port forwarding everything on the WAN port 80 to 192.168.2.2 port 80.  
-* Connectivity test evidence:
-Pinging externally -
-![Alt text](alpha1DNS.png "Pinging external")
-Route table - 
-![Alt text](routetablepart1.png "First part of routing table")
-![Alt text](routetablepart2.png "Second part of routing table")
 
 ## Firewall Rules
 
