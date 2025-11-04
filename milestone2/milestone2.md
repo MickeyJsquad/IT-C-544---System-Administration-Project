@@ -37,10 +37,10 @@
 
 ### DNS Resolution
 
-![Alt text](milestone2/alpha1DNS.png "VLAN 200 DNS")
-![Alt text](milestone2/alpha5DNS.png "VLAN 201 DNS")
-![Alt text](milestone2/beta3DNS.png "VLAN 202 DNS")
-![Alt text](milestone2/beta0DNS.png "VLAN 203 DNS")
+![Alt text](alpha1DNS.png "VLAN 200 DNS")
+![Alt text](alpha5DNS.png "VLAN 201 DNS")
+![Alt text](beta3DNS.png "VLAN 202 DNS")
+![Alt text](beta0DNS.png "VLAN 203 DNS")
 
 
 
