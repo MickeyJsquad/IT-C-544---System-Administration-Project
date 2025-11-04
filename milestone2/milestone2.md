@@ -1,4 +1,4 @@
-# Milesonte 2
+# Milestone 2
 
 ## Updates Only
 
@@ -34,6 +34,15 @@
 ## Router
 
 ## Firewall Rules
+
+### DNS Resolution
+
+![Alt text](milestone2/alpha1DNS.png "VLAN 200 DNS")
+![Alt text](milestone2/alpha5DNS.png "VLAN 201 DNS")
+![Alt text](milestone2/beta3DNS.png "VLAN 202 DNS")
+![Alt text](milestone2/beta0DNS.png "VLAN 203 DNS")
+
+
 
 ## Hardware Planning
 
