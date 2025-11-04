@@ -5,6 +5,9 @@
 ## Network Design
 
 ## Hosts Inventory
+|Hostname   |IP Address   |VLAN   |Role   |Local admin account created   |Status   |
+|----------------------------------------------------------------------------------|
+|alpha-0   |172.16.40.21,192.168.1.1   |None   |Router   |yes   |Configured   |
 
 ## Router
 
