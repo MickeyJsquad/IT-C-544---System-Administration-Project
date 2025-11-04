@@ -76,6 +76,26 @@ No updates to Technologies and Softwares as defined in the previous Milestone.
 
 
 ## Router
+* Router role:
+Edge routing and DHCP relay
+* WAN interface configuration: 
+Static IP: 172.16.40.21/21
+Gateway: 172.16.40.1
+DNS: Temporarily using 8.8.8.8
+* Internal interface configurations:
+![Alt text](vlans.png "VLAN configurations")
+See routing table below.
+* Routing protocol setup:
+N/A
+
+* NAT configuration: 
+Port forwarding everything on the WAN port 80 to 192.168.2.2 port 80.  
+* Connectivity test evidence:
+Pinging externally -
+![Alt text](alpha1DNS.png "Pinging external")
+Route table - 
+![Alt text](routetablepart1.png "First part of routing table")
+![Alt text](routetablepart2.png "Second part of routing table")
 
 ## Firewall Rules
 
