@@ -37,9 +37,13 @@
 
 ### DNS Resolution
 
+#### VLAN 200
 ![Alt text](alpha1DNS.png "VLAN 200 DNS")
+#### VLAN 201
 ![Alt text](alpha5DNS.png "VLAN 201 DNS")
+#### VLAN 202
 ![Alt text](beta3DNS.png "VLAN 202 DNS")
+#### VLAN 203
 ![Alt text](beta0DNS.png "VLAN 203 DNS")
 
 
