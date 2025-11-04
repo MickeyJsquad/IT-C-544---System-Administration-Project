@@ -5,9 +5,6 @@
 ## Network Design
 
 ## Hosts Inventory
-|Hostname   |IP Address   |VLAN   |Role   |Local admin account created   |Status   |
-|----------------------------------------------------------------------------------|
-|alpha-0   |172.16.40.21,192.168.1.1   |None   |Router   |yes   |Configured   |
 
 ## Router
 
@@ -56,25 +53,46 @@
     * beta-2: 4
     * beta-3: 4
 
-* Total Storage: XXXXXXXXXXX
-    * 4 workstations: 64GB each
-    * Linux1: 64GB
-    * Linux2: 128GB
-    * Linux3: 64GB
-    * Win1: 128GB
-    * Win2: 1TB
-    * Additional storage: 512GB
+* Total Storage: 492GB
+    * alpha-0: 32GB
+    * alpha-1: 20GB
+    * alpha-2: 20GB
+    * alpha-3: 20GB
+    * alpha-4: 100GB
+    * alpha-5: 100GB
+    * beta-0: 50GB
+    * beta-1: 50GB
+    * beta-2: 50GB
+    * beta-3: 50GB
 
 #### Networking 
-* 1 gigabit switch with minimum 12 ports
-* 15 ethernet cables
-* Label maker or tape & pen
+* 48 port switch with 2 PSUs
+* Console cable
+* 9 ethernet cables
+* Switch and cable assignments:
+
+|   Switch Port |   Destination    |
+|-----|-----|
+|   1,2             |   Proxmox Switch  | 
+|   37  |   delta-6 |
+|   38  |   gamma-1 |
+|   39  |   delta-0 |
+|   40  |   delta-1 |
+|   41  |   delta-2 |
+|   42  |   delta-3 |
+|   43  |   delta-4 |
+
 
 #### Backup
-* Main backup server is Win2 as noted above
-* 1 Server or larger desktop with high drive capacity
-* Offsite backup (another location in CSRL, but connected over WAN)
+* Main backup server is alpha-5
+* Future plans for off-site backup
 
 #### VM Tagging and Pooling Strategy
+
+
+
+
+
+
 
 ## Assumptions & Justifications
