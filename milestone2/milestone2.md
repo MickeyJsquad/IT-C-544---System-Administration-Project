@@ -29,20 +29,30 @@
     * 2 USB hubs
 
 #### VM Specifications
-* Total RAM: XXXXXXXX
-    * 4 workstations: 4GB each
-    * Linux1: 8GB
-    * Linux2: 16GB
-    * Linux3: 8GB
-    * Win1: 8GB
-    * Win2: 8GB
-* Total CPU Cores: XXXXXXXXXX
-    * 4 workstations: 2 each
-    * Linux1: 2
-    * Linux2: 6
-    * Linux3: 2
-    * Win1: 2
-    * Win2: 4
+* Total RAM: 176
+    * alpha-0: 16GB
+    * alpha-1: 16GB
+    * alpha-2: 32GB
+    * alpha-3: 16GB
+    * alpha-4: 16GB
+    * alpha-5: 16GB
+    * beta-0: 16GB
+    * beta-1: 16GB
+    * beta-2: 16GB
+    * beta-3: 16GB
+    
+* Total CPU Cores: 44
+    * alpha-0: 4
+    * alpha-1: 4
+    * alpha-2: 8
+    * alpha-3: 4
+    * alpha-4: 4
+    * alpha-5: 4
+    * beta-0: 4
+    * beta-1: 4
+    * beta-2: 4
+    * beta-3: 4
+
 * Total Storage: XXXXXXXXXXX
     * 4 workstations: 64GB each
     * Linux1: 64GB
