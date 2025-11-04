@@ -122,3 +122,12 @@
 * 2 pools: Servers-alpha & Workstations-beta
 
 ## Assumptions & Justifications
+
+### VLANs
+* See above table for assumptions based on who is using what VLAN
+
+### Firewall Rules
+* Executives should have access to all everything
+* Backup (VLAN 201) should have access to everything
+* Workstations should be able to access file server
+* Servers should be able to reach Executives and Workstations
