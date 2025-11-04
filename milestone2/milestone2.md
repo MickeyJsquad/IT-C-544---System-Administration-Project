@@ -74,16 +74,16 @@
 * 9 ethernet cables
 * Switch and cable assignments:
 
-|   Switch Port |   Destination    |
-|-----|-----|
-|   1,2             |   Proxmox Switch  | 
-|   37  |   delta-6 |
-|   38  |   gamma-1 |
-|   39  |   delta-0 |
-|   40  |   delta-1 |
-|   41  |   delta-2 |
-|   42  |   delta-3 |
-|   43  |   delta-4 |
+    |   Switch Port |   Destination    |
+    |-----|-----|
+    |   1,2             |   Proxmox Switch  | 
+    |   37  |   delta-6 |
+    |   38  |   gamma-1 |
+    |   39  |   delta-0 |
+    |   40  |   delta-1 |
+    |   41  |   delta-2 |
+    |   42  |   delta-3 |
+    |   43  |   delta-4 |
 
 
 #### Backup
