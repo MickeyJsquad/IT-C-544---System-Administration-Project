@@ -35,6 +35,13 @@
 
 ## Firewall Rules
 
+![Alt text](BackupsFirewallRules.png "Backup rules")
+![Alt text](ExecFirewallRules.png "Executive rules")
+![Alt text](LANFirewallRules.png "LAN rules")
+![Alt text](ServersFirewallRules.png "Server rules")
+![Alt text](WANFirewallRules.png "WAN rules")
+![Alt text](WorkstationsFirewallRules.png "Workstation rules")
+
 ### DNS Resolution
 
 #### VLAN 200
