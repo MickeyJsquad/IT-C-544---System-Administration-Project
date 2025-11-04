@@ -3,6 +3,10 @@
 ## Updates Only
 
 ## Network Design
+### Physical Diagram
+![Alt text](physical_network.png "Physical Diagram")
+### Logical Diagram
+![Alt text](logical_network.png "Logical Diagram")
 
 ## Hosts Inventory
 |Hostname   |IP Address   |VLAN   |Role   |Local admin account created   |Status   |
