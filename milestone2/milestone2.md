@@ -1,12 +1,20 @@
 # Milestone 2
 
 ## Updates Only
+No updates to Technologies and Softwares as defined in the previous Milestone.
 
 ## Network Design
 ### Physical Diagram
 ![Alt text](physical_network.png "Physical Diagram")
 ### Logical Diagram
 ![Alt text](logical_network.png "Logical Diagram")
+### VLAN Table
+| VLAN | Name        | IP Subnet         | Hosts / Services                        |
+|------|--------------|-------------------|------------------------------------------|
+| 200    | Servers      | 192.168.2.0/24    | DNS, Web Server, File Server, IDS/IPS/SIEM, Metric Server, Vuln Scanner, Database, AD  |
+| 201   | Backup Server   | 192.168.6.0/24   | Backup Database, Backup AD                   |
+| 202   | Employee Workstations     | 192.168.10.0/24   | Employee Workstations         |
+| 203   | Executives       | 192.168.100.0/24   | Executive Workstations                        |
 
 ## Hosts Inventory
 | Hostname       | IP Address     | VLAN | Role              | Local Admin Account | Status   |
