@@ -5,9 +5,27 @@
 ## Network Design
 
 ## Hosts Inventory
-|Hostname   |IP Address   |VLAN   |Role   |Local admin account created   |Status   |
-|----------------------------------------------------------------------------------|
-|alpha-0   |172.16.40.21,192.168.1.1   |None   |Router   |yes   |Configured   |
+| Hostname       | IP Address     | VLAN | Role              | Local Admin Account | Status   |
+|----------------|----------------|------|-------------------|----------------|----------|
+| alpha-0        | 172.16.40.21, 192.168.1.1  | None   | Router        | root      | Configured |
+| alpha-1       | 192.168.2.2   | 200   | DNS, Web Server        | localadmin          | Installed   |
+| alpha-2    | 192.168.2.3    | 200    | SIEM, Metric Server, Vulnerability Scanner       | localadmin       | Installed   |
+| alpha-3       | 192.168.2.4  | 200   | File Server       | localadmin     | Installed   |
+| alpha-4       | 192.168.2.5  | 200   | Database, Active Directory     | Administrator   | Installed  |
+| alpha-5        | 192.168.6.2  | 201   | Backup Server        | Administrator      | Installed |
+| beta-0        | 192.168.100.2  | 203   | Remote: Emily Brown        | admin      | Installed |
+| beta-1        | 192.168.100.3  | 203   | Remote: Albert Tay        | admin      | Installed |
+| beta-2        | 192.168.100.4  | 203   | Remote: Alex Patel        | admin      | Installed |
+| beta-3        | DHCP  | 202   | Remote: Olivia Davis        | admin      | Installed |
+| gamma-0        | DHCP  | 202   | Hybrid Workstation        | admin      | Installed |
+| gamma-1        | DHCP  | 202   | Hybrid Workstation        | admin      | Installed |
+| delta-0        | DHCP  | 202   | Rachel Nguyen        | admin      | Installed |
+| delta-1        | DHCP  | 202   | Karen Taylor        |       | Installed |
+| delta-2        | DHCP  | 202   | Jessica Rodriguez       | omega      | Installed |
+| delta-3        | DHCP  | 202   | Ryan Lee        | omega      | Installed |
+| delta-4        | DHCP  | 202   | Ben Anderson        | admin      | Installed |
+
+
 
 ## Router
 
@@ -56,43 +74,25 @@
     * beta-2: 4
     * beta-3: 4
 
-* Total Storage: 492GB
-    * alpha-0: 32GB
-    * alpha-1: 20GB
-    * alpha-2: 20GB
-    * alpha-3: 20GB
-    * alpha-4: 100GB
-    * alpha-5: 100GB
-    * beta-0: 50GB
-    * beta-1: 50GB
-    * beta-2: 50GB
-    * beta-3: 50GB
+* Total Storage: XXXXXXXXXXX
+    * 4 workstations: 64GB each
+    * Linux1: 64GB
+    * Linux2: 128GB
+    * Linux3: 64GB
+    * Win1: 128GB
+    * Win2: 1TB
+    * Additional storage: 512GB
 
 #### Networking 
-* 48 port switch with 2 PSUs
-* Console cable
-* 9 ethernet cables
-* Switch and cable assignments:
-
-    |   Switch Port |   Destination    |
-    |-----|-----|
-    |   1,2             |   Proxmox Switch  | 
-    |   37  |   delta-6 |
-    |   38  |   gamma-1 |
-    |   39  |   delta-0 |
-    |   40  |   delta-1 |
-    |   41  |   delta-2 |
-    |   42  |   delta-3 |
-    |   43  |   delta-4 |
-
+* 1 gigabit switch with minimum 12 ports
+* 15 ethernet cables
+* Label maker or tape & pen
 
 #### Backup
-* Main backup server is alpha-5
-* Future plans for off-site backup
+* Main backup server is Win2 as noted above
+* 1 Server or larger desktop with high drive capacity
+* Offsite backup (another location in CSRL, but connected over WAN)
 
 #### VM Tagging and Pooling Strategy
-* Descriptive, role based tags: dhcp, firewall, router, vpn, backup-server, dns, web-server, active-directory, db-server, metric-server, siem, vulnerability-scanner, file-server, workstation
-* 2 pools: Servers-alpha & Workstations-beta
-
 
 ## Assumptions & Justifications
