@@ -65,16 +65,17 @@ To make our incident response plan effective, we’d put monitoring tools in pla
 * 7 Desktop computers
     * 7 power cables
     * 7 Ethernet cables
-    * Minimum 8GB RAM, 256GB SSD, i5/Ryzen 5
-    * Must have ethernet NIC
-    * MFF if possible
-    * 4 or more thumbdrives for OS installers
+    * 8GB RAM, 256GB SSD, i5
+    * Ethernet NIC
+    * Micro Form Factor
+    * 4 thumbdrives for OS installers
 
 * 2 Monitors, mice, keyboards
     * 7 Display Port cables
     * 2 power cables
-    * 1080 or higher resolution
-    * KVM 8 to 2
+    * 2 1080 monitors
+    * 1 KVM
+    * 2 USB hubs
 
 #### VM Specifications
 * Total RAM: 64
