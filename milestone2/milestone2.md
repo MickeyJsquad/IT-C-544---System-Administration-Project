@@ -65,7 +65,7 @@ No updates to Technologies and Softwares as defined in the previous Milestone.
 #### delta-0
 ![Alt Text](delta-0.png "Delta 0")
 #### delta-1
-![Alt Text](delta-1.png "Delta 1")
+
 #### delta-2
 ![Alt Text](delta-2.png "Delta 2")
 #### delta-3
