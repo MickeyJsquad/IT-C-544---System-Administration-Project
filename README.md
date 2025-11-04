@@ -1,62 +1,122 @@
-# Milestone 1
+# Milestone 2
 
-## Technologies & Software
+## Updates Only
+No updates to Technologies and Softwares as defined in the previous Milestone.
 
-
-Choose the technologies & software that you will use. Several technologies you may want to consider include:
-
-
-1. **Router** (OPNSense)
-1. **Firewall** (OPNSense)
-1. **DNS** (BIND)
-1. **IDS/IPS/SIEM** (Wazuh)
-1. **Web Server** (Apache)
-1. **VPN** (OPNSense)
-1. **File Server** (TrueNAS)
-1. **Database** (MySQL)
-1. **Backup and Restore Solution** (Duplicati)
-1. **DHCP Server** (OPNSense)
-1. **Metric Server** (Node exporter, Prometheus, Grafana)
-
-
-
-## Network Diagram
+## Network Design
 ### Physical Diagram
-![Alt text](milestone1/physical_network.png "Physical Diagram")
+![Alt text](milestone2/physical_network.png "Physical Diagram")
 ### Logical Diagram
-![Alt text](milestone1/logical_network.png "Logical Diagram")
-### Vlan Table
-![Alt text](milestone1/vlan_table.png "Vlan Table")
-### Hosts Inventory
-![Alt text](milestone1/hosts_inventory.png "Hosts Inventory")
+![Alt text](milestone2/logical_network.png "Logical Diagram")
+### VLAN Table
+| VLAN | Name        | IP Subnet         | Hosts / Services                        |
+|------|--------------|-------------------|------------------------------------------|
+| 200    | Servers      | 192.168.2.0/24    | DNS, Web Server, File Server, IDS/IPS/SIEM, Metric Server, Vuln Scanner, Database, AD  |
+| 201   | Backup Server   | 192.168.6.0/24   | Backup Database, Backup AD                   |
+| 202   | Employee Workstations     | 192.168.10.0/24   | Employee Workstations         |
+| 203   | Executives       | 192.168.100.0/24   | Executive Workstations                        |
 
-We wanted to provide seperate network switches for the VMs and the physical workstations. The VLANs are based on use cases such as servers, IT and Execs, and regualr employees. 
+## Hosts Inventory
+| Hostname       | IP Address     | VLAN | Role              | Local Admin Account | Status   |
+|----------------|----------------|------|-------------------|----------------|----------|
+| alpha-0        | 172.16.40.21, 192.168.1.1  | None   | Router        | root      | Configured |
+| alpha-1       | 192.168.2.2   | 200   | DNS, Web Server        | localadmin          | Installed   |
+| alpha-2    | 192.168.2.3    | 200    | SIEM, Metric Server, Vulnerability Scanner       | localadmin       | Installed   |
+| alpha-3       | 192.168.2.4  | 200   | File Server       | localadmin     | Installed   |
+| alpha-4       | 192.168.2.5  | 200   | Database, Active Directory     | Administrator   | Installed  |
+| alpha-5        | 192.168.6.2  | 201   | Backup Server        | Administrator      | Installed |
+| beta-0        | 192.168.100.2  | 203   | Remote: Emily Brown        | admin      | Installed |
+| beta-1        | 192.168.100.3  | 203   | Remote: Albert Tay        | admin      | Installed |
+| beta-2        | 192.168.100.4  | 203   | Remote: Alex Patel        | admin      | Installed |
+| beta-3        | DHCP  | 202   | Remote: Olivia Davis        | admin      | Installed |
+| gamma-0        | DHCP  | 202   | Hybrid Workstation        | admin      | Installed |
+| gamma-1        | DHCP  | 202   | Hybrid Workstation        | admin      | Installed |
+| delta-0        | DHCP  | 202   | Rachel Nguyen        | admin      | Installed |
+| delta-1        | DHCP  | 202   | Karen Taylor        |       | Installed |
+| delta-2        | DHCP  | 202   | Jessica Rodriguez       | omega      | Installed |
+| delta-3        | DHCP  | 202   | Ryan Lee        | omega      | Installed |
+| delta-4        | DHCP  | 202   | Ben Anderson        | admin      | Installed |
+
+### Installation Proof
+#### alpha-0
+![Alt Text](milestone2/alpha-0.png "alpha-0")
+#### alpha-1
+![Alt Text](milestone2/alpha-1.png "alpha-1")
+#### alpha-2
+![Alt Text](milestone2/alpha-2.png "alpha-2")
+#### alpha-3
+![Alt Text](milestone2/alpha-3.png "alpha-3")
+#### alpha-4
+![Alt Text](milestone2/alpha-4.png "alpha-4")
+#### alpha-5
+![Alt Text](milestone2/alpha-5.png "alpha-5")
+#### beta-0
+![Alt Text](milestone2/beta-0.png "beta-0")
+#### beta-1
+![Alt Text](milestone2/beta-1.png "beta-1")
+#### beta-2
+![Alt Text](milestone2/beta-2.png "beta-2")
+#### beta-3
+![Alt Text](milestone2/beta-3.png "beta-3")
+#### gamma-0
+![Alt Text](milestone2/gamma-0.png "gamma-0")
+#### gamma-1
+![Alt Text](milestone2/gamma-1.png "gamma-1")
+#### delta-0
+![Alt Text](milestone2/delta-0.png "delta-0")
+#### delta-1
+![Alt Text](milestone2/delta-1.png "delta-1")
+#### delta-2
+![Alt Text](milestone2/delta-2.png "delta-2")
+#### delta-3
+![Alt Text](milestone2/delta-3.png "delta-3")
+#### delta-4
+![Alt Text](milestone2/delta-4.png "delta-4")
 
 
 
-## Disaster Recovery
-* We will do daily incremental backups onsite
-* We will do weekly differentialy backups onsite and offsite
-* We will do monthly full backups onsite and offsite
-* We will do weekly VM snapshots onsite and offsite
-* We have a backup AD, 
+## Router
+* Router role:
+Edge routing and DHCP relay
+* WAN interface configuration: 
+Static IP: 172.16.40.21/21
+Gateway: 172.16.40.1
+DNS: Temporarily using 8.8.8.8
+* Internal interface configurations:
+![Alt text](milestone2/vlans.png "VLAN configurations")
+See routing table below.
+* Routing protocol setup:
+N/A
 
-## Policies
+* NAT configuration: 
+Port forwarding everything on the WAN port 80 to 192.168.2.2 port 80.  
+* Connectivity test evidence:
+Pinging externally -
+![Alt text](milestone2/alpha1DNS.png "Pinging external")
+Route table - 
+![Alt text](milestone2/routetablepart1.png "First part of routing table")
+![Alt text](milestone2/routetablepart2.png "Second part of routing table")
 
-### Acceptable Use Policy
-To make sure our Acceptable Use Policy is followed, we would combine both technical controls and awareness efforts. For example, we could block dangerous or non-work-related websites with DNS filtering and prevent users from installing unauthorized software through endpoint management tools. At the same time, we would regularly remind employees of what is and isn’t allowed with short training sessions and acknowledgment forms. This way, enforcement isn’t just about catching violations but also about helping people understand the rules from the start.
-### Password Policy
-Enforcing our Password Policy would start with setting system-wide requirements through Active Directory, where we can control length, complexity, and reuse rules. To strengthen things further, we’d require multi-factor authentication, especially for remote access and admin accounts. We’d also make use of password filters that stop people from using common or already-compromised passwords. This way, employees don’t have to think too much about the rules—the systems enforce them automatically.
-### Access Control Policy
-For access control, we’d rely on role-based access so that permissions are tied to someone’s job rather than given out individually. This prevents people from building up extra access over time. We’d also set up automatic account provisioning and deactivation linked to HR updates so that when someone joins, changes roles, or leaves, their access changes right away. On top of that, we’d schedule regular reviews of who has access to what, making sure nothing slips through the cracks.
-### Data Retention and Disposal Policy
-We’d enforce our data retention rules by using storage and email systems that automatically delete or archive data based on the timelines we set. For example, old files that no longer serve a business purpose could be securely wiped, while records we’re legally required to keep would be archived properly. Backups would also follow the same rules, with retention schedules applied so that outdated or unneeded data isn’t hanging around in backup sets longer than it should. When it comes time to get rid of data, we’d use certified digital wiping tools or shredding services for paper, and we’d make sure backup tapes or disks are securely destroyed as well. Keeping records of these activities would help us prove compliance if needed.
-### Remote Access Policy
-For remote work, we’d make sure that all employees connect through a secure VPN with multi-factor authentication. Firewalls would be configured so that only the VPN gateway can be used for remote access, reducing the risk of someone sneaking in another way. We’d also set requirements for any device connecting remotely, such as having current patches, antivirus, and disk encryption. By logging and reviewing remote sessions, we’d keep a close eye on unusual activity.
-### GDPR or CCPA Compliance
-To enforce privacy regulations like GDPR and CCPA, we’d focus on controlling access to personal data and making sure it’s always protected. This would mean using encryption for both stored and transmitted data, and logging who accesses sensitive information. We’d also create automated processes so that if someone requests their data or asks for it to be deleted, we can respond quickly and consistently. Finally, our incident response plan would include the required breach notification steps so we stay compliant even if something goes wrong.
-### Security Incident Response Plan
-To make our incident response plan effective, we’d put monitoring tools in place from a SIEM to collect logs and flag suspicious activity. We’d also write out playbooks that explain step-by-step what to do in common scenarios such as a malware infection or a phishing attack. Regular drills would help the team practice, so that in a real incident, people don’t waste time figuring out roles or next steps. After each incident, we’d hold a quick review to see what went well and what we can improve.
+## Firewall Rules
+
+![Alt text](milestone2/BackupsFirewallRules.png "Backup rules")
+![Alt text](milestone2/ExecFirewallRules.png "Executive rules")
+![Alt text](milestone2/LANFirewallRules.png "LAN rules")
+![Alt text](milestone2/ServersFirewallRules.png "Server rules")
+![Alt text](milestone2/WANFirewallRules.png "WAN rules")
+![Alt text](milestone2/WorkstationsFirewallRules.png "Workstation rules")
+
+### DNS Resolution
+
+#### VLAN 200
+![Alt text](milestone2/alpha1DNS.png "VLAN 200 DNS")
+#### VLAN 201
+![Alt text](milestone2/alpha5DNS.png "VLAN 201 DNS")
+#### VLAN 202
+![Alt text](milestone2/beta3DNS.png "VLAN 202 DNS")
+#### VLAN 203
+![Alt text](milestone2/beta0DNS.png "VLAN 203 DNS")
+
 
 
 ## Hardware Planning
@@ -65,7 +125,7 @@ To make our incident response plan effective, we’d put monitoring tools in pla
 * 7 Desktop computers
     * 7 power cables
     * 7 Ethernet cables
-    * 8GB RAM, 256GB SSD, i5
+    * 8GB RAM, 256GB SSD, Intel Core i5
     * Ethernet NIC
     * Micro Form Factor
     * 4 thumbdrives for OS installers
@@ -78,21 +138,31 @@ To make our incident response plan effective, we’d put monitoring tools in pla
     * 2 USB hubs
 
 #### VM Specifications
-* Total RAM: 64
-    * 4 workstations: 4GB each
-    * Linux1: 8GB
-    * Linux2: 16GB
-    * Linux3: 8GB
-    * Win1: 8GB
-    * Win2: 8GB
-* Total CPU Cores: 24
-    * 4 workstations: 2 each
-    * Linux1: 2
-    * Linux2: 6
-    * Linux3: 2
-    * Win1: 2
-    * Win2: 4
-* Total Storage: 2TB
+* Total RAM: 176
+    * alpha-0: 16GB
+    * alpha-1: 16GB
+    * alpha-2: 32GB
+    * alpha-3: 16GB
+    * alpha-4: 16GB
+    * alpha-5: 16GB
+    * beta-0: 16GB
+    * beta-1: 16GB
+    * beta-2: 16GB
+    * beta-3: 16GB
+    
+* Total CPU Cores: 44
+    * alpha-0: 4
+    * alpha-1: 4
+    * alpha-2: 8
+    * alpha-3: 4
+    * alpha-4: 4
+    * alpha-5: 4
+    * beta-0: 4
+    * beta-1: 4
+    * beta-2: 4
+    * beta-3: 4
+
+* Total Storage: XXXXXXXXXXX
     * 4 workstations: 64GB each
     * Linux1: 64GB
     * Linux2: 128GB
@@ -103,7 +173,6 @@ To make our incident response plan effective, we’d put monitoring tools in pla
 
 #### Networking 
 * 1 gigabit switch with minimum 12 ports
-* 1 Wireless AP
 * 15 ethernet cables
 * Label maker or tape & pen
 
@@ -112,3 +181,17 @@ To make our incident response plan effective, we’d put monitoring tools in pla
 * 1 Server or larger desktop with high drive capacity
 * Offsite backup (another location in CSRL, but connected over WAN)
 
+#### VM Tagging and Pooling Strategy
+* Descriptive, role based tags: dhcp, firewall, router, vpn, backup-server, dns, web-server, active-directory, db-server, metric-server, siem, vulnerability-scanner, file-server, workstation
+* 2 pools: Servers-alpha & Workstations-beta
+
+## Assumptions & Justifications
+
+### VLANs
+* See above table for assumptions based on who is using what VLAN
+
+### Firewall Rules
+* Executives should have access to all everything
+* Backup (VLAN 201) should have access to everything
+* Workstations should be able to access file server
+* Servers should be able to reach Executives and Workstations
