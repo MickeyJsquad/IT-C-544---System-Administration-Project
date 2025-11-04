@@ -37,6 +37,21 @@ No updates to Technologies and Softwares as defined in the previous Milestone.
 | delta-3        | DHCP  | 202   | Ryan Lee        | omega      | Installed |
 | delta-4        | DHCP  | 202   | Ben Anderson        | admin      | Installed |
 
+### Installation Proof
+#### Delta 0
+![Alt Text](delta-0.png "Delta 0")
+#### Delta 1
+![Alt Text](delta-1.png "Delta 1")
+#### Delta 2
+![Alt Text](delta-2.png "Delta 2")
+#### Delta 3
+![Alt Text](delta-3.png "Delta 3")
+#### Delta 4
+![Alt Text](delta-4.png "Delta 4")
+#### Gamma 0
+![Alt Text](gamma-0.png "Gamma 0")
+#### Gamma 1
+![Alt Text](gamma-1.png "Gamma 1")
 
 
 ## Router
