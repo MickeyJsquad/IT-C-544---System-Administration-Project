@@ -39,39 +39,39 @@ No updates to Technologies and Softwares as defined in the previous Milestone.
 
 ### Installation Proof
 #### alpha-0
-![Alt Text](alpha-0.png "Gamma 0")
+![Alt Text](alpha-0.png "alpha-0")
 #### alpha-1
-![Alt Text](alpha-1.png "Gamma 0")
+![Alt Text](alpha-1.png "alpha-1")
 #### alpha-2
-![Alt Text](alpha-2.png "Gamma 0")
+![Alt Text](alpha-2.png "alpha-2")
 #### alpha-3
-![Alt Text](alpha-3.png "Gamma 0")
+![Alt Text](alpha-3.png "alpha-3")
 #### alpha-4
-![Alt Text](alpha-4.png "Gamma 0")
+![Alt Text](alpha-4.png "alpha-4")
 #### alpha-5
-![Alt Text](alpha-5.png "Gamma 0")
+![Alt Text](alpha-5.png "alpha-5")
 #### beta-0
-![Alt Text](beta-0.png "Gamma 0")
+![Alt Text](beta-0.png "beta-0")
 #### beta-1
-![Alt Text](beta-1.png "Gamma 0")
+![Alt Text](beta-1.png "beta-1")
 #### beta-2
-![Alt Text](beta-2.png "Gamma 0")
+![Alt Text](beta-2.png "beta-2")
 #### beta-3
-![Alt Text](beta-3.png "Gamma 0")
+![Alt Text](beta-3.png "beta-3")
 #### gamma-0
-![Alt Text](gamma-0.png "Gamma 0")
+![Alt Text](gamma-0.png "gamma-0")
 #### gamma-1
-![Alt Text](gamma-1.png "Gamma 1")
+![Alt Text](gamma-1.png "gamma-1")
 #### delta-0
-![Alt Text](delta-0.png "Delta 0")
+![Alt Text](delta-0.png "delta-0")
 #### delta-1
-![Alt Text](delta-1.png "Delta 1")
+![Alt Text](delta-1.png "delta-1")
 #### delta-2
-![Alt Text](delta-2.png "Delta 2")
+![Alt Text](delta-2.png "delta-2")
 #### delta-3
-![Alt Text](delta-3.png "Delta 3")
+![Alt Text](delta-3.png "delta-3")
 #### delta-4
-![Alt Text](delta-4.png "Delta 4")
+![Alt Text](delta-4.png "delta-4")
 
 
 
