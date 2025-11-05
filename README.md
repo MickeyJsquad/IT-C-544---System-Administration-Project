@@ -5,9 +5,9 @@ No updates to Technologies and Softwares as defined in the previous Milestone.
 
 ## Network Design
 ### Physical Diagram
-![Alt text](physical_network.png "Physical Diagram")
+![Alt text](milestone2/physical_network.png "Physical Diagram")
 ### Logical Diagram
-![Alt text](logical_network.png "Logical Diagram")
+![Alt text](milestone2/logical_network.png "Logical Diagram")
 ### VLAN Table
 | VLAN | Name        | IP Subnet         | Hosts / Services                        |
 |------|--------------|-------------------|------------------------------------------|
@@ -39,39 +39,39 @@ No updates to Technologies and Softwares as defined in the previous Milestone.
 
 ### Installation Proof
 #### alpha-0
-![Alt Text](alpha-0.png "alpha-0")
+![Alt Text](milestone2/alpha-0.png "alpha-0")
 #### alpha-1
-![Alt Text](alpha-1.png "alpha-1")
+![Alt Text](milestone2/alpha-1.png "alpha-1")
 #### alpha-2
-![Alt Text](alpha-2.png "alpha-2")
+![Alt Text](milestone2/alpha-2.png "alpha-2")
 #### alpha-3
-![Alt Text](alpha-3.png "alpha-3")
+![Alt Text](milestone2/alpha-3.png "alpha-3")
 #### alpha-4
-![Alt Text](alpha-4.png "alpha-4")
+![Alt Text](milestone2/alpha-4.png "alpha-4")
 #### alpha-5
-![Alt Text](alpha-5.png "alpha-5")
+![Alt Text](milestone2/alpha-5.png "alpha-5")
 #### beta-0
-![Alt Text](beta-0.png "beta-0")
+![Alt Text](milestone2/beta-0.png "beta-0")
 #### beta-1
-![Alt Text](beta-1.png "beta-1")
+![Alt Text](milestone2/beta-1.png "beta-1")
 #### beta-2
-![Alt Text](beta-2.png "beta-2")
+![Alt Text](milestone2/beta-2.png "beta-2")
 #### beta-3
-![Alt Text](beta-3.png "beta-3")
+![Alt Text](milestone2/beta-3.png "beta-3")
 #### gamma-0
-![Alt Text](gamma-0.png "gamma-0")
+![Alt Text](milestone2/gamma-0.png "gamma-0")
 #### gamma-1
-![Alt Text](gamma-1.png "gamma-1")
+![Alt Text](milestone2/gamma-1.png "gamma-1")
 #### delta-0
-![Alt Text](delta-0.png "delta-0")
+![Alt Text](milestone2/delta-0.png "delta-0")
 #### delta-1
-![Alt Text](delta-1.png "delta-1")
+![Alt Text](milestone2/delta-1.png "delta-1")
 #### delta-2
-![Alt Text](delta-2.png "delta-2")
+![Alt Text](milestone2/delta-2.png "delta-2")
 #### delta-3
-![Alt Text](delta-3.png "delta-3")
+![Alt Text](milestone2/delta-3.png "delta-3")
 #### delta-4
-![Alt Text](delta-4.png "delta-4")
+![Alt Text](milestone2/delta-4.png "delta-4")
 
 
 
@@ -83,7 +83,7 @@ Static IP: 172.16.40.21/21
 Gateway: 172.16.40.1
 DNS: Temporarily using 8.8.8.8
 * Internal interface configurations:
-![Alt text](vlans.png "VLAN configurations")
+![Alt text](milestone2/vlans.png "VLAN configurations")
 See routing table below.
 * Routing protocol setup:
 N/A
@@ -92,32 +92,30 @@ N/A
 Port forwarding everything on the WAN port 80 to 192.168.2.2 port 80.  
 * Connectivity test evidence:
 Pinging externally -
-![Alt text](alpha1DNS.png "Pinging external")
+![Alt text](milestone2/alpha1DNS.png "Pinging external")
 Route table - 
-![Alt text](routetablepart1.png "First part of routing table")
-![Alt text](routetablepart2.png "Second part of routing table")
+![Alt text](milestone2/routetablepart1.png "First part of routing table")
+![Alt text](milestone2/routetablepart2.png "Second part of routing table")
 
 ## Firewall Rules
 
-![Alt text](BackupsFirewallRules.png "Backup rules")
-![Alt text](ExecFirewallRules.png "Executive rules")
-![Alt text](LANFirewallRules.png "LAN rules")
-![Alt text](ServersFirewallRules.png "Server rules")
-![Alt text](WANFirewallRules.png "WAN rules")
-![Alt text](WorkstationsFirewallRules.png "Workstation rules")
+![Alt text](milestone2/BackupsFirewallRules.png "Backup rules")
+![Alt text](milestone2/ExecFirewallRules.png "Executive rules")
+![Alt text](milestone2/LANFirewallRules.png "LAN rules")
+![Alt text](milestone2/ServersFirewallRules.png "Server rules")
+![Alt text](milestone2/WANFirewallRules.png "WAN rules")
+![Alt text](milestone2/WorkstationsFirewallRules.png "Workstation rules")
 
 ### DNS Resolution
 
 #### VLAN 200
-![Alt text](alpha1DNS.png "VLAN 200 DNS")
+![Alt text](milestone2/alpha1DNS.png "VLAN 200 DNS")
 #### VLAN 201
-![Alt text](alpha5DNS.png "VLAN 201 DNS")
+![Alt text](milestone2/alpha5DNS.png "VLAN 201 DNS")
 #### VLAN 202
-![Alt text](beta3DNS.png "VLAN 202 DNS")
+![Alt text](milestone2/beta3DNS.png "VLAN 202 DNS")
 #### VLAN 203
-![Alt text](beta0DNS.png "VLAN 203 DNS")
-
-
+![Alt text](milestone2/beta0DNS.png "VLAN 203 DNS")
 
 ## Hardware Planning
 
