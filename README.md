@@ -5,9 +5,9 @@ No updates to Technologies and Softwares as defined in the previous Milestone.
 
 ## Network Design
 ### Physical Diagram
-![Alt text](milestone2/physical_network.png "Physical Diagram")
+![Alt text](physical_network.png "Physical Diagram")
 ### Logical Diagram
-![Alt text](milestone2/logical_network.png "Logical Diagram")
+![Alt text](logical_network.png "Logical Diagram")
 ### VLAN Table
 | VLAN | Name        | IP Subnet         | Hosts / Services                        |
 |------|--------------|-------------------|------------------------------------------|
@@ -39,39 +39,39 @@ No updates to Technologies and Softwares as defined in the previous Milestone.
 
 ### Installation Proof
 #### alpha-0
-![Alt Text](milestone2/alpha-0.png "alpha-0")
+![Alt Text](alpha-0.png "alpha-0")
 #### alpha-1
-![Alt Text](milestone2/alpha-1.png "alpha-1")
+![Alt Text](alpha-1.png "alpha-1")
 #### alpha-2
-![Alt Text](milestone2/alpha-2.png "alpha-2")
+![Alt Text](alpha-2.png "alpha-2")
 #### alpha-3
-![Alt Text](milestone2/alpha-3.png "alpha-3")
+![Alt Text](alpha-3.png "alpha-3")
 #### alpha-4
-![Alt Text](milestone2/alpha-4.png "alpha-4")
+![Alt Text](alpha-4.png "alpha-4")
 #### alpha-5
-![Alt Text](milestone2/alpha-5.png "alpha-5")
+![Alt Text](alpha-5.png "alpha-5")
 #### beta-0
-![Alt Text](milestone2/beta-0.png "beta-0")
+![Alt Text](beta-0.png "beta-0")
 #### beta-1
-![Alt Text](milestone2/beta-1.png "beta-1")
+![Alt Text](beta-1.png "beta-1")
 #### beta-2
-![Alt Text](milestone2/beta-2.png "beta-2")
+![Alt Text](beta-2.png "beta-2")
 #### beta-3
-![Alt Text](milestone2/beta-3.png "beta-3")
+![Alt Text](beta-3.png "beta-3")
 #### gamma-0
-![Alt Text](milestone2/gamma-0.png "gamma-0")
+![Alt Text](gamma-0.png "gamma-0")
 #### gamma-1
-![Alt Text](milestone2/gamma-1.png "gamma-1")
+![Alt Text](gamma-1.png "gamma-1")
 #### delta-0
-![Alt Text](milestone2/delta-0.png "delta-0")
+![Alt Text](delta-0.png "delta-0")
 #### delta-1
-![Alt Text](milestone2/delta-1.png "delta-1")
+![Alt Text](delta-1.png "delta-1")
 #### delta-2
-![Alt Text](milestone2/delta-2.png "delta-2")
+![Alt Text](delta-2.png "delta-2")
 #### delta-3
-![Alt Text](milestone2/delta-3.png "delta-3")
+![Alt Text](delta-3.png "delta-3")
 #### delta-4
-![Alt Text](milestone2/delta-4.png "delta-4")
+![Alt Text](delta-4.png "delta-4")
 
 
 
@@ -83,7 +83,7 @@ Static IP: 172.16.40.21/21
 Gateway: 172.16.40.1
 DNS: Temporarily using 8.8.8.8
 * Internal interface configurations:
-![Alt text](milestone2/vlans.png "VLAN configurations")
+![Alt text](vlans.png "VLAN configurations")
 See routing table below.
 * Routing protocol setup:
 N/A
@@ -92,30 +92,30 @@ N/A
 Port forwarding everything on the WAN port 80 to 192.168.2.2 port 80.  
 * Connectivity test evidence:
 Pinging externally -
-![Alt text](milestone2/alpha1DNS.png "Pinging external")
+![Alt text](alpha1DNS.png "Pinging external")
 Route table - 
-![Alt text](milestone2/routetablepart1.png "First part of routing table")
-![Alt text](milestone2/routetablepart2.png "Second part of routing table")
+![Alt text](routetablepart1.png "First part of routing table")
+![Alt text](routetablepart2.png "Second part of routing table")
 
 ## Firewall Rules
 
-![Alt text](milestone2/BackupsFirewallRules.png "Backup rules")
-![Alt text](milestone2/ExecFirewallRules.png "Executive rules")
-![Alt text](milestone2/LANFirewallRules.png "LAN rules")
-![Alt text](milestone2/ServersFirewallRules.png "Server rules")
-![Alt text](milestone2/WANFirewallRules.png "WAN rules")
-![Alt text](milestone2/WorkstationsFirewallRules.png "Workstation rules")
+![Alt text](BackupsFirewallRules.png "Backup rules")
+![Alt text](ExecFirewallRules.png "Executive rules")
+![Alt text](LANFirewallRules.png "LAN rules")
+![Alt text](ServersFirewallRules.png "Server rules")
+![Alt text](WANFirewallRules.png "WAN rules")
+![Alt text](WorkstationsFirewallRules.png "Workstation rules")
 
 ### DNS Resolution
 
 #### VLAN 200
-![Alt text](milestone2/alpha1DNS.png "VLAN 200 DNS")
+![Alt text](alpha1DNS.png "VLAN 200 DNS")
 #### VLAN 201
-![Alt text](milestone2/alpha5DNS.png "VLAN 201 DNS")
+![Alt text](alpha5DNS.png "VLAN 201 DNS")
 #### VLAN 202
-![Alt text](milestone2/beta3DNS.png "VLAN 202 DNS")
+![Alt text](beta3DNS.png "VLAN 202 DNS")
 #### VLAN 203
-![Alt text](milestone2/beta0DNS.png "VLAN 203 DNS")
+![Alt text](beta0DNS.png "VLAN 203 DNS")
 
 
 
@@ -162,24 +162,38 @@ Route table -
     * beta-2: 4
     * beta-3: 4
 
-* Total Storage: XXXXXXXXXXX
-    * 4 workstations: 64GB each
-    * Linux1: 64GB
-    * Linux2: 128GB
-    * Linux3: 64GB
-    * Win1: 128GB
-    * Win2: 1TB
-    * Additional storage: 512GB
+* Total Storage: 492GB
+    * alpha-0: 32GB
+    * alpha-1: 20GB
+    * alpha-2: 20GB
+    * alpha-3: 20GB
+    * alpha-4: 100GB
+    * alpha-5: 100GB
+    * beta-0: 50GB
+    * beta-1: 50GB
+    * beta-2: 50GB
+    * beta-3: 50GB
 
 #### Networking 
-* 1 gigabit switch with minimum 12 ports
-* 15 ethernet cables
-* Label maker or tape & pen
+* 48 port switch with 2 PSUs
+* Console cable
+* 9 ethernet cables
+* Switch and cable assignments:
+
+    |   Switch Port |   Destination    |
+    |-----|-----|
+    |   1,2             |   Proxmox Switch  | 
+    |   37  |   delta-6 |
+    |   38  |   gamma-1 |
+    |   39  |   delta-0 |
+    |   40  |   delta-1 |
+    |   41  |   delta-2 |
+    |   42  |   delta-3 |
+    |   43  |   delta-4 |
 
 #### Backup
-* Main backup server is Win2 as noted above
-* 1 Server or larger desktop with high drive capacity
-* Offsite backup (another location in CSRL, but connected over WAN)
+* Main backup server is alpha-5
+* Future plans for off-site backup
 
 #### VM Tagging and Pooling Strategy
 * Descriptive, role based tags: dhcp, firewall, router, vpn, backup-server, dns, web-server, active-directory, db-server, metric-server, siem, vulnerability-scanner, file-server, workstation
