@@ -26,6 +26,25 @@ alpha-2 has no problem resolving the local domain "www.sysadmin.local" and the p
 ![alpha-2 pinging local and public domain](alpha-2_pings.png)
 
 ## DHCP Setup
+DHCP has been configured for each individual VLAN. DHCP is being used to statically assign IP addresses to all servers and dynamically assign IP addresses for all workstations. The full range of IP addresses for the subnet is given to DHCP to assign IP addresses to devices. DHCP also assigns the default gateway (which is the first address of the subnet) for each VLAN and the DNS server (192.168.2.2).
+
+#### DHCP Config and Static IPs for VLAN 200 - Servers
+![VLAN 200 Server DHCP](dhcp-servers.png)
+![VLAN 200 Static IPs](statics-servers.png)
+Static IPs are assigned for the servers because of the services they provide on the network and the IPs shouldn't change to ensure continuous connectivity.
+
+#### DHCP Config and Static IPs for VLAN 202 - Backups
+![VLAN 201 Backups DHCP](dhcp-backups.png)
+![VLAN 201 Static IPs](statics-backups.png)
+Static IP for the backup server is assigned for a similar reason as the other servers.
+
+#### DHCP Config for VLAN 202 - Workstations
+![VLAN 202 Workstations DHCP](dhcp-workstations.png)
+No static IPs are assigned for workstations.
+
+#### DHCP Config for VLAN 203 - Executives
+![VLAN 203 Executives DHCP](dhcp-execs.png)
+No static IPs are assigned for executive workstations.
 
 ## Firewall Rules
 
