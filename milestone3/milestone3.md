@@ -49,3 +49,7 @@ No static IPs are assigned for executive workstations.
 ## Firewall Rules
 
 ## Network Diagrams
+
+No updates to logical or physical diagrams from previous milestone.
+![Logical Diagram](logical_network.png)
+![Physical Diagram](physical_network.png)
