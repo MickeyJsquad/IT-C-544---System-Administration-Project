@@ -7,6 +7,23 @@
 ## Group Policies
 
 ## DNS Configuration
+The DNS server is configured on alpha-1 which runs BIND9 on an Ubuntu Server and has the IP Address 192.168.2.2. The Domain Controller is set as the authoritative server for the domain "sysadmin.local" whereas the DNS server is set as the primary DNS that forwards any local domain requests to the DC. The DNS server also forwards all external domain resolution to the IP addresses 1.1.1.1 and 8.8.8.8. 
+
+
+The records on the DC including manually added ones and hostnames from devices connected to the domain.
+![Records on the DC]()
+
+The config that forwards all local domain resolution requests to the DC.
+![named.conf.local](dns_zones.png)
+
+The config that forwards all external domain resolution to external DNS servers.
+![named.conf.options](named.conf.options.png)
+
+The router assigns DNS servers to the devices as it gives DHCP leases. alpha-2 can see what DNS server it is using.
+![alpha-2 dns server](alpha-2_dns_server.png)
+
+alpha-2 has no problem resolving the local domain "www.sysadmin.local" and the public domain "google.com" and reaching both.
+![alpha-2 pinging local and public domain](alpha-2_pings.png)
 
 ## DHCP Setup
 
