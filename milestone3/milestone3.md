@@ -47,6 +47,12 @@ No static IPs are assigned for workstations.
 No static IPs are assigned for executive workstations.
 
 ## Firewall Rules
+![Alt text](BackupsRules.png "Backup rules")
+![Alt text](ExecutivesRules.png "Executive rules")
+![Alt text](LANRules.png "LAN rules")
+![Alt text](ServersRules.png "Server rules")
+![Alt text](WANRules.png "WAN rules")
+![Alt text](WorkstationsRules.png "Workstation rules")
 
 ## Network Diagrams
 
