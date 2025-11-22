@@ -4,16 +4,25 @@
 
 ## User Accounts & Groups
 Security Groups and Users
+
 Executive group: Albert Tay, Emily Brown
+
 IT group: Alex Patel, Eric Nguyen
+
 Employees group: Ben Anderson, Jessica Rodriguez, Karen Taylor, Olivia Davis, Rachel Nguyen, Ryan Lee
 
 Organizational Units
+
 Backups: ALPHA-5
+
 Executives: BETA-0, BETA-1, BETA-2
+
 Servers: ALPHA-0, ALPHA-1, ALPHA-2, ALPHA-3
+
 Workstations: BETA-3, DELTA-0, DELTA-1, GAMMA-0, GAMMA-1
+
 Domain Controllers: ALPHA-4
+
 
 
 ## Group Policies
@@ -21,19 +30,24 @@ Password & Security Policy (applied to all groups and devices)
 - Enforce minimum password length: 12 characters
 - Require complex passwords
 - Set account lockout after 5 failed login attempts
-•	Software Deployment
+
+Software Deployment
 - Block all .exe installs from user downloads
+  
 Access Control
 - Once SMB is up (Milestone 4), we will map network drives based on department (e.g., HR_Shared, Sales_Shared)
 - Limit access to servers and admin consoles according to user group
 - Spicy Cluck Co. will enforce Multi-factor authentication using Duo for all logins
+
 Administrative Rights
 - IT Managers and Network Admins: Full admin on servers and devices relevant to IT operations
 - Executives: Limited delegation for business-critical apps
 - All other users: Standard user privileges; no local admin rights
+
 Device Configuration
 - Company-standard desktop configuration (Including standard wallpaper, taskbar, etc.)
 - Restrict USB and removable media access for sensitive groups
+
 
 All of the above policies are enforced.
 
