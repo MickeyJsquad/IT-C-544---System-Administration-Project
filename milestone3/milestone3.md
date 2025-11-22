@@ -5,6 +5,26 @@
 ## User Accounts & Groups
 
 ## Group Policies
+Password & Security Policy (applied to all groups and devices)
+- Enforce minimum password length: 12 characters
+- Require complex passwords
+- Set account lockout after 5 failed login attempts
+•	Software Deployment
+- Block all .exe installs from user downloads
+Access Control
+- Once SMB is up (Milestone 4), we will map network drives based on department (e.g., HR_Shared, Sales_Shared)
+- Limit access to servers and admin consoles according to user group
+- Spicy Cluck Co. will enforce Multi-factor authentication using Duo for all logins
+Administrative Rights
+- IT Managers and Network Admins: Full admin on servers and devices relevant to IT operations
+- Executives: Limited delegation for business-critical apps
+- All other users: Standard user privileges; no local admin rights
+Device Configuration
+- Company-standard desktop configuration (Including standard wallpaper, taskbar, etc.)
+- Restrict USB and removable media access for sensitive groups
+
+All of the above policies are enforced.
+
 
 ## DNS Configuration
 The DNS server is configured on alpha-1 which runs BIND9 on an Ubuntu Server and has the IP Address 192.168.2.2. The Domain Controller is set as the authoritative server for the domain "sysadmin.local" whereas the DNS server is set as the primary DNS that forwards any local domain requests to the DC. The DNS server also forwards all external domain resolution to the IP addresses 1.1.1.1 and 8.8.8.8. 
