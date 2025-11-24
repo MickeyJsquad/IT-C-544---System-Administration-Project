@@ -57,7 +57,7 @@ The DNS server is configured on alpha-1 which runs BIND9 on an Ubuntu Server and
 
 
 The records on the DC including manually added ones and hostnames from devices connected to the domain.
-![Records on the DC]()
+![Records on the DC](AD_DNS.png)
 
 The config that forwards all local domain resolution requests to the DC.
 ![named.conf.local](dns_zones.png)
