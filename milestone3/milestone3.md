@@ -94,12 +94,8 @@ No static IPs are assigned for executive workstations.
 
 ## Firewall Rules
 The reasoning behind our firewall rules is relatively simple. The network requires access to the internet at large, meaning we need to have ports 80, 443, 123, and 53 allowed for HTTP, HTTPS, NTP, and DNS respectively. Each machine within the system must also have access to Active Directory, requiring the inclusion of ports 88, 636, and 135 for Kerberos, Encrypted LDAP, and RPC, respectively. Each VLAN has rules allowing it a certain amount of access to other VLANs. Executives, for example, are given access to all other VLANs because of their role. For the moment, the Backups VLAN is given the same level of permission to ensure that everything can be backed up properly. This may be revised in the future as deemed necessary. Workstations really only need an internet connection, and the rules reflect that need.
-![Alt text](BackupsRules.png "Backup rules")
-![Alt text](ExecutivesRules.png "Executive rules")
-![Alt text](LANRules.png "LAN rules")
-![Alt text](ServersRules.png "Server rules")
-![Alt text](WANRules.png "WAN rules")
-![Alt text](WorkstationsRules.png "Workstation rules")
+
+The firewall rules can be viewed in [this backup file](BackupFile.xml).
 
 ## Network Diagrams
 
