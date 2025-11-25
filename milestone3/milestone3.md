@@ -2,6 +2,14 @@
 
 ## AD & LDAP Setup
 
+To create users or groups, first open "Active Directory Users and Computers" on the Domain Controller. Open the folder "Users" (or other desired OU), and it will list all users and groups on the right panel. From the toolbar, select either "Create a new user in the current container" or "Create a new group in the current container". For creating a new user, fill in "Full name" and "User logon name" in the dialog box, press next, assign the password and account policies, press next, then review the information and press finish. For creating a new group, simply input the group name and press ok. 
+
+To assign permissions to users or groups, right-click on the user or group and select "Properties". The opened dialog box will contain several tabs for managing the properties of the user/group, including permissions which can primarily be found and assigned in the "Member Of" tab. In this tab, users and groups can be assigned membership of other groups that have permissions associated with them (e.g., giving a user administrator rights by assigning them membership in the Administrators group). Simply click add, enter the name of the permissions group, check names, then press ok. 
+
+Modifying and disabling user accounts can initially done in creating a new user, but can be revisited in another tab of "Properties". Most pertinent account settings, including disabling the account, can be located in the "Account" tab.
+
+The Microsoft supported method of backing up Active Directory (running on a Windows Server) is with a System State Backup, installed in Powershell with "Install-WindowsFeature Windows-Server-Backup". Then you would run the backup with "wbadmin start systemstatebackup -backupTarget:\\SERVER\Backups -quiet" (\\SERVER\ could also be replaced with a local hard drive, such as D:). To run a non-authoritative restore (where one domain controller goes down), boot into Directory Services Restore Mode on the downed DC and run "wbadmin start systemstaterecovery -version:<timestamp> -backupTarget:D: -quiet". After rebooting, the downed DC will update by replicating from an active Domain Controller. 
+
 ## User Accounts & Groups
 Security Groups and Users
 
