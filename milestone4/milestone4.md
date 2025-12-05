@@ -134,14 +134,29 @@ empl
 	-Employees: change
 
 
-    screenshots...
+ACL For Executive Share
+![ACL For Executive Share](m4_screenshots/smb_acl/exec_acl.PNG)
+
+ACL For IT Share
+![ACL For IT Share](m4_screenshots/smb_acl/it_acl.PNG)
+
+ACL For Employee Share
+![ACL For Employee Share](m4_screenshots/smb_acl/empl_acl.PNG)
+
+Example: Alex Patel can access all three shares
+![Alex Patel can access all three shares](m4_screenshots/smb_proof/alex_has_all_3.PNG)
+
+Example: Ben Anderson can access Employee share but is denied connecting to IT share
+![Ben Anderson can access Employee share but is denied connecting to IT share](m4_screenshots/smb_proof/ben_has_empl_but_denied_it.PNG)
 
 #### Backup schedules and locations
 
-#### Troubleshooting tips
-serial number stuuf
-time stuff
+!!!!!!!!!!!!!!!!EITHER FILL THIS OUT OR DELETE IT!!!!!!!!!!!!!!!!!11
 
+#### Troubleshooting tips
+When using TrueNAS in Proxmox and adding a pool on a virtual drive, you must assign the virtual drive a serial number. This can be done by adding ```serial=<make up a serial>``` to the end of the line in the config file for the drive on the host's shell.
+
+We also had some trouble with joining the TrueNAS server to the domain. This turned out to be due to a time difference between the domain controller and TrueNAS machine. 
 
 ## Vulnerability Scanning
 * Tool setup and configuration
