@@ -1,4 +1,4 @@
-# Milestone 3
+# Milestone 4
 
 ## AD & LDAP Setup
 
@@ -114,7 +114,7 @@ No updates to logical or physical diagrams from previous milestone.
 ## File Server Configuration
 * Folder structure and mapping to groups
 * Access rights per folder
-* backup schedules and locations
+* Backup schedules and locations
 * Troubleshooting tips
 
 
