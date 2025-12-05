@@ -112,10 +112,35 @@ No updates to logical or physical diagrams from previous milestone.
 ![Physical Diagram](physical_network.png)
 
 ## File Server Configuration
-* Folder structure and mapping to groups
-* Access rights per folder
-* Backup schedules and locations
-* Troubleshooting tips
+#### Folder structure and mapping to groups
+We are using TrueNAS on a VM in Proxmox for our file server. There is a secondary virtual drive other than the boot drive which has a pool called "general." Under general there are directories mapped to our three groups: executives (exec), IT (it), and Employees (empl). There is an SMB share for each of these directories.
+
+
+screenshot from web gui...
+
+#### Access rights per folder
+The TrueNAS file server is joined to AD for access control. The shares can only be mapped by the appropriate individuals. Additionally, acess can be set as read, change, and full (we do not currently have any that are read-only). Below is the access allowed for each share:
+
+exec
+	-Executives: change
+	-Alex Patel: full
+
+it
+	-IT: full
+
+empl
+	-IT: full
+	-Executives: change
+	-Employees: change
+
+
+    screenshots...
+
+#### Backup schedules and locations
+
+#### Troubleshooting tips
+serial number stuuf
+time stuff
 
 
 ## Vulnerability Scanning
