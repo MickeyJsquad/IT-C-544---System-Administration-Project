@@ -48,6 +48,26 @@ When using TrueNAS in Proxmox and adding a pool on a virtual drive, you must ass
 We also had some trouble with joining the TrueNAS server to the domain. This turned out to be due to a time difference between the domain controller and TrueNAS machine. 
 
 ## Vulnerability Scanning
+
+#### Setup and Configuration
+We are using Nessus, an easy to install and intuitive vulnerability scanner, to scan the network for vulnerabilities. Nessus can be installed by going to the Downloads page and selecting the right download package for your Operating System. This can also be done via the command line using wget. Then you install the package and let it configure itself and install all of the necessary plugins. Once it is done it will deploy a web interface on port 8834. It will walk you through the steps of creating an admin account. It will eventually bring you to the login page where you can log in with the account you just created.
+![Nessus login page](m4_screenshots/nessus/nessus_login.png)
+
+Once logged in and all plugins are installed, you can click the New Scan button in the top right corner to Configure a scan of your machines.
+
+We have a scan of all machines in our Servers VLAN along with the router that is scheduled to scan once a week.
+![Nessus scheduled scan](m4_screenshots/nessus/nessus_schedule.png)
+
+#### Scan Results
+Here are the results of the scan of our main servers.
+![Main Servers Scan](m4_screenshots/nessus/main_servers.png)
+
+Windows Credentialed Scan
+![Windows Creds](m4_screenshots/nessus/windows_creds.png)
+
+Linux Credentialed Scan
+![Linux Creds](m4_screenshots/nessus/linux_creds.png)
+
 * Tool setup and configuration
 * Scan results and screenshots
 * Risk assessment updates
@@ -61,6 +81,10 @@ We also had some trouble with joining the TrueNAS server to the domain. This tur
 * Test results and troubleshootign steps
 
 ## SIEM & Endpoint Protection
+
+We decided to use Wazuh as our SIEM and Endpoint Detection software. Because the network is not very large, we decided to use the all-in-one script meaning that all three parts of Wazuh, Server, Manager, and Dashboard, are installed on the same device. After the installation we were provided with the initial login credentials which we changed. In the dashboard, there are instructions provided for deploying agents on other machines.
+![]
+
 * Deployment steps for SIEM and endpoint tools
 * Devicdes monitored and log sources
 * Alert rules and examples
