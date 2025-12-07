@@ -4,8 +4,8 @@
 #### Folder structure and mapping to groups
 We are using TrueNAS on a VM in Proxmox for our file server. There is a secondary virtual drive other than the boot drive which has a pool called "general." Under general there are directories mapped to our three groups: executives (exec), IT (it), and Employees (empl). There is an SMB share for each of these directories.
 
-
-screenshot from web gui...
+TrueNAS SMB Shares
+![TrueNAS SMB Shares](m4_screenshots/smb_proof/shares.png)
 
 #### Access rights per folder
 The TrueNAS file server is joined to AD for access control. The shares can only be mapped by the appropriate individuals. Additionally, acess can be set as read, change, and full (we do not currently have any that are read-only). Below is the access allowed for each share:
