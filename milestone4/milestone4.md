@@ -92,8 +92,12 @@ We decided to use Wazuh as our SIEM and Endpoint Detection software. Because the
 
 ## Configuration Files
 * VPN
+
 * File Server
+
+	TrueNAS System Configuration: milestone4/ALPHA3-25.10.0.1-20251206184633.tar
 * SIEM
+
 * Endpoint Protection
 
 ## Security Policies: Update documentation to reflect changes in policies from this milestone:
