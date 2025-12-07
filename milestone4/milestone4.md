@@ -95,3 +95,20 @@ We decided to use Wazuh as our SIEM and Endpoint Detection software. Because the
 * File Server
 * SIEM
 * Endpoint Protection
+
+## Security Policies: Update documentation to reflect changes in policies from this milestone:
+Password & access control.
+VPN access restrictions.
+Endpoint protection enforcement.
+File server permissions.
+
+## Network Diagrams
+Physical network diagram
+![physical network diagram](physical_network.png)
+Logical network diagram
+![logical network diagram](logical_network.png)
+
+
+## Backup & Recovery Procedures: Include instructions for restoring file server and metric server configurations.
+
+## Change Log: Track all updates to Group Policies, firewall rules, and system configurations.
