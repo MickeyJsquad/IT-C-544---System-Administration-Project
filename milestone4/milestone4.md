@@ -74,11 +74,31 @@ Linux Credentialed Scan
 * Mitigation strategies
 
 ## VPN Server
-* Iinstallation steps and configuration
+* Installation steps and configuration
+Created CA
+Created User Certificate
+Created VPN instance
+Important configurations:
+![General Settings](m4_screenshots/vpn/config1.PNG)
+![General and Trust](m4_screenshots/vpn/config2.PNG)
+![Trust Configurations](m4_screenshots/vpn/config3.PNG)
+![Routing Configurations](m4_screenshots/vpn/config4.PNG)
+
 * Authentication methods
+![Authentication Methods](m4_screenshots/vpn/entercredentials.PNG)
 * Connection instructions for remote users
+Install OpenVPN
+Download .ovpn file from opnsense
+Upload and import .ovpn file 
+Sign in with valid credentials and MFA app such as Duo Mobile
+![Log in](m4_screenshots/vpn/entercredentials.PNG)
+![MFA](m4_screenshots/vpn/mfa.jpg)
 * Firewall and port forwarding configuration
+![Firewall](m4_screenshots/vpn/firewallrules.PNG)
+![Port Forwarding](m4_screenshots/vpn/portforward.PNG)
 * Test results and troubleshootign steps
+![Success!!](m4_screenshots/vpn/successdetails.PNG)
+![You're in the VPN!](m4_screenshots/vpn/successgraph.PNG)
 
 ## SIEM & Endpoint Protection
 
