@@ -64,62 +64,27 @@ Windows Credentialed Scan
 Linux Credentialed Scan
 ![Linux Creds](m4_screenshots/nessus/linux_creds.png)
 
+* Tool setup and configuration
+* Scan results and screenshots
+* Risk assessment updates
+* Mitigation strategies
+
 ## VPN Server
-* Installation steps and configuration
-
-Created CA
-
-Created User Certificate
-
-Created VPN instance
-
-Important configurations:
-
-![General Settings](m4_screenshots/vpn/config1.png)
-![General and Trust](m4_screenshots/vpn/config2.png)
-![Trust Configurations](m4_screenshots/vpn/config3.png)
-![Routing Configurations](m4_screenshots/vpn/config4.png)
-
+* Iinstallation steps and configuration
 * Authentication methods
-
-![Authentication Methods](m4_screenshots/vpn/auth.png)
-
 * Connection instructions for remote users
-
-Install OpenVPN
-
-Download .ovpn file from opnsense
-
-Upload and import .ovpn file 
-
-Sign in with valid credentials and MFA app such as Duo Mobile
-
-![Log in](m4_screenshots/vpn/entercredentials.png)
-![MFA](m4_screenshots/vpn/mfa.jpg)
-
 * Firewall and port forwarding configuration
-
-![Firewall](m4_screenshots/vpn/firewallrules.png)
-![Port Forwarding](m4_screenshots/vpn/portforward.png)
-
 * Test results and troubleshootign steps
-
-![Success!!](m4_screenshots/vpn/successdetails.png)
-![You're in the VPN!](m4_screenshots/vpn/successgraph.png)
 
 ## SIEM & Endpoint Protection
 
-We decided to use Wazuh as our SIEM and Endpoint Detection software. Because the network is not very large, we decided to use the all-in-one script meaning that all three parts of Wazuh (Server, Manager, and Dashboard) are installed on the same device. After the installation, we were provided with the initial login credentials which we changed. In the dashboard, there are instructions provided for deploying agents on other machines.
+We decided to use Wazuh as our SIEM and Endpoint Detection software. Because the network is not very large, we decided to use the all-in-one script meaning that all three parts of Wazuh, Server, Manager, and Dashboard, are installed on the same device. After the installation we were provided with the initial login credentials which we changed. In the dashboard, there are instructions provided for deploying agents on other machines.
+![]
 
-We installed agents on all devices for general log collection.
-![Deploy agent](m4_screenshots/wazuh/deploy_agent-1.png)
-![Deploy agent](m4_screenshots/wazuh/deploy_agent-2.png)
-
-We can see the devices that have been registered in Wazuh and whether they are up and running or not. We can also see the initial dashboard of the alerts that they generate.
-![Monitored agents](m4_screenshots/wazuh/monitored-devices.png)
-
-We also deployed 2 Wazuh agents that acted as antivirus/EDR software on the machines. We did this by installing and using sysmon on the endpoints which provides the EDR-level telemetry. We made a group for our edr agents to be able to monitor and edit their configuration.
-![EDR Group](m4_screenshots/wazuh/edr-group.png)
+* Deployment steps for SIEM and endpoint tools
+* Devicdes monitored and log sources
+* Alert rules and examples
+* Screenshots of SIEM dashboards and alerts
 
 ## Configuration Files
 * VPN
@@ -127,10 +92,9 @@ We also deployed 2 Wazuh agents that acted as antivirus/EDR software on the mach
 * File Server
 
 	TrueNAS System Configuration: milestone4/ALPHA3-25.10.0.1-20251206184633.tar
-* SIEM & EDR
+* SIEM
 
-[SIEM & EDR Configurattion](wazuh-backup.tar.gz)
-
+* Endpoint Protection
 
 ## Security Policies: Update documentation to reflect changes in policies from this milestone:
 Password & access control.
@@ -145,7 +109,9 @@ Logical network diagram
 ![logical network diagram](logical_network.png)
 
 
-## Backup & Recovery Procedures: 
-In order to back up the file server configuration log into the TrueNAS web portal and go to System > Advanced Settings > Manage Configuration > Dowload File. To restore, go to the same location and select Upload File instead of Download File.
+## Backup & Recovery Procedures: Include instructions for restoring file server and metric server configurations.
 
 ## Change Log: Track all updates to Group Policies, firewall rules, and system configurations.
+
+### Firewall Rule Updates
+We added ports to allow traffic for the File Server, specifically ports 137-139 and 445. These ports are necessary for TrueNAS to function as intended. Each of these ports was allowed for each VLAN, and no other rules were added so that the principle of least privilege was followed as closely as possible.
