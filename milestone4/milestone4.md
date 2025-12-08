@@ -91,7 +91,7 @@ Important configurations:
 
 * Authentication methods
 
-![Authentication Methods](m4_screenshots/vpn/entercredentials.png)
+![Authentication Methods](m4_screenshots/vpn/auth.png)
 
 * Connection instructions for remote users
 
