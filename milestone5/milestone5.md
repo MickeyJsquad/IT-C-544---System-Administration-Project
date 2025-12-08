@@ -4,6 +4,8 @@
 - Data retention
     - Define retention periods for different data types (e.g., configurations, financial, marketing, sales, etc.)
     - Ensure retention meets legal, compliance, and operational requirements
+    
+    Basic configurations will be kept indefinitely in case a system needs to be rebuilt quickly. 
 - Frequency of backups
     - Full backups, incremental backups, and differential backups
     - Choose type based on recovery objectives and storage efficiency
@@ -12,6 +14,8 @@
     - Ensure redundancy across multiple storage locations
 - Off-site Backups
     - Maintain off-site copies for disaster recovery
+
+We will maintain an off-site backup of our system to preserve its integrity and confidentiality. 
 - Encryption and Security 
     - Encrpyt all backup files in transit and at rest
     - Restrict access using role-based access controls
@@ -39,7 +43,7 @@
     - Schedule periodic reviews of the backup policy
     - Conduct simulation tests to validate procedures 
 
-    ## Disaster Recovery Policy
+## Disaster Recovery Policy
 
 - Risk Assessment and Business Impact Analysis (BIA)
     - Identify threats and vulnerabilities to IT systems
