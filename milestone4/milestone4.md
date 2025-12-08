@@ -79,26 +79,26 @@ Created CA
 Created User Certificate
 Created VPN instance
 Important configurations:
-![General Settings](m4_screenshots/vpn/config1.PNG)
-![General and Trust](m4_screenshots/vpn/config2.PNG)
-![Trust Configurations](m4_screenshots/vpn/config3.PNG)
-![Routing Configurations](m4_screenshots/vpn/config4.PNG)
+![General Settings](m4_screenshots/vpn/config1.png)
+![General and Trust](m4_screenshots/vpn/config2.png)
+![Trust Configurations](m4_screenshots/vpn/config3.png)
+![Routing Configurations](m4_screenshots/vpn/config4.png)
 
 * Authentication methods
-![Authentication Methods](m4_screenshots/vpn/entercredentials.PNG)
+![Authentication Methods](m4_screenshots/vpn/entercredentials.png)
 * Connection instructions for remote users
 Install OpenVPN
 Download .ovpn file from opnsense
 Upload and import .ovpn file 
 Sign in with valid credentials and MFA app such as Duo Mobile
-![Log in](m4_screenshots/vpn/entercredentials.PNG)
+![Log in](m4_screenshots/vpn/entercredentials.png)
 ![MFA](m4_screenshots/vpn/mfa.jpg)
 * Firewall and port forwarding configuration
-![Firewall](m4_screenshots/vpn/firewallrules.PNG)
-![Port Forwarding](m4_screenshots/vpn/portforward.PNG)
+![Firewall](m4_screenshots/vpn/firewallrules.png)
+![Port Forwarding](m4_screenshots/vpn/portforward.png)
 * Test results and troubleshootign steps
-![Success!!](m4_screenshots/vpn/successdetails.PNG)
-![You're in the VPN!](m4_screenshots/vpn/successgraph.PNG)
+![Success!!](m4_screenshots/vpn/successdetails.png)
+![You're in the VPN!](m4_screenshots/vpn/successgraph.png)
 
 ## SIEM & Endpoint Protection
 
