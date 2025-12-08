@@ -9,6 +9,8 @@
 - Frequency of backups
     - Full backups, incremental backups, and differential backups
     - Choose type based on recovery objectives and storage efficiency
+
+Full backups will be made once every six months. Incremental backups will be made once each month. Differential backups will be made once each week.
 - Storage Media
     - Local disks, NAS, SAN, or cloud storage
     - Ensure redundancy across multiple storage locations
@@ -19,6 +21,8 @@ We will maintain an off-site backup of our system to preserve its integrity and 
 - Encryption and Security 
     - Encrpyt all backup files in transit and at rest
     - Restrict access using role-based access controls
+
+To ensure the security of backup files at rest, we will use cryptography and asynchronous encryption. The encryption keys will be stored separately from the data at rest. Crypto-shredding will be used at the end of a hardware cycle to ensure that old keys are no longer usable. Executives and the IT manager will be the only users with access to the backup, whether in transit or at rest.
 - Testing and Verification
     - Peridically restore backups to verify integrity and functionality
     - Document the success/failure of test restores
