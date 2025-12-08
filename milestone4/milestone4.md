@@ -38,10 +38,6 @@ Example: Alex Patel can access all three shares
 Example: Ben Anderson can access Employee share but is denied connecting to IT share
 ![Ben Anderson can access Employee share but is denied connecting to IT share](m4_screenshots/smb_proof/ben_has_empl_but_denied_it.PNG)
 
-#### Backup schedules and locations
-
-!!!!!!!!!!!!!!!!EITHER FILL THIS OUT OR DELETE IT!!!!!!!!!!!!!!!!!11
-
 #### Troubleshooting tips
 When using TrueNAS in Proxmox and adding a pool on a virtual drive, you must assign the virtual drive a serial number. This can be done by adding ```serial=<make up a serial>``` to the end of the line in the config file for the drive on the host's shell.
 
@@ -149,6 +145,7 @@ Logical network diagram
 ![logical network diagram](logical_network.png)
 
 
-## Backup & Recovery Procedures: Include instructions for restoring file server and metric server configurations.
+## Backup & Recovery Procedures: 
+In order to back up the file server configuration log into the TrueNAS web portal and go to System > Advanced Settings > Manage Configuration > Dowload File. To restore, go to the same location and select Upload File instead of Download File.
 
 ## Change Log: Track all updates to Group Policies, firewall rules, and system configurations.
