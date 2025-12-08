@@ -68,11 +68,6 @@ Windows Credentialed Scan
 Linux Credentialed Scan
 ![Linux Creds](m4_screenshots/nessus/linux_creds.png)
 
-* Tool setup and configuration
-* Scan results and screenshots
-* Risk assessment updates
-* Mitigation strategies
-
 ## VPN Server
 * Installation steps and configuration
 
@@ -118,13 +113,17 @@ Sign in with valid credentials and MFA app such as Duo Mobile
 
 ## SIEM & Endpoint Protection
 
-We decided to use Wazuh as our SIEM and Endpoint Detection software. Because the network is not very large, we decided to use the all-in-one script meaning that all three parts of Wazuh, Server, Manager, and Dashboard, are installed on the same device. After the installation we were provided with the initial login credentials which we changed. In the dashboard, there are instructions provided for deploying agents on other machines.
-![]
+We decided to use Wazuh as our SIEM and Endpoint Detection software. Because the network is not very large, we decided to use the all-in-one script meaning that all three parts of Wazuh (Server, Manager, and Dashboard) are installed on the same device. After the installation, we were provided with the initial login credentials which we changed. In the dashboard, there are instructions provided for deploying agents on other machines.
 
-* Deployment steps for SIEM and endpoint tools
-* Devicdes monitored and log sources
-* Alert rules and examples
-* Screenshots of SIEM dashboards and alerts
+We installed agents on all devices for general log collection.
+![Deploy agent](m4_screenshots/wazuh/deploy_agent-1.png)
+![Deploy agent](m4_screenshots/wazuh/deploy_agent-2.png)
+
+We can see the devices that have been registered in Wazuh and whether they are up and running or not. We can also see the initial dashboard of the alerts that they generate.
+![Monitored agents](m4_screenshots/wazuh/monitored-devices.png)
+
+We also deployed 2 Wazuh agents that acted as antivirus/EDR software on the machines. We did this by installing and using sysmon on the endpoints which provides the EDR-level telemetry. We made a group for our edr agents to be able to monitor and edit their configuration.
+![EDR Group](m4_screenshots/wazuh/edr-group.png)
 
 ## Configuration Files
 * VPN
@@ -132,9 +131,10 @@ We decided to use Wazuh as our SIEM and Endpoint Detection software. Because the
 * File Server
 
 	TrueNAS System Configuration: milestone4/ALPHA3-25.10.0.1-20251206184633.tar
-* SIEM
+* SIEM & EDR
 
-* Endpoint Protection
+[SIEM & EDR Configurattion](wazuh-backup.tar.gz)
+
 
 ## Security Policies: Update documentation to reflect changes in policies from this milestone:
 Password & access control.
