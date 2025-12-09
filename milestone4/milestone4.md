@@ -5,6 +5,7 @@
 We are using TrueNAS on a VM in Proxmox for our file server. There is a secondary virtual drive other than the boot drive which has a pool called "general." Under general there are directories mapped to our three groups: executives (exec), IT (it), and Employees (empl). There is an SMB share for each of these directories.
 
 TrueNAS SMB Shares
+
 ![TrueNAS SMB Shares](m4_screenshots/smb_proof/shares.png)
 
 #### Access rights per folder
@@ -24,18 +25,23 @@ empl
 
 
 ACL For Executive Share
+
 ![ACL For Executive Share](m4_screenshots/smb_acl/exec_acl.PNG)
 
 ACL For IT Share
+
 ![ACL For IT Share](m4_screenshots/smb_acl/it_acl.PNG)
 
 ACL For Employee Share
+
 ![ACL For Employee Share](m4_screenshots/smb_acl/empl_acl.PNG)
 
 Example: Alex Patel can access all three shares
+
 ![Alex Patel can access all three shares](m4_screenshots/smb_proof/alex_has_all_3.PNG)
 
 Example: Ben Anderson can access Employee share but is denied connecting to IT share
+
 ![Ben Anderson can access Employee share but is denied connecting to IT share](m4_screenshots/smb_proof/ben_has_empl_but_denied_it.PNG)
 
 #### Troubleshooting tips
@@ -142,7 +148,7 @@ VPN access will be restricted to employees with remote workstations only.
 * If system config files are modified, block and report
 * Disable suspicious users instantly
 ### File server permissions
-Our TrueNAS file server uses role-based access to ensure that users can only access files that their group is allowed to view, write to, or execute.
+Our TrueNAS file server uses role-based access to ensure that users can only access files that their group is allowed to view, write to, or execute. See "Access rights per folder" above.
 
 ## Network Diagrams
 Physical network diagram
