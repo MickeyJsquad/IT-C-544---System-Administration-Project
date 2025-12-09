@@ -133,12 +133,17 @@ We also deployed 2 Wazuh agents that acted as antivirus/EDR software on the mach
 
 
 ## Security Policies: Update documentation to reflect changes in policies from this milestone:
-Password & access control.
-VPN access restrictions.
-Endpoint protection enforcement.
-File server permissions.
-
-VPN access will be restricted to employees with remote workstations only. Our TrueNAS file server uses role-based access to ensure that users can only access files that their group is allowed to view, write to, or execute.
+### Password & access control
+### VPN access restrictions
+VPN access will be restricted to employees with remote workstations only. 
+### Endpoint protection enforcement
+* Drop attacker IP after 5 failed SSH attempts
+* Alert on login from other regions
+* Block execution from world-writable directories
+* If system config files are modified, block and report
+* Disable suspicious users instantly
+### File server permissions
+Our TrueNAS file server uses role-based access to ensure that users can only access files that their group is allowed to view, write to, or execute.
 
 ## Network Diagrams
 Physical network diagram
