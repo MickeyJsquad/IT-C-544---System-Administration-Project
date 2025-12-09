@@ -133,7 +133,6 @@ We also deployed 2 Wazuh agents that acted as antivirus/EDR software on the mach
 
 
 ## Security Policies: Update documentation to reflect changes in policies from this milestone:
-### Password & access control
 ### VPN access restrictions
 VPN access will be restricted to employees with remote workstations only. 
 ### Endpoint protection enforcement
