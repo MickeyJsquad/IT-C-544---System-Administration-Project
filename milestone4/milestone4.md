@@ -164,3 +164,5 @@ In order to back up the file server configuration log into the TrueNAS web porta
 
 ### Firewall Rule Updates
 We added ports to allow traffic for the File Server, specifically ports 137-139 and 445. We also allowed inbound traffic on ports 1514 and 1515 for our SIEM. These ports are necessary for TrueNAS to function as intended. Each of these ports was allowed for each VLAN, and no other rules were added so that the principle of least privilege was followed as closely as possible.
+
+The updated firewall rules can be viewed in [this file](config.xml).

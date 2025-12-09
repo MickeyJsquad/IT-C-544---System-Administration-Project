@@ -1,0 +1,3184 @@
+<?xml version="1.0"?>
+<opnsense>
+  <theme>opnsense</theme>
+  <sysctl version="1.0.1" persisted_at="1761082389.73">
+    <item/>
+  </sysctl>
+  <system>
+    <optimization>normal</optimization>
+    <hostname>alpha-0</hostname>
+    <domain>internal</domain>
+    <dnsallowoverride>1</dnsallowoverride>
+    <dnsallowoverride_exclude/>
+    <group uuid="b2cbc75b-de36-472a-ab3f-2f2b0d32b2e9">
+      <gid>1999</gid>
+      <name>admins</name>
+      <scope>system</scope>
+      <description>System Administrators</description>
+      <priv>page-all</priv>
+      <member>0</member>
+      <source_networks/>
+    </group>
+    <user uuid="493aa18f-76d2-4227-be5e-f70d73a5c639">
+      <uid>0</uid>
+      <name>root</name>
+      <disabled>0</disabled>
+      <scope>system</scope>
+      <expires/>
+      <authorizedkeys/>
+      <otp_seed/>
+      <shell/>
+      <password>$2y$11$zYk6Nkk4l3Q2UaZzviVAie.cZcJcIuwxoBPqTU23wetQngx9.NsXi</password>
+      <pwd_changed_at/>
+      <landing_page/>
+      <comment/>
+      <email/>
+      <apikeys/>
+      <priv>page-all,page-diagnostics-arptable,page-diagnostics-authentication,page-diagnostics-backup-restore,page-diagnostics-configurationhistory,page-diagnostics-factorydefaults,page-diagnostics-system-pftop,page-diagnostics-pf-info,page-diagnostics-haltsystem,page-diagnostics-logs-firewall-general,page-diagnostics-logs-dhcp,page-diagnostics-logs-firewall-dynamic,page-diagnostics-logs-firewall-plain,page-diagnostics-logs-firewall-summary,page-diagnostics-logs-gateways,page-diagnostics-logs-system,page-diagnostics-ndptable,page-diagnostics-netflow,page-diagnostics-netstat,page-diagnostics-networkinsight,page-diagnostics-packetcapture,page-diagnostics-tables,page-diagnostics-ping,page-diagnostics-rebootsystem,page-diagnostics-routingtables,page-diagnostics-limiter-info,page-diagnostics-showstates,page-diagnostics-system-activity,page-diagnostics-health,page-diagnostics-testport,page-diagnostics-traceroute,page-firewall-alias-edit,page-firewall-aliases,page-filter-api,page-filter-snat-api,page-firewall-categories,page-firewall-nat-1-1-edit,page-firewall-nat-npt,page-firewall-nat-outbound,page-firewall-nat-outbound-edit,page-firewall-nat-portforward,page-firewall-nat-portforward-edit,page-firewall-scrub,page-firewall-rules,page-firewall-rules-edit,page-firewall-schedules,page-firewall-schedules-edit,page-firewall-trafficshaper,page-interfaces-assignnetworkports,page-interfaces-bridge-edit,page-diagnostics-dns_diagnostics,page-interfaces-gif-edit,page-interfaces-gre-edit,page-interfaces-groups-edit,page-interfaces-lagg-edit,page-interfaces-loopback,page-interfaces-neighbor,page-interfaces-ppps,page-interfaces-ppps-edit,page-firewall-virtualipaddress-edit,page-status-carp,page-interfaces-vlan-edit,page-interfaces-vxlan,page-interfaces,page-interfaces-wireless,page-interfaces-wireless-edit,page-system-login-logout,page-system-license,page-system-usermanager-passwordmg,page-status-trafficgraph,page-services-captiveportal,page-services-dhcpserver,page-services-dhcpserver-editstaticmapping,page-dhcp-kea-ctrl-agent,page-diagnostics-logs-kea,page-dhcp-kea-v4,page-dhcp-kea-v6,page-services-dhcpv6server,page-services-dhcpserverv6-editstaticmapping,page-services-dhcprelay,page-services-opendns,page-diagnostics-logs-dnsmasq,page-services-dnsforwarder,page-services-ids,page-services-ntpd,page-services-router-advertisements,page-services-unbound,page-services-dnsresolver-acls,page-services-dnsresolver-advanced,page-services-dnsresolver-overrides,page-services-dnsresolver,page-diagnostics-logs-resolver,page-status-dhcpleases,page-status-dhcpv6leases,page-status-dnsoverview,page-status-habackup,page-status-interfaces,page-status-ipsec,page-status-ipsec-leases,page-status-ipsec-sad,page-status-ipsec-spd,page-status-ntp,page-services-ntp-gps,page-services-ntp-pps,page-status-openvpn,page-status-services,page-status-systemlogs-portalauth,page-status-systemlogs-ipsecvpn,page-status-systemlogs-ntpd,page-status-systemlogs-openvpn,page-status-systemlogs-ppp,page-status-systemlogs-routing,page-status-systemlogs-wireless,page-diagnostics-wirelessstatus,page-system-groupmanager,page-system-usermanager-addprivs,page-system-usermanager,page-system-advanced-admin,page-system-advanced-firewall,page-system-advanced-misc,page-system-advanced-network,page-system-advanced-sysctl,page-system-authservers,page-system-camanager,page-system-certmanager,page-wizard-system,page-diagnostics-crash-reporter,page-system-crlmanager,user-config-readonly,page-system-firmware-manualupdate,page-system-gatewaygroups,page-system-gateways,page-system-gateways-editgatewaygroups,page-system-generalsetup,page-system-hasync,page-system-cron,page-diagnostics-logs-settings-targets,page-snapshots,page-system-staticroutes,page-system-status,page-vpn-ipsec-connections,page-vpn-ipsec-editkeys,page-vpn-ipsec-keypairs,page-openvpn-client-export,page-openvpn-csc,page-openvpn-instances,page-wireguard-config,page-wireguard-logs,page-wireguard-diagnostics,page-services-monit,page-xmlrpclibrary</priv>
+      <language/>
+      <descr>System Administrator</descr>
+      <dashboard/>
+    </user>
+    <user uuid="7aeae2c8-36f4-428c-96f0-1281b047edf0">
+      <uid>2000</uid>
+      <name>alberttay</name>
+      <disabled>0</disabled>
+      <scope>user</scope>
+      <expires/>
+      <authorizedkeys/>
+      <otp_seed>RFJCXCWEL2U5F2AJAIS46IR3O7XVDJUB</otp_seed>
+      <shell/>
+      <password>$2y$11$a/3NQOJxwM5ixbM.LWkN/uyfbPus.UfBLOk2pwPS.5Wi58AYv6cWe</password>
+      <pwd_changed_at/>
+      <landing_page/>
+      <comment/>
+      <email/>
+      <apikeys/>
+      <priv/>
+      <language/>
+      <descr>Albert Tay</descr>
+      <dashboard/>
+    </user>
+    <timezone>America/Denver</timezone>
+    <timeservers>0.opnsense.pool.ntp.org 1.opnsense.pool.ntp.org 2.opnsense.pool.ntp.org 3.opnsense.pool.ntp.org</timeservers>
+    <webgui>
+      <protocol>https</protocol>
+      <ssl-certref>68f7fc70ae315</ssl-certref>
+    </webgui>
+    <disablenatreflection>yes</disablenatreflection>
+    <usevirtualterminal>1</usevirtualterminal>
+    <disableconsolemenu/>
+    <disablevlanhwfilter>1</disablevlanhwfilter>
+    <disablechecksumoffloading>1</disablechecksumoffloading>
+    <disablesegmentationoffloading>1</disablesegmentationoffloading>
+    <disablelargereceiveoffloading>1</disablelargereceiveoffloading>
+    <ipv6allow>1</ipv6allow>
+    <powerd_ac_mode>hadp</powerd_ac_mode>
+    <powerd_battery_mode>hadp</powerd_battery_mode>
+    <powerd_normal_mode>hadp</powerd_normal_mode>
+    <bogons>
+      <interval>monthly</interval>
+    </bogons>
+    <pf_share_forward>1</pf_share_forward>
+    <lb_use_sticky>1</lb_use_sticky>
+    <ssh>
+      <group>admins</group>
+    </ssh>
+    <rrdbackup>-1</rrdbackup>
+    <netflowbackup>-1</netflowbackup>
+    <firmware version="1.0.1" persisted_at="1761082389.24">
+      <mirror/>
+      <flavour/>
+      <plugins/>
+      <type/>
+      <subscription/>
+      <reboot>0</reboot>
+    </firmware>
+    <dnsserver>172.16.40.1</dnsserver>
+    <dnsserver>192.168.2.2</dnsserver>
+    <language>en_US</language>
+    <dns1gw>none</dns1gw>
+    <dns2gw>none</dns2gw>
+    <dns3gw>none</dns3gw>
+    <dns4gw>none</dns4gw>
+    <dns5gw>none</dns5gw>
+    <dns6gw>none</dns6gw>
+    <dns7gw>none</dns7gw>
+    <dns8gw>none</dns8gw>
+    <authserver>
+      <refid>692f5c0547b17</refid>
+      <type>totp</type>
+      <name>TOTP VPN Access Server</name>
+      <otpLength>6</otpLength>
+      <timeWindow>60</timeWindow>
+      <graceperiod>15</graceperiod>
+      <passwordFirst/>
+    </authserver>
+  </system>
+  <interfaces>
+    <wan>
+      <if>vtnet0</if>
+      <descr>WAN</descr>
+      <enable>1</enable>
+      <spoofmac/>
+      <ipaddr>172.16.40.21</ipaddr>
+      <subnet>21</subnet>
+    </wan>
+    <lan>
+      <enable>1</enable>
+      <if>vtnet1</if>
+      <ipaddr>192.168.1.1</ipaddr>
+      <subnet>16</subnet>
+      <ipaddrv6>track6</ipaddrv6>
+      <subnetv6>64</subnetv6>
+      <media/>
+      <mediaopt/>
+      <track6-interface>wan</track6-interface>
+      <track6-prefix-id>0</track6-prefix-id>
+      <descr>LAN</descr>
+    </lan>
+    <lo0>
+      <internal_dynamic>1</internal_dynamic>
+      <descr>Loopback</descr>
+      <enable>1</enable>
+      <if>lo0</if>
+      <ipaddr>127.0.0.1</ipaddr>
+      <ipaddrv6>::1</ipaddrv6>
+      <subnet>8</subnet>
+      <subnetv6>128</subnetv6>
+      <type>none</type>
+      <virtual>1</virtual>
+    </lo0>
+    <opt5>
+      <if>vtnet1_vlan202</if>
+      <descr>Workstations</descr>
+      <enable>1</enable>
+      <spoofmac/>
+      <ipaddr>192.168.10.1</ipaddr>
+      <subnet>24</subnet>
+    </opt5>
+    <opt1>
+      <if>vtnet1_vlan200</if>
+      <descr>Servers</descr>
+      <enable>1</enable>
+      <spoofmac/>
+      <ipaddr>192.168.2.1</ipaddr>
+      <subnet>24</subnet>
+    </opt1>
+    <opt2>
+      <if>vtnet1_vlan201</if>
+      <descr>Backups</descr>
+      <enable>1</enable>
+      <spoofmac/>
+      <ipaddr>192.168.6.1</ipaddr>
+      <subnet>24</subnet>
+    </opt2>
+    <opt3>
+      <if>vtnet1_vlan203</if>
+      <descr>Executives</descr>
+      <enable>1</enable>
+      <spoofmac/>
+      <ipaddr>192.168.100.1</ipaddr>
+      <subnet>24</subnet>
+    </opt3>
+    <openvpn>
+      <internal_dynamic>1</internal_dynamic>
+      <enable>1</enable>
+      <if>openvpn</if>
+      <descr>OpenVPN</descr>
+      <type>group</type>
+      <virtual>1</virtual>
+      <networks/>
+    </openvpn>
+  </interfaces>
+  <dnsmasq version="1.0.7" persisted_at="1761858529.58">
+    <enable>1</enable>
+    <regdhcp>0</regdhcp>
+    <regdhcpstatic>0</regdhcpstatic>
+    <dhcpfirst>0</dhcpfirst>
+    <strict_order>0</strict_order>
+    <domain_needed>0</domain_needed>
+    <no_private_reverse>0</no_private_reverse>
+    <no_resolv>0</no_resolv>
+    <log_queries>0</log_queries>
+    <no_hosts>0</no_hosts>
+    <strictbind>0</strictbind>
+    <dnssec>0</dnssec>
+    <regdhcpdomain/>
+    <interface>lan</interface>
+    <port>0</port>
+    <dns_forward_max/>
+    <cache_size/>
+    <local_ttl/>
+    <add_mac/>
+    <add_subnet>0</add_subnet>
+    <strip_subnet>0</strip_subnet>
+    <dhcp>
+      <no_interface/>
+      <fqdn>1</fqdn>
+      <domain/>
+      <lease_max/>
+      <authoritative>0</authoritative>
+      <default_fw_rules>1</default_fw_rules>
+      <reply_delay/>
+      <enable_ra>0</enable_ra>
+      <nosync>0</nosync>
+    </dhcp>
+    <no_ident>1</no_ident>
+    <dhcp_ranges uuid="52c9fcd8-b890-4c39-b506-95d4ba236c9b">
+      <interface>lan</interface>
+      <set_tag/>
+      <start_addr>192.168.0.41</start_addr>
+      <end_addr>192.168.255.245</end_addr>
+      <subnet_mask/>
+      <constructor/>
+      <mode/>
+      <prefix_len/>
+      <lease_time/>
+      <domain_type>range</domain_type>
+      <domain/>
+      <nosync>0</nosync>
+      <ra_mode/>
+      <ra_priority/>
+      <ra_mtu/>
+      <ra_interval/>
+      <ra_router_lifetime/>
+      <description/>
+    </dhcp_ranges>
+  </dnsmasq>
+  <snmpd>
+    <syslocation/>
+    <syscontact/>
+    <rocommunity>public</rocommunity>
+  </snmpd>
+  <nat>
+    <outbound>
+      <mode>hybrid</mode>
+      <rule>
+        <source>
+          <network>any</network>
+        </source>
+        <destination>
+          <any>1</any>
+        </destination>
+        <descr/>
+        <category/>
+        <interface>wan</interface>
+        <tag/>
+        <tagged/>
+        <poolopts/>
+        <poolopts_sourcehashkey/>
+        <ipprotocol>inet</ipprotocol>
+        <target/>
+        <targetip_subnet>0</targetip_subnet>
+        <sourceport/>
+        <updated>
+          <username>root@192.168.100.2</username>
+          <time>1763673763.64</time>
+          <description>/firewall_nat_out_edit.php made changes</description>
+        </updated>
+        <created>
+          <username>root@192.168.100.2</username>
+          <time>1763673763.64</time>
+          <description>/firewall_nat_out_edit.php made changes</description>
+        </created>
+      </rule>
+    </outbound>
+    <rule>
+      <protocol>tcp</protocol>
+      <interface>wan</interface>
+      <category/>
+      <ipprotocol>inet</ipprotocol>
+      <descr/>
+      <tag/>
+      <tagged/>
+      <poolopts/>
+      <associated-rule-id/>
+      <target>192.168.2.2</target>
+      <local-port>80</local-port>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <network>wanip</network>
+        <port>80</port>
+      </destination>
+      <natreflection>purenat</natreflection>
+      <updated>
+        <username>root@192.168.100.3</username>
+        <time>1761927550.97</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.3</username>
+        <time>1761888041.91</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule>
+      <protocol>udp</protocol>
+      <interface>wan</interface>
+      <category/>
+      <ipprotocol>inet</ipprotocol>
+      <descr/>
+      <tag/>
+      <tagged/>
+      <poolopts/>
+      <associated-rule-id>nat_6931f99d911361.56683998</associated-rule-id>
+      <target>192.168.1.1</target>
+      <local-port>1347</local-port>
+      <source>
+        <any>1</any>
+        <port>1347</port>
+      </source>
+      <destination>
+        <network>wanip</network>
+        <port>1347</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.2</username>
+        <time>1765214638.42</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764882845.59</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </created>
+    </rule>
+  </nat>
+  <filter>
+    <rule uuid="c304540c-5232-4132-a91d-efb51eec585e">
+      <type>pass</type>
+      <interface>opt2,opt3,opt1,opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <floating>yes</floating>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.2/32</address>
+        <port>53</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763673445.44</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763673321.38</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="299f2b6e-c8e8-4d84-846e-d05f6aaaba9f">
+      <type>pass</type>
+      <interface>opt2,opt3,opt1,opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <floating>yes</floating>
+      <quick>1</quick>
+      <protocol>icmp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763677714.23</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763677714.23</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="e26a142c-c5ef-47f4-a23d-f2f7cf93bb22">
+      <type>pass</type>
+      <interface>opt2,opt3,lan,openvpn,opt1,wan,opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <floating>yes</floating>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1347</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.2</username>
+        <time>1764897998.13</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.2</username>
+        <time>1764897998.13</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="546176b3-f1a7-418d-86d2-c9a31611c395">
+      <type>pass</type>
+      <associated-rule-id>nat_6931f99d911361.56683998</associated-rule-id>
+      <source>
+        <any>1</any>
+        <port>1347</port>
+      </source>
+      <interface>wan</interface>
+      <statetype>keep state</statetype>
+      <protocol>udp</protocol>
+      <ipprotocol>inet</ipprotocol>
+      <destination>
+        <address>192.168.1.1</address>
+        <port>1347</port>
+      </destination>
+      <descr/>
+      <category/>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764882845.59</time>
+        <description>/firewall_nat_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="bf0df53a-e694-4ef8-a682-7ea1936134cc">
+      <type>pass</type>
+      <interface>wan</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1347</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.2</username>
+        <time>1764897837.17</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764710032.33</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="264595b9-9644-41f6-b35c-b2f54c435478">
+      <type>pass</type>
+      <interface>openvpn</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <source>
+        <network>openvpn</network>
+      </source>
+      <destination>
+        <any>1</any>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764716567.86</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764716567.86</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="cbadfa59-31e9-462f-a2e9-200ddef007e2">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764886639.00</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764886639.00</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="3f26ab79-2797-48eb-ab08-cdddcb11a0c5">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <address>192.168.2.2</address>
+      </source>
+      <destination>
+        <address>8.8.8.8</address>
+        <port>53</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763673204.15</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763673204.15</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+      <log>1</log>
+    </rule>
+    <rule uuid="a6b989f7-f862-467e-b9ee-9843a32b41a2">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <address>192.168.2.2/32</address>
+      </source>
+      <destination>
+        <address>1.1.1.1</address>
+        <port>53</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763673252.39</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763673252.39</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+      <log>1</log>
+    </rule>
+    <rule uuid="4b76106d-9a99-418b-8df6-4bd56c8784c5">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1,opt2,opt3</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>80</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763675101.60</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763675101.60</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+      <log>1</log>
+    </rule>
+    <rule uuid="509f074f-c9f6-4d12-8072-120c8f39d122">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1,opt2,opt3</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>443</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763675119.26</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763675119.26</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+      <log>1</log>
+    </rule>
+    <rule uuid="356b740f-d551-4d00-b1fa-ceec38677cbe">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1,opt2,opt3</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>123</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763675148.43</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763675148.43</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+      <log>1</log>
+    </rule>
+    <rule uuid="bff13c0b-e1ae-477b-9c38-4b543a009a50">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>139</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892464.86</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892277.84</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="ba2f223f-bc12-4cb1-beda-d8245feaf61c">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>445</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892455.47</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892287.59</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="6444f164-2868-4862-a515-405fb359912c">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>137</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892442.09</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892325.88</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="55df03ba-4c2e-46a6-9186-15711262b291">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>138</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892428.56</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892337.06</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="f0169511-558c-4d08-8763-2d01c42a51c0">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>icmp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763675221.18</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763675221.18</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+      <log>1</log>
+    </rule>
+    <rule uuid="1c5e2ebb-2e03-49e1-837b-ab236df0e80e">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1514</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764723814.52</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764723775.63</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+      <log>1</log>
+    </rule>
+    <rule uuid="6767aa26-3d7b-429e-9ecd-f516357d4f66">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1515</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764723850.77</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764723850.77</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+      <log>1</log>
+    </rule>
+    <rule uuid="5821c03d-941e-41d4-b01c-43a774536a41">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>135</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764885091.31</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764885091.31</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="258c8ec1-4294-421f-b1f7-16c258138bb6">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <source>
+        <address>192.168.2.5</address>
+      </source>
+      <destination>
+        <address>192.168.6.2</address>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764885423.15</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764885423.15</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="72049e4d-7f9a-4b9c-889e-a56b1ae92875">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1,opt2,opt3</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>80</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763677516.22</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763677516.22</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="ee4f033c-b1d7-4922-bad0-ae40ab6f8a17">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1,opt2,opt3</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>443</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763677531.55</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763677531.55</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="5f8db5fa-eabc-41f4-9f9c-49de8e0dae90">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1,opt2,opt3</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>123</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763677543.96</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763677543.96</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="2f3d161b-8f6a-439d-beed-839470f18b5c">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1,opt2,opt3</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>53</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763677555.12</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763677555.12</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="b01e7a36-ad84-4b99-a518-3b8baa8c6460">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>88</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763864206.94</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763677592.73</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="ee830b63-09d0-41a3-a9db-417aea129bed">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>135</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763864222.01</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763677609.81</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="03851590-0a37-4089-a158-a35a8477b5a2">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>636</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763864244.14</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763677625.26</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="9816adfc-5748-4b09-b081-c545417a3677">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>139</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892085.07</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892085.07</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="2a91beac-ff74-4299-b631-b3a0889b92c3">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>137</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892145.41</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892145.41</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="af6bffc5-67f4-41e4-936d-9c3d106b92c3">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>138</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892168.18</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892168.18</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="5ca5191b-0dfb-4b1f-ba26-bfd9ca57a8b4">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>445</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892109.56</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892109.56</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="e4452565-6f64-435e-95cf-d4f40903360c">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>389</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763865035.65</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.6</username>
+        <time>1763865035.65</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="65b7a353-3037-45f7-b627-6cde4a1465d6">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>any-464</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763866359.23</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.6</username>
+        <time>1763866359.23</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="9af11854-2cad-44f4-aa6d-e1ffd50bc7cf">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <source>
+        <address>192.168.6.2</address>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+      </destination>
+      <updated>
+        <username>root@192.168.6.2</username>
+        <time>1764030281.77</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.6.2</username>
+        <time>1764030281.77</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="6c824ff6-7f26-4888-aeab-209474614a5c">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <source>
+        <address>192.168.6.2</address>
+      </source>
+      <destination>
+        <any>1</any>
+      </destination>
+      <updated>
+        <username>root@192.168.6.2</username>
+        <time>1764030567.92</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.6.2</username>
+        <time>1764030567.92</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+      <disabled>1</disabled>
+    </rule>
+    <rule uuid="2e6e90db-8e9f-4eea-9782-7bcf90154b7d">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1194</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764709954.00</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764709954.00</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="7e1f6935-ed5a-48f4-8327-96768f3c2525">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1514</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764724671.02</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764724671.02</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="b44f1f3e-22de-4e6a-b0bd-396bf2bb3b3c">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1515</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764724693.97</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764724693.97</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="384f1d68-d9d6-4f01-bec8-7ac0a5628453">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>135</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764885112.73</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764885112.73</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="6a83f5ab-8aa5-454e-9d6b-1306cadd8c20">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1,opt2,opt3</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>80</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763674959.37</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763674959.37</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="d08b6104-3d68-4df0-9465-552473dcba95">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1,opt2,opt3</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>443</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763674977.64</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763674977.64</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="3557a92d-a885-4107-9da2-d2c4e80953a7">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1,opt2,opt3</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>53</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763674993.19</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763674993.19</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="528ea7ec-b6ad-465e-ac65-5cff4fdc072b">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1,opt2,opt3</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>123</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763675027.80</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763675027.80</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="c538dce5-a725-4909-81bd-97204881154b">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>636</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763864322.14</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763675722.50</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="13ac74b3-eb1f-424a-93fa-8007ae2dd675">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>135</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763864337.18</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763675842.85</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="e94ada1e-2294-4944-a9a5-f2a9c7bd4b05">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>139</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892198.95</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892198.95</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="b7b7977a-281b-4b2e-9561-2afd534510cf">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>445</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892211.22</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892211.22</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="d6598ee2-80c9-4eb9-aa26-c494ec30b234">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>137</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892240.84</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892240.84</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="8ffe1d4b-e137-4319-9fae-fccf267f24a0">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>138</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892254.14</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892254.14</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="31258e22-06ca-425e-a18a-9501829a0b56">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>88</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763864353.99</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763675859.09</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="aea10c1a-bf11-47ac-86e2-67710057b4c9">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>389</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763865000.46</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.6</username>
+        <time>1763865000.46</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="ffd9106e-5352-41a4-a4a4-534b602842e8">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>any-464</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763866338.77</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.6</username>
+        <time>1763866338.77</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="2afbc49d-f3a7-4a90-91cc-36e803fbfe34">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1194</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764709997.14</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764709997.14</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="00c67efd-8bef-4d38-bde9-2c3a7135bd33">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1514</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764724823.62</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764724823.62</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="fd43f359-5199-424b-af6f-b5cc69097ced">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1515</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764724849.45</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764724849.45</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="4e8f293d-0684-4202-bd8e-c7df516e68d2">
+      <type>pass</type>
+      <interface>opt3</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>135</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764885134.01</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764885134.01</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="a437090e-db14-4871-aa19-7d76e3caa445">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>445</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763677055.45</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763676432.59</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="442fe052-9549-4002-a442-063b9d5017ce">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>80</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763677072.42</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763676450.50</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="e104628b-07e7-4ecc-840d-51fd291112c8">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>443</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763677092.76</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763676465.80</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="1aa53ae1-a246-4f37-ad6f-26d09d54ebbc">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>53</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763677113.56</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763676480.04</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="44776b29-dd36-4085-b01b-57d52592631e">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <address>opt5,opt1</address>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>123</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1763677128.21</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763676675.79</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="a59b40ba-b55e-4f84-bc22-89fbae0f5cd1">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>636</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763864076.55</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763676505.79</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="f0e38df3-f2ac-47ad-b2a0-cabd443d73ac">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>139</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892363.24</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892363.24</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="0234e4d4-73c6-49e5-a30f-430303deaf16">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>445</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892374.65</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892374.65</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="e37f3613-c5b3-4f53-9d45-928d14164a3c">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>135</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763864054.62</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763676560.80</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="1fdf5a3e-a60b-4f2a-a118-065f62b87b24">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>88</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763863981.77</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1763676575.14</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="b2bacf8c-13aa-4069-9882-6ea6550c8c95">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>389</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763864943.97</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.6</username>
+        <time>1763864918.00</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="15ff73b9-4d90-4acd-9287-9b4c2d5f18eb">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5</address>
+        <port>any-464</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.6</username>
+        <time>1763866204.00</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.6</username>
+        <time>1763866204.00</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="c3deda01-7b44-4a96-960e-e7cdbcb933aa">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>138</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892395.52</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892395.52</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="13bf5db5-5233-407e-9819-d29c39c81cd7">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <address>192.168.2.5/32</address>
+        <port>139</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764892414.91</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764892414.91</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="2871cfbe-b0d2-4bdf-a933-5f7be02f9a31">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1194</port>
+      </destination>
+      <updated>
+        <username>root@192.168.10.11</username>
+        <time>1764710064.09</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.10.11</username>
+        <time>1764710064.09</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="2b969cfe-c81a-4391-8341-de07ccce5b4d">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp/udp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1514</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764724884.42</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764724884.42</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="ffa60140-a3d3-4311-b36a-abc17147f397">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>1515</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764724909.82</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764724909.82</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="f458ed14-14b2-4426-9392-b5a227b95c30">
+      <type>pass</type>
+      <interface>opt5</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+        <port>135</port>
+      </destination>
+      <updated>
+        <username>root@192.168.100.2</username>
+        <time>1764885157.47</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.100.2</username>
+        <time>1764885157.47</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+  </filter>
+  <rrd>
+    <enable/>
+  </rrd>
+  <ntpd>
+    <prefer>0.opnsense.pool.ntp.org</prefer>
+  </ntpd>
+  <revision>
+    <username>root@192.168.10.2</username>
+    <description>/api/openvpn/instances/set/ed55661f-7b49-4280-9923-4b9f724393b9 made changes</description>
+    <time>1765216681.15</time>
+  </revision>
+  <OPNsense>
+    <wireguard>
+      <client version="1.0.0" persisted_at="1761082388.61">
+        <clients/>
+      </client>
+      <general version="0.0.1" persisted_at="1761082388.63">
+        <enabled>0</enabled>
+      </general>
+      <server version="1.0.0" persisted_at="1761082388.63">
+        <servers/>
+      </server>
+    </wireguard>
+    <IPsec version="1.0.4" persisted_at="1761082388.68">
+      <general>
+        <enabled/>
+        <preferred_oldsa>0</preferred_oldsa>
+        <disablevpnrules>0</disablevpnrules>
+        <passthrough_networks/>
+        <user_source/>
+        <local_group/>
+      </general>
+      <charon>
+        <max_ikev1_exchanges/>
+        <threads>16</threads>
+        <ikesa_table_size>32</ikesa_table_size>
+        <ikesa_table_segments>4</ikesa_table_segments>
+        <init_limit_half_open>1000</init_limit_half_open>
+        <ignore_acquire_ts>1</ignore_acquire_ts>
+        <install_routes>0</install_routes>
+        <cisco_unity>0</cisco_unity>
+        <make_before_break>0</make_before_break>
+        <retransmit_tries/>
+        <retransmit_timeout/>
+        <retransmit_base/>
+        <retransmit_jitter/>
+        <retransmit_limit/>
+        <syslog>
+          <daemon>
+            <ike_name>1</ike_name>
+            <log_level>0</log_level>
+            <app>1</app>
+            <asn>1</asn>
+            <cfg>1</cfg>
+            <chd>1</chd>
+            <dmn>1</dmn>
+            <enc>1</enc>
+            <esp>1</esp>
+            <ike>1</ike>
+            <imc>1</imc>
+            <imv>1</imv>
+            <job>1</job>
+            <knl>1</knl>
+            <lib>1</lib>
+            <mgr>1</mgr>
+            <net>1</net>
+            <pts>1</pts>
+            <tls>1</tls>
+            <tnc>1</tnc>
+          </daemon>
+        </syslog>
+        <plugins>
+          <attr>
+            <subnet/>
+            <split-include/>
+            <x_28674/>
+            <x_28675/>
+            <x_28672/>
+            <x_28673>0</x_28673>
+            <x_28679/>
+            <dns/>
+            <nbns/>
+          </attr>
+          <eap-radius>
+            <servers/>
+            <accounting>0</accounting>
+            <class_group>0</class_group>
+          </eap-radius>
+          <xauth-pam>
+            <pam_service>ipsec</pam_service>
+            <session>0</session>
+            <trim_email>1</trim_email>
+          </xauth-pam>
+        </plugins>
+      </charon>
+      <keyPairs/>
+      <preSharedKeys/>
+    </IPsec>
+    <Swanctl version="1.0.0" persisted_at="1761082388.77">
+      <Connections/>
+      <locals/>
+      <remotes/>
+      <children/>
+      <Pools/>
+      <VTIs/>
+      <SPDs/>
+    </Swanctl>
+    <OpenVPNExport version="0.0.1" persisted_at="1764895527.60">
+      <servers>
+        <server uuid="10eeee9e-8a49-4970-ab02-104cf3a4c94e">
+          <vpnid>ed55661f-7b49-4280-9923-4b9f724393b9</vpnid>
+          <hostname>128.187.49.253</hostname>
+          <template>PlainOpenVPN</template>
+          <local_port>1347</local_port>
+          <random_local_port>1</random_local_port>
+          <validate_server_cn>1</validate_server_cn>
+          <cryptoapi>0</cryptoapi>
+          <auth_nocache>0</auth_nocache>
+          <static_challenge>0</static_challenge>
+          <plain_config/>
+        </server>
+      </servers>
+    </OpenVPNExport>
+    <OpenVPN version="1.0.1" persisted_at="1765216681.15">
+      <Overwrites/>
+      <Instances>
+        <Instance uuid="ed55661f-7b49-4280-9923-4b9f724393b9">
+          <vpnid>1</vpnid>
+          <enabled>1</enabled>
+          <dev_type>tun</dev_type>
+          <verb>4</verb>
+          <proto>udp4</proto>
+          <port>1347</port>
+          <port-share/>
+          <local/>
+          <topology>subnet</topology>
+          <remote/>
+          <role>server</role>
+          <server>10.55.23.0/24</server>
+          <server_ipv6/>
+          <bridge_gateway/>
+          <bridge_pool/>
+          <route/>
+          <push_route>192.168.0.0/16</push_route>
+          <cert>692f580a8883e</cert>
+          <crl/>
+          <ca>692f57842dac6</ca>
+          <cert_depth/>
+          <remote_cert_tls>0</remote_cert_tls>
+          <verify_client_cert>require</verify_client_cert>
+          <use_ocsp>0</use_ocsp>
+          <auth/>
+          <data-ciphers/>
+          <data-ciphers-fallback/>
+          <tls_key/>
+          <authmode>Local Database,TOTP VPN Access Server</authmode>
+          <local_group/>
+          <various_flags/>
+          <various_push_flags/>
+          <push_inactive/>
+          <username_as_common_name>0</username_as_common_name>
+          <strictusercn>0</strictusercn>
+          <username/>
+          <password/>
+          <maxclients>10</maxclients>
+          <keepalive_interval/>
+          <keepalive_timeout/>
+          <reneg-sec/>
+          <auth-gen-token/>
+          <auth-gen-token-renewal/>
+          <auth-gen-token-secret/>
+          <provision_exclusive>0</provision_exclusive>
+          <redirect_gateway/>
+          <route_metric/>
+          <register_dns>0</register_dns>
+          <dns_domain/>
+          <dns_domain_search/>
+          <dns_servers/>
+          <ntp_servers/>
+          <tun_mtu/>
+          <fragment/>
+          <mssfix>0</mssfix>
+          <carp_depend_on/>
+          <description>VPN Access Server</description>
+          <compress_migrate>0</compress_migrate>
+          <ifconfig-pool-persist>0</ifconfig-pool-persist>
+          <http-proxy/>
+        </Instance>
+      </Instances>
+      <StaticKeys/>
+    </OpenVPN>
+    <captiveportal version="1.0.4" persisted_at="1761082389.76">
+      <zones/>
+      <templates/>
+    </captiveportal>
+    <cron version="1.0.4" persisted_at="1761082389.80">
+      <jobs/>
+    </cron>
+    <DHCRelay version="1.0.1" persisted_at="1761082389.82"/>
+    <Firewall>
+      <Lvtemplate version="0.0.1" persisted_at="1761082389.84">
+        <templates/>
+      </Lvtemplate>
+      <Alias version="1.0.1" persisted_at="1761082391.00">
+        <geoip>
+          <url/>
+        </geoip>
+        <aliases/>
+      </Alias>
+      <Category version="1.0.0" persisted_at="1763677516.23">
+        <categories/>
+      </Category>
+      <Filter version="1.0.4" persisted_at="1761082391.28">
+        <rules/>
+        <snatrules/>
+        <npt/>
+        <onetoone/>
+      </Filter>
+    </Firewall>
+    <Netflow version="1.0.1" persisted_at="1761082389.86">
+      <capture>
+        <interfaces/>
+        <egress_only/>
+        <version>v9</version>
+        <targets/>
+      </capture>
+      <collect>
+        <enable>0</enable>
+      </collect>
+      <activeTimeout>1800</activeTimeout>
+      <inactiveTimeout>15</inactiveTimeout>
+    </Netflow>
+    <IDS version="1.1.0" persisted_at="1761082392.86">
+      <rules/>
+      <policies/>
+      <userDefinedRules/>
+      <files/>
+      <fileTags/>
+      <general>
+        <enabled>0</enabled>
+        <ips>0</ips>
+        <promisc>0</promisc>
+        <interfaces>wan</interfaces>
+        <homenet>192.168.0.0/16,10.0.0.0/8,172.16.0.0/12</homenet>
+        <defaultPacketSize/>
+        <UpdateCron/>
+        <AlertLogrotate>W0D23</AlertLogrotate>
+        <AlertSaveLogs>4</AlertSaveLogs>
+        <MPMAlgo/>
+        <detect>
+          <Profile/>
+          <toclient_groups/>
+          <toserver_groups/>
+        </detect>
+        <syslog>0</syslog>
+        <syslog_eve>0</syslog_eve>
+        <LogPayload>0</LogPayload>
+        <verbosity/>
+        <eveLog>
+          <http>
+            <enable>0</enable>
+            <extended>0</extended>
+            <dumpAllHeaders/>
+          </http>
+          <tls>
+            <enable>0</enable>
+            <extended>0</extended>
+            <sessionResumption>0</sessionResumption>
+            <custom/>
+          </tls>
+        </eveLog>
+      </general>
+    </IDS>
+    <Interfaces>
+      <loopbacks version="1.0.0" persisted_at="1761082393.03"/>
+      <neighbors version="1.0.0" persisted_at="1761082393.04"/>
+      <vxlans version="1.0.2" persisted_at="1761082393.15"/>
+    </Interfaces>
+    <Kea>
+      <ctrl_agent version="0.0.1" persisted_at="1761082393.17">
+        <general>
+          <enabled>0</enabled>
+          <http_host>127.0.0.1</http_host>
+          <http_port>8000</http_port>
+        </general>
+      </ctrl_agent>
+      <dhcp4 version="1.0.4" persisted_at="1761082393.18">
+        <general>
+          <enabled>0</enabled>
+          <manual_config>0</manual_config>
+          <interfaces/>
+          <valid_lifetime>4000</valid_lifetime>
+          <fwrules>1</fwrules>
+          <dhcp_socket_type>raw</dhcp_socket_type>
+        </general>
+        <ha>
+          <enabled>0</enabled>
+          <this_server_name/>
+          <max_unacked_clients>2</max_unacked_clients>
+        </ha>
+        <subnets/>
+        <reservations/>
+        <ha_peers/>
+      </dhcp4>
+      <dhcp6 version="1.0.0" persisted_at="1761082393.19">
+        <general>
+          <enabled>0</enabled>
+          <manual_config>0</manual_config>
+          <interfaces/>
+          <valid_lifetime>4000</valid_lifetime>
+          <fwrules>1</fwrules>
+        </general>
+        <ha>
+          <enabled>0</enabled>
+          <this_server_name/>
+          <max_unacked_clients>2</max_unacked_clients>
+        </ha>
+        <subnets/>
+        <reservations/>
+        <pd_pools/>
+        <ha_peers/>
+      </dhcp6>
+    </Kea>
+    <monit version="1.0.13" persisted_at="1761082393.25">
+      <general>
+        <enabled>0</enabled>
+        <interval>120</interval>
+        <startdelay>120</startdelay>
+        <mailserver>127.0.0.1</mailserver>
+        <port>25</port>
+        <username/>
+        <password/>
+        <ssl>0</ssl>
+        <sslversion>auto</sslversion>
+        <sslverify>1</sslverify>
+        <logfile/>
+        <statefile/>
+        <eventqueuePath/>
+        <eventqueueSlots/>
+        <httpdEnabled>0</httpdEnabled>
+        <httpdUsername>root</httpdUsername>
+        <httpdPassword/>
+        <httpdPort>2812</httpdPort>
+        <httpdAllow/>
+        <mmonitUrl/>
+        <mmonitTimeout>5</mmonitTimeout>
+        <mmonitRegisterCredentials>1</mmonitRegisterCredentials>
+      </general>
+      <alert uuid="793d19af-0a09-4f97-88ca-b567ebb39348">
+        <enabled>0</enabled>
+        <recipient>root@localhost.local</recipient>
+        <noton>0</noton>
+        <events/>
+        <format/>
+        <reminder/>
+        <description/>
+      </alert>
+      <service uuid="d6317bb5-36ae-4630-87ff-29a45be4e56b">
+        <enabled>1</enabled>
+        <name>$HOST</name>
+        <description/>
+        <type>system</type>
+        <pidfile/>
+        <match/>
+        <path/>
+        <timeout>300</timeout>
+        <starttimeout>30</starttimeout>
+        <address/>
+        <interface/>
+        <start/>
+        <stop/>
+        <tests>8167d41b-d50d-4b01-b7c5-59e6211da38f,bb1b85d2-cec4-4ca1-ad0b-a511a334ebb1,dc7eba42-b375-4eab-a117-3e49ec1d5499,6051d985-177c-40a6-b105-5d89a84227ef</tests>
+        <depends/>
+        <polltime/>
+      </service>
+      <service uuid="8207bc21-bef2-491b-88a4-f3ba27c6bb4e">
+        <enabled>1</enabled>
+        <name>RootFs</name>
+        <description/>
+        <type>filesystem</type>
+        <pidfile/>
+        <match/>
+        <path>/</path>
+        <timeout>300</timeout>
+        <starttimeout>30</starttimeout>
+        <address/>
+        <interface/>
+        <start/>
+        <stop/>
+        <tests>b464294b-24bb-4978-8ed6-dc37ba627825</tests>
+        <depends/>
+        <polltime/>
+      </service>
+      <service uuid="5788098d-3043-4482-afe8-d97286dd94aa">
+        <enabled>0</enabled>
+        <name>carp_status_change</name>
+        <description/>
+        <type>custom</type>
+        <pidfile/>
+        <match/>
+        <path>/usr/local/opnsense/scripts/OPNsense/Monit/carp_status</path>
+        <timeout>300</timeout>
+        <starttimeout>30</starttimeout>
+        <address/>
+        <interface/>
+        <start/>
+        <stop/>
+        <tests>e9ee9fd6-49d5-4fa1-a35e-32e845b7c064</tests>
+        <depends/>
+        <polltime/>
+      </service>
+      <service uuid="a986d414-0e0f-4250-b308-6142291b49a1">
+        <enabled>0</enabled>
+        <name>gateway_alert</name>
+        <description/>
+        <type>custom</type>
+        <pidfile/>
+        <match/>
+        <path>/usr/local/opnsense/scripts/OPNsense/Monit/gateway_alert</path>
+        <timeout>300</timeout>
+        <starttimeout>30</starttimeout>
+        <address/>
+        <interface/>
+        <start/>
+        <stop/>
+        <tests>262e7cb6-2508-43d9-8330-91921cac5a23</tests>
+        <depends/>
+        <polltime/>
+      </service>
+      <test uuid="e8a4b098-47ca-4468-aad2-3cea2e62e18c">
+        <name>Ping</name>
+        <type>NetworkPing</type>
+        <condition>failed ping</condition>
+        <action>alert</action>
+        <path/>
+      </test>
+      <test uuid="d505778d-3a02-4e0b-8aee-59c93a954733">
+        <name>NetworkLink</name>
+        <type>NetworkInterface</type>
+        <condition>failed link</condition>
+        <action>alert</action>
+        <path/>
+      </test>
+      <test uuid="349e7523-67d1-4704-9ecb-6f8b2418327c">
+        <name>NetworkSaturation</name>
+        <type>NetworkInterface</type>
+        <condition>saturation is greater than 75%</condition>
+        <action>alert</action>
+        <path/>
+      </test>
+      <test uuid="8167d41b-d50d-4b01-b7c5-59e6211da38f">
+        <name>MemoryUsage</name>
+        <type>SystemResource</type>
+        <condition>memory usage is greater than 75%</condition>
+        <action>alert</action>
+        <path/>
+      </test>
+      <test uuid="bb1b85d2-cec4-4ca1-ad0b-a511a334ebb1">
+        <name>CPUUsage</name>
+        <type>SystemResource</type>
+        <condition>cpu usage is greater than 75%</condition>
+        <action>alert</action>
+        <path/>
+      </test>
+      <test uuid="dc7eba42-b375-4eab-a117-3e49ec1d5499">
+        <name>LoadAvg1</name>
+        <type>SystemResource</type>
+        <condition>loadavg (1min) is greater than 4</condition>
+        <action>alert</action>
+        <path/>
+      </test>
+      <test uuid="6051d985-177c-40a6-b105-5d89a84227ef">
+        <name>LoadAvg5</name>
+        <type>SystemResource</type>
+        <condition>loadavg (5min) is greater than 3</condition>
+        <action>alert</action>
+        <path/>
+      </test>
+      <test uuid="8b01bb6d-6c10-4e46-9cae-3ed224b45f35">
+        <name>LoadAvg15</name>
+        <type>SystemResource</type>
+        <condition>loadavg (15min) is greater than 2</condition>
+        <action>alert</action>
+        <path/>
+      </test>
+      <test uuid="b464294b-24bb-4978-8ed6-dc37ba627825">
+        <name>SpaceUsage</name>
+        <type>SpaceUsage</type>
+        <condition>space usage is greater than 75%</condition>
+        <action>alert</action>
+        <path/>
+      </test>
+      <test uuid="e9ee9fd6-49d5-4fa1-a35e-32e845b7c064">
+        <name>ChangedStatus</name>
+        <type>ProgramStatus</type>
+        <condition>changed status</condition>
+        <action>alert</action>
+        <path/>
+      </test>
+      <test uuid="262e7cb6-2508-43d9-8330-91921cac5a23">
+        <name>NonZeroStatus</name>
+        <type>ProgramStatus</type>
+        <condition>status != 0</condition>
+        <action>alert</action>
+        <path/>
+      </test>
+    </monit>
+    <Gateways version="1.0.0" persisted_at="1763673913.84">
+      <gateway_item uuid="2ac2ec8e-2bbe-4e2c-b6e3-d5f8f96b895c">
+        <disabled>0</disabled>
+        <name>WAN_GW</name>
+        <descr>WAN Gateway</descr>
+        <interface>wan</interface>
+        <ipprotocol>inet</ipprotocol>
+        <gateway>172.16.40.1</gateway>
+        <defaultgw>1</defaultgw>
+        <fargw>0</fargw>
+        <monitor_disable>0</monitor_disable>
+        <monitor_noroute>0</monitor_noroute>
+        <monitor_killstates>0</monitor_killstates>
+        <monitor_killstates_priority>0</monitor_killstates_priority>
+        <monitor/>
+        <force_down>0</force_down>
+        <priority>255</priority>
+        <weight>1</weight>
+        <latencylow/>
+        <latencyhigh/>
+        <losslow/>
+        <losshigh/>
+        <interval/>
+        <time_period/>
+        <loss_interval/>
+        <data_length/>
+      </gateway_item>
+    </Gateways>
+    <Syslog version="1.0.2" persisted_at="1764734846.38">
+      <general>
+        <enabled>1</enabled>
+        <loglocal>1</loglocal>
+        <maxpreserve>31</maxpreserve>
+        <maxfilesize/>
+      </general>
+      <destinations>
+        <destination uuid="7d152309-ab1d-4680-8696-ee264f81fa1f">
+          <enabled>1</enabled>
+          <transport>udp4</transport>
+          <program>audit,configd.py,dhcpd,dhcrelay,dnsmasq,filterlog,firewall,dpinger,charon,kea-ctrl-agent,kea-dhcp4,kea-dhcp6,kernel,lighttpd,monit,ntp,ntpd,ntpdate,openvpn,pkg,pkg-static,captiveportal,ppp,unbound,bgpd,miniupnpd,olsrd,ospfd,routed,zebra,suricata,wireguard,hostapd</program>
+          <level>debug,info,notice,warn,err,crit,alert,emerg</level>
+          <facility>kern,user,mail,daemon,auth,syslog,lpr,news,uucp,cron,authpriv,ftp,ntp,security,console,local0,local1,local2,local3,local4,local5,local6,local7</facility>
+          <hostname>alpha-2</hostname>
+          <certificate/>
+          <port>514</port>
+          <rfc5424>1</rfc5424>
+          <description/>
+        </destination>
+      </destinations>
+    </Syslog>
+    <TrafficShaper version="1.0.3" persisted_at="1761082393.37">
+      <pipes/>
+      <queues/>
+      <rules/>
+    </TrafficShaper>
+    <trust>
+      <general version="1.0.1" persisted_at="1761082394.52">
+        <store_intermediate_certs>0</store_intermediate_certs>
+        <install_crls>0</install_crls>
+        <fetch_crls>0</fetch_crls>
+        <enable_legacy_sect>1</enable_legacy_sect>
+        <enable_config_constraints>0</enable_config_constraints>
+        <CipherString/>
+        <Ciphersuites/>
+        <SignatureAlgorithms/>
+        <groups/>
+        <MinProtocol/>
+        <MinProtocol_DTLS/>
+      </general>
+    </trust>
+    <unboundplus version="1.0.12" persisted_at="1761082394.89">
+      <general>
+        <enabled>1</enabled>
+        <port>53</port>
+        <stats>0</stats>
+        <active_interface/>
+        <dnssec>0</dnssec>
+        <dns64>0</dns64>
+        <dns64prefix/>
+        <noarecords>0</noarecords>
+        <regdhcp>0</regdhcp>
+        <regdhcpdomain/>
+        <regdhcpstatic>0</regdhcpstatic>
+        <noreglladdr6>0</noreglladdr6>
+        <noregrecords>0</noregrecords>
+        <txtsupport>0</txtsupport>
+        <cacheflush>0</cacheflush>
+        <local_zone_type>transparent</local_zone_type>
+        <outgoing_interface/>
+        <enable_wpad>0</enable_wpad>
+      </general>
+      <advanced>
+        <hideidentity>0</hideidentity>
+        <hideversion>0</hideversion>
+        <prefetch>0</prefetch>
+        <prefetchkey>0</prefetchkey>
+        <dnssecstripped>0</dnssecstripped>
+        <aggressivensec>1</aggressivensec>
+        <serveexpired>0</serveexpired>
+        <serveexpiredreplyttl/>
+        <serveexpiredttl/>
+        <serveexpiredttlreset>0</serveexpiredttlreset>
+        <serveexpiredclienttimeout/>
+        <qnameminstrict>0</qnameminstrict>
+        <extendedstatistics>0</extendedstatistics>
+        <logqueries>0</logqueries>
+        <logreplies>0</logreplies>
+        <logtagqueryreply>0</logtagqueryreply>
+        <logservfail>0</logservfail>
+        <loglocalactions>0</loglocalactions>
+        <logverbosity>1</logverbosity>
+        <valloglevel>0</valloglevel>
+        <privatedomain/>
+        <privateaddress>0.0.0.0/8,10.0.0.0/8,100.64.0.0/10,169.254.0.0/16,172.16.0.0/12,192.0.2.0/24,192.168.0.0/16,198.18.0.0/15,198.51.100.0/24,203.0.113.0/24,233.252.0.0/24,::1/128,2001:db8::/32,fc00::/8,fd00::/8,fe80::/10</privateaddress>
+        <insecuredomain/>
+        <msgcachesize/>
+        <rrsetcachesize/>
+        <outgoingnumtcp/>
+        <incomingnumtcp/>
+        <numqueriesperthread/>
+        <outgoingrange/>
+        <jostletimeout/>
+        <discardtimeout/>
+        <cachemaxttl/>
+        <cachemaxnegativettl/>
+        <cacheminttl/>
+        <infrahostttl/>
+        <infrakeepprobing>0</infrakeepprobing>
+        <infracachenumhosts/>
+        <unwantedreplythreshold/>
+      </advanced>
+      <acls>
+        <default_action>allow</default_action>
+      </acls>
+      <dnsbl>
+        <enabled>0</enabled>
+        <safesearch>0</safesearch>
+        <type/>
+        <lists/>
+        <whitelists/>
+        <blocklists/>
+        <wildcards/>
+        <address/>
+        <nxdomain>0</nxdomain>
+      </dnsbl>
+      <forwarding>
+        <enabled>0</enabled>
+      </forwarding>
+      <dots/>
+      <hosts/>
+      <aliases/>
+    </unboundplus>
+  </OPNsense>
+  <hasync version="1.0.2" persisted_at="1761082389.40">
+    <disablepreempt>0</disablepreempt>
+    <disconnectppps>0</disconnectppps>
+    <pfsyncinterface/>
+    <pfsyncpeerip/>
+    <pfsyncversion>1400</pfsyncversion>
+    <synchronizetoip/>
+    <verifypeer>0</verifypeer>
+    <username/>
+    <password/>
+    <syncitems/>
+  </hasync>
+  <openvpn/>
+  <ifgroups version="1.0.0" persisted_at="1761082391.29"/>
+  <bridges version="1.0.0" persisted_at="1761082392.88">
+    <bridged/>
+  </bridges>
+  <gifs version="1.0.0" persisted_at="1761082392.92">
+    <gif/>
+  </gifs>
+  <gres version="1.0.0" persisted_at="1761082392.93">
+    <gre/>
+  </gres>
+  <laggs version="1.0.0" persisted_at="1761082393.02">
+    <lagg/>
+  </laggs>
+  <virtualip version="1.0.1" persisted_at="1761082393.05">
+    <vip/>
+  </virtualip>
+  <vlans version="1.0.0" persisted_at="1761864955.43">
+    <vlan uuid="6ffbbe03-36b3-4cac-91ef-a4351228a309">
+      <if>vtnet1</if>
+      <tag>202</tag>
+      <pcp>0</pcp>
+      <proto/>
+      <descr/>
+      <vlanif>vtnet1_vlan202</vlanif>
+    </vlan>
+    <vlan uuid="be8e48ee-fd1d-4f79-80d4-0d9d965c772e">
+      <if>vtnet1</if>
+      <tag>200</tag>
+      <pcp>0</pcp>
+      <proto/>
+      <descr/>
+      <vlanif>vtnet1_vlan200</vlanif>
+    </vlan>
+    <vlan uuid="46e04028-cdc4-46a5-b7e7-6cf80eb76dbf">
+      <if>vtnet1</if>
+      <tag>201</tag>
+      <pcp>0</pcp>
+      <proto/>
+      <descr/>
+      <vlanif>vtnet1_vlan201</vlanif>
+    </vlan>
+    <vlan uuid="2e08fa8b-a3ad-4a52-a219-c4bdca41d103">
+      <if>vtnet1</if>
+      <tag>203</tag>
+      <pcp>0</pcp>
+      <proto/>
+      <descr/>
+      <vlanif>vtnet1_vlan203</vlanif>
+    </vlan>
+  </vlans>
+  <staticroutes version="1.0.0" persisted_at="1761082393.26">
+    <route/>
+  </staticroutes>
+  <ppps>
+    <ppp/>
+  </ppps>
+  <wireless>
+    <clone/>
+  </wireless>
+  <ca uuid="1a854e8c-92c2-49b3-995f-253aff7e8f64">
+    <refid>692f57842dac6</refid>
+    <descr>SpicyCluck-CA</descr>
+    <crt>LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURNekNDQWh1Z0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFOTVFzd0NRWURWUVFHRXdKVlV6QWUKRncweU5URXlNREl5TVRFM05UZGFGdzB5TmpBek1USXlNVEUzTlRkYU1BMHhDekFKQmdOVkJBWVRBbFZUTUlJQgpJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBc0szMUlFR0RtUmxRUmhHQmROcUlVbGgzCmRFSVFDTTNqSklKWDNBd1JCbzNMbUlKRkxLNVZINmtVYjlvVS9kQU14aGg5QU5LRVoreGZuTzVNcVozeENDYS8KbE1TYkRhWElSNDRiNnFDemN5a1NudU5HNGJWRktwZGYzbGJmcWR6OEhJN3pYYnRGSkR1bG5aMXRXTmo0dU1aRAo1dHkxUXF4WCs5NktMWk51djI1bE1ucVd0Si9hRFBQbWxjK21DdUV0UTZac3dpakplZ1l1NHZxQ2RlRVJlUkExCklZS25QSGUxTEl4Um9xUHcvZnZoaUVHZ3dwWkVmK29yUmlBN215clhtUEJYRjMzUmVFQzRiTU9uUUJDSzJ6VmoKSFBqbVdEM0lHR1BZdU9tRGFrY0VHVkYwMGt3QkRiL2Y2QUJyUHNKRzlPUWlxTDl2TWloUVhEQ29PQXlPN3dJRApBUUFCbzRHZE1JR2FNRGNHQ1dDR1NBR0crRUlCRFFRcUZpaFBVRTV6Wlc1elpTQkhaVzVsY21GMFpXUWdRMlZ5CmRHbG1hV05oZEdVZ1FYVjBhRzl5YVhSNU1CMEdBMVVkRGdRV0JCVCt1bHFmY1dSN3R0K0ExUjVuUnFrSEQ1SmoKenpBZkJnTlZIU01FR0RBV2dCVCt1bHFmY1dSN3R0K0ExUjVuUnFrSEQ1Smp6ekFQQmdOVkhSTUJBZjhFQlRBRApBUUgvTUE0R0ExVWREd0VCL3dRRUF3SUJoakFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBRjZVeW9xVnRWMFhLCjhlc3lrUDljZ3kxQlRqWUFzbGIxWVhUSUxidHVwYTZtbTBPMWtpdFY2anh3N0ZQRkttQVRiTjdMbXRNZ0FXQS8KZmNlU1lxdGFYdEhkLzJGdTBRd1lJZ2tZMWJCc0JRZmhIVjlKZ2FTZWN2b01DcW85cHdsZmpseVQrbDllaFRtUApHRU4yUk5OVG41ZlBxbzdyQmVueWdPNGsxbWJoYWRTUHUyUHcyM2JpOE1qRHVWOG04eXVKNERiKy9SR0daaUhtCmE2VEk0WU4zdGNnL1gzbnEySk9RZjFCTmdwVEdWWFp3WENwdWlDN05FN1VYelF3TjVNdzhTWUZjM1FEcUE0NFAKcFg1QXg2Q3FHaEV0MFF0MENhT01EMHlhMGRQZ216Y2d4dktXM2UydllkRmY3NExWaUFrWjZxOVZhdi81YnJhaApWWGJaMnBKbVpnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=</crt>
+    <prv>LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ3dyZlVnUVlPWkdWQkcKRVlGMDJvaFNXSGQwUWhBSXplTWtnbGZjREJFR2pjdVlna1VzcmxVZnFSUnYyaFQ5MEF6R0dIMEEwb1JuN0YrYwo3a3lwbmZFSUpyK1V4SnNOcGNoSGpodnFvTE56S1JLZTQwYmh0VVVxbDEvZVZ0K3AzUHdjanZOZHUwVWtPNldkCm5XMVkyUGk0eGtQbTNMVkNyRmY3M29vdGsyNi9ibVV5ZXBhMG45b004K2FWejZZSzRTMURwbXpDS01sNkJpN2kKK29KMTRSRjVFRFVoZ3FjOGQ3VXNqRkdpby9EOSsrR0lRYURDbGtSLzZpdEdJRHViS3RlWThGY1hmZEY0UUxocwp3NmRBRUlyYk5XTWMrT1pZUGNnWVk5aTQ2WU5xUndRWlVYVFNUQUVOdjkvb0FHcyt3a2IwNUNLb3YyOHlLRkJjCk1LZzRESTd2QWdNQkFBRUNnZ0VBVUpNRTkzRHBVeWo0TXZ4SXpjSGI2Ykh1eUZaWWVhdHJxM3JHRnRScDcxTTcKUnBJaWVmNEhWQ2tINlByTUYvU0ozczNNTkZQTmpwZCtBMU9xSXJDays5S3dER2lkVGR3Tk9wVFVwbXdqYXFHUQpuR1dLTGVVOVplOGpDWU1VL2FLS1YzdmFBU1Vtb3grUXFCRGpqV0ZtRE41ZW1TcU9mNW1aaG9RM0FCSDhyOUFtCnFRTzdRRDVhSHZNNWRDYkhEQ1pvNVJGa29zenl6MW1oMExQandHM3F0N1U3ZW1MZlI4NGJwQlgyUjlhRkFhbVEKb0Y2U2NUQWlqUHI3bzlRUCthbXdKZzNaOXRPZ1hEWGg3eUxpM3dRMWd5U1Rjb0Qzdzc5UThMeUk0dnZQcnNERgpQRzRmYVcvelBXRlJmdHFtKzM5L0RkNGRtbnQ0Z0dhc3pvWmFTcGM0QVFLQmdRRGVlSkw3L3JESmFLNmZsU2FLCmdpd3JpUmU1UEZKOVFTWVJoM2M1cnQ0b1NVdTJaYjVabDIySEVPeVpva2E3WVFQUE02QTVOc1dCVkF1Rk0zQ3oKZFp0RlNQZ0lRaWwvZk5TbVJFR1VickZCNGlTWDhEWU1pMEJsYUZGa3FpcWxVNlFSbWRUa0loWEwyaTkwM0FoQgpyaW1WbG02UVRtcXJYWnlKeC9TTVhDQWtId0tCZ1FETFRxV0RHdHFPZU5tZ0JNVWJHUW1GTVkrMjZicTBJa3NqCkJsdnFDdFdYTDM1d0VxcmQvNllibG9vZEtOSGNtZFJJZytyNU9oMVdxQTIzNWlZTEMwMXVpNzBhdDFaUWVkeDIKdE0wRkdObGFjNkpxZjF5Ry9EV3J1M2ZyMXNwK1Z5NUpycjBERGwzNnRNSXMwNjFKSzJiYTZvc2daUlIzSHRUWQpOcHNrZkIyN01RS0JnUUNIQUxCaGoyc0VyaXZaMTQ3dDJwU25UcWhBMW1SUWNpcUIxS3o3S2l6U1ViaEtWVyt2CnVuN1N5ZWhxU3RtVmVBZnh3eWhseitFRzNGT3BYMC95OTFsa01DV2tEVkpWZFJFdVhKbFhVOXpwV0N4UXI0cDkKRGp2anpld21wRVVBMHNMcmsyaG5rRytkcHlmSlNJVVNKbmhCdUdvYjFCcFRKNW1JMnZpQi9KM2NqUUtCZ0NMdQovNWVZZktkd2NveUJaVkR6cTJRY2tRSXdCU25BbnNLRTdEUTU2bHVSQ0p1L1NXYmQ3Ni9iM1IySGp3L2x5c2t2CkNhZ0xhVkVqalQvbEp2Sk0zZUE1MktPSGp5aEMyRFA1ZXlUK0VSTHV2YUNwQThBYUJDcmZDb3NXbkRLN1RqUFEKOTU5WHo2UXRmUlB3eDF6RVBXY3VWL3VZQXIwNUtmK0Eyb1daWWc1eEFvR0FiRUtNaFo1Lzd4emZlbGRVaFlzRAo5YnpwN0hTVlRNTXl3eUVtaDFZWFB2RXlZUEZ1UWV3ZXRTdmdtc0NkQ2o2NFRZc0NLT2E2Ny9IMXZSVUU4dklNCkpGVW83MkdoVENndmZCelF1UlBGaHNYSDY1VlRkMjFhSmU4bDdiTi9VZ0RGM21lSVJ6dmVHekhTTHp3OWVoYzUKNm16bHgxVGRZVlBBeGxtQXN5K0dPR1E9Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K</prv>
+    <serial>7</serial>
+    <caref/>
+  </ca>
+  <dhcpd>
+    <opt5>
+      <enable>1</enable>
+      <gateway>192.168.10.1</gateway>
+      <ddnsdomainalgorithm>hmac-md5</ddnsdomainalgorithm>
+      <numberoptions>
+        <item/>
+      </numberoptions>
+      <range>
+        <from>192.168.10.2</from>
+        <to>192.168.10.254</to>
+      </range>
+      <winsserver/>
+      <dnsserver>192.168.2.2</dnsserver>
+      <ntpserver/>
+      <staticmap/>
+      <pool/>
+    </opt5>
+    <opt1>
+      <enable>1</enable>
+      <gateway>192.168.2.1</gateway>
+      <denyunknown>1</denyunknown>
+      <ddnsdomainalgorithm>hmac-md5</ddnsdomainalgorithm>
+      <numberoptions>
+        <item/>
+      </numberoptions>
+      <range>
+        <from>192.168.2.2</from>
+        <to>192.168.2.254</to>
+      </range>
+      <winsserver/>
+      <dnsserver>192.168.2.2</dnsserver>
+      <ntpserver/>
+      <staticmap>
+        <mac>bc:24:11:07:42:69</mac>
+        <ipaddr>192.168.2.2</ipaddr>
+        <hostname>alpha-1</hostname>
+        <winsserver/>
+        <dnsserver/>
+        <ntpserver/>
+      </staticmap>
+      <staticmap>
+        <mac>bc:24:11:a7:a2:21</mac>
+        <ipaddr>192.168.2.3</ipaddr>
+        <hostname>alpha-2</hostname>
+        <winsserver/>
+        <dnsserver/>
+        <ntpserver/>
+      </staticmap>
+      <staticmap>
+        <mac>bc:24:11:44:56:2d</mac>
+        <ipaddr>192.168.2.4</ipaddr>
+        <hostname>alpha-3</hostname>
+        <winsserver/>
+        <dnsserver/>
+        <ntpserver/>
+      </staticmap>
+      <staticmap>
+        <mac>bc:24:11:2b:5e:08</mac>
+        <ipaddr>192.168.2.5</ipaddr>
+        <hostname>alpha-4</hostname>
+        <winsserver/>
+        <dnsserver/>
+        <ntpserver/>
+      </staticmap>
+    </opt1>
+    <opt2>
+      <enable>1</enable>
+      <gateway>192.168.6.1</gateway>
+      <denyunknown>1</denyunknown>
+      <ddnsdomainalgorithm>hmac-md5</ddnsdomainalgorithm>
+      <numberoptions>
+        <item/>
+      </numberoptions>
+      <range>
+        <from>192.168.6.2</from>
+        <to>192.168.6.254</to>
+      </range>
+      <winsserver/>
+      <dnsserver>192.168.2.2</dnsserver>
+      <ntpserver/>
+      <staticmap>
+        <mac>bc:24:11:d1:0b:3f</mac>
+        <ipaddr>192.168.6.2</ipaddr>
+        <hostname>alpha-5</hostname>
+        <winsserver/>
+        <dnsserver/>
+        <ntpserver/>
+      </staticmap>
+    </opt2>
+    <opt3>
+      <enable>1</enable>
+      <gateway>192.168.100.1</gateway>
+      <ddnsdomainalgorithm>hmac-md5</ddnsdomainalgorithm>
+      <numberoptions>
+        <item/>
+      </numberoptions>
+      <range>
+        <from>192.168.100.2</from>
+        <to>192.168.100.254</to>
+      </range>
+      <winsserver/>
+      <dnsserver>192.168.2.2</dnsserver>
+      <ntpserver/>
+    </opt3>
+  </dhcpd>
+  <dhcpdv6/>
+  <cert uuid="f987a8f6-ab2c-4330-9adb-8af501d3f6fb">
+    <refid>68f7fc70ae315</refid>
+    <descr>Web GUI TLS certificate</descr>
+    <caref/>
+    <crt>LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUhFakNDQlBxZ0F3SUJBZ0lVV29XZC9SeTgyQjFOK1diKzFnNURCaUduMWY4d0RRWUpLb1pJaHZjTkFRRUwKQlFBd2dZWXhHakFZQmdOVkJBTU1FVTlRVG5ObGJuTmxMbWx1ZEdWeWJtRnNNUXN3Q1FZRFZRUUdFd0pPVERFVgpNQk1HQTFVRUNBd01XblZwWkMxSWIyeHNZVzVrTVJVd0V3WURWUVFIREF4TmFXUmtaV3hvWVhKdWFYTXhMVEFyCkJnTlZCQW9NSkU5UVRuTmxibk5sSUhObGJHWXRjMmxuYm1Wa0lIZGxZaUJqWlhKMGFXWnBZMkYwWlRBZUZ3MHkKTlRFd01qRXlNVE0wTkRSYUZ3MHlOakV4TWpJeU1UTTBORFJhTUlHR01Sb3dHQVlEVlFRRERCRlBVRTV6Wlc1egpaUzVwYm5SbGNtNWhiREVMTUFrR0ExVUVCaE1DVGt3eEZUQVRCZ05WQkFnTURGcDFhV1F0U0c5c2JHRnVaREVWCk1CTUdBMVVFQnd3TVRXbGtaR1ZzYUdGeWJtbHpNUzB3S3dZRFZRUUtEQ1JQVUU1elpXNXpaU0J6Wld4bUxYTnAKWjI1bFpDQjNaV0lnWTJWeWRHbG1hV05oZEdVd2dnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJSwpBb0lDQVFDNVpsRXNuQ0pDbFJocFNWVXo2R1BUeHd5QWVzYU5xelV3TW5XYU92VEVhNG1zcE55am1rNDJUYW9LCnptZWx2cEhkRlFLeTVlR1JSQWx5R29CS0VnM0hjYzhBYXlZNlNocjgwZGNCbXl5Mi9YbmU0QVZ0WFI1ajVhTmUKN3ZjbTBqQ3VwUGZhN3QxS1JXSzE2R0xLd2kzYytoenRxMmJ4Znl2RnBnNm5Zbk05bHNSZFBkeHpyVEZ2djFsdgpKMTFDclNyckNUSU1OVStwWC9HWkVOd1ZmMjV5ejBxQU9PYmtWekJ3SGpHbDdQSUlWT3FBYzE5bnpOeDBtemdjCngwZm9Hc2dISDF5VFpkd3ZNaFNFL1ZZQVo0RGZhZHVIb2tOOFJoRWJwdkhabDI2TWluazd1TUVxZlNUWUQ0S3oKVW9YRVVtdGJPWXdlVEVCRDBESjA3VDRUL3BVS1ZyKytVOWxaaUVxNUFrRWpKNExhNDhTcnJqRmFnVVR2VDZtVApIc3ZDYXBuWnVEczJFRFo0ekZ1bWxhT0grMjY5YWVaN0tyWE9PZHZzSjFyRXQ1RTI4MjlvUWd4NjhFcnR5MkJrCjZBUGxvOVMydjR0ZnhqTlJ5eGhIdjJtVytPOGluTE5EOXJjRE9ObWZDOE5nWk9IVHUyZkkrUmozTk5wNGs2UEwKdkJMMmIvY3R0M00zT3RDYWR6cC91THZMVE9ndWk2VFNyb08rcFkvdy9QRWhrczJHN09sUGJOcWs1OW93U1FiZAo5Q3JKWkhOMFdUYkV5YVlGK0xUUmorcVcyazJwYkJpZ1VIeWVwcWJvTTYxQ0xmdzNRZnE2Ui9UbmZBTXBWdmVqCjIzc2phN1NJUzVOS2F0Nm13TC9PeGdQK21jc0JEejRNbGhIbCtJeWZ2RGN6SkMyKzJRSURBUUFCbzRJQmREQ0MKQVhBd0NRWURWUjBUQkFJd0FEQVJCZ2xnaGtnQmh2aENBUUVFQkFNQ0JrQXdOQVlKWUlaSUFZYjRRZ0VOQkNjVwpKVTlRVG5ObGJuTmxJRWRsYm1WeVlYUmxaQ0JUWlhKMlpYSWdRMlZ5ZEdsbWFXTmhkR1V3SFFZRFZSME9CQllFCkZQeFd4K2pDZ0plMlozSERncWs3Z05DK3FjMmhNSUd3QmdOVkhTTUVnYWd3Z2FXaGdZeWtnWWt3Z1lZeEdqQVkKQmdOVkJBTU1FVTlRVG5ObGJuTmxMbWx1ZEdWeWJtRnNNUXN3Q1FZRFZRUUdFd0pPVERFVk1CTUdBMVVFQ0F3TQpXblZwWkMxSWIyeHNZVzVrTVJVd0V3WURWUVFIREF4TmFXUmtaV3hvWVhKdWFYTXhMVEFyQmdOVkJBb01KRTlRClRuTmxibk5sSUhObGJHWXRjMmxuYm1Wa0lIZGxZaUJqWlhKMGFXWnBZMkYwWllJVVdvV2QvUnk4MkIxTitXYisKMWc1REJpR24xZjh3SFFZRFZSMGxCQll3RkFZSUt3WUJCUVVIQXdFR0NDc0dBUVVGQ0FJQ01Bc0dBMVVkRHdRRQpBd0lGb0RBY0JnTlZIUkVFRlRBVGdoRlBVRTV6Wlc1elpTNXBiblJsY201aGJEQU5CZ2txaGtpRzl3MEJBUXNGCkFBT0NBZ0VBU29uMW1aNWRMd09hQUh5NDlQaktTamtRY1lQTjRYbnlxeVFNVUxJSHhIRWdxSkRycmN2ZTVTSkwKNjFQNWhBWENRUTk3dWxyblJFNEhKcEtrNm9kSThqWEVCU1Z2RDNSbFhSZDlJTy9wbnN5NmdJZUVxSjV2NU03dAp6ZVlGSVBhUjJHdGRCdmJ0cDRxQ1BMVXc4ZlplNDI3ME4xb1NtZ0dQODdBNWNGTjMyQkJKZWhIdUo2emlxbWVkCnUxWUd1OVNkNlpsRHpZdm1WRE9uRFNPQnNxKzBjdko1ajB6Q2NLVHJDNmtzbFhXMzVLd3VHSHJLVDB4MWdpV2IKQ3hwRnFjNks3V2p3MDJGL043U3NobUxEcmQ3dWZ1M3RWcnJSeXZBNWNyR2xybnNTdVc0c0lnUStoamtVRnczMQpwNXBnUmdGdlQvenNFRnVsY0N3ZFNLbW9lejdXN3dWUDZ5aWdlazVjRjRQUmhMbjN6a0NVc1pDalJWNFNtZDMwClNhMDNBdGJ4STNHOUtIbE9TVURxU3lueE81bFNhMVFFM0daMnVqVjExU24yQkVUcCtqUkZUSGowaXd6L1FuOXoKQ01ydkhqSHpNZVpsbDc5QzNNeXN6SGlUOEt3Z1ZCSS9oZ1JOdWY1NWh6SytuQWduR1hWTHhRNENaa01mZnplcgpMT0VyR2tjTVVUTDE4L3RBVXp6RG41bjlSYjh0K0kzUWZrNnFQWXJERUFid25xRFBYNUFoNTNlenE0Tk52M2s0ClhsS241aXhmL0dNR3NYZUJOaklNNGFZZXprY1hZeE84YzlMWHNaTlE0TkYwNTl5VWRyczJrRWZqQjk3TGtGZC8KV3dtQ2JRVTJOT2toNjlWczYvZTdxR3VhdXBXMHpVRkpCeU9Dd25FWW9hSUZtbE56dFRNPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==</crt>
+    <csr/>
+    <prv>LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUpRd0lCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQ1Mwd2dna3BBZ0VBQW9JQ0FRQzVabEVzbkNKQ2xSaHAKU1ZVejZHUFR4d3lBZXNhTnF6VXdNbldhT3ZURWE0bXNwTnlqbWs0MlRhb0t6bWVsdnBIZEZRS3k1ZUdSUkFseQpHb0JLRWczSGNjOEFheVk2U2hyODBkY0JteXkyL1huZTRBVnRYUjVqNWFOZTd2Y20wakN1cFBmYTd0MUtSV0sxCjZHTEt3aTNjK2h6dHEyYnhmeXZGcGc2blluTTlsc1JkUGR4enJURnZ2MWx2SjExQ3JTcnJDVElNTlUrcFgvR1oKRU53VmYyNXl6MHFBT09ia1Z6QndIakdsN1BJSVZPcUFjMTluek54MG16Z2N4MGZvR3NnSEgxeVRaZHd2TWhTRQovVllBWjREZmFkdUhva044UmhFYnB2SFpsMjZNaW5rN3VNRXFmU1RZRDRLelVvWEVVbXRiT1l3ZVRFQkQwREowCjdUNFQvcFVLVnIrK1U5bFppRXE1QWtFako0TGE0OFNycmpGYWdVVHZUNm1USHN2Q2Fwblp1RHMyRURaNHpGdW0KbGFPSCsyNjlhZVo3S3JYT09kdnNKMXJFdDVFMjgyOW9RZ3g2OEVydHkyQms2QVBsbzlTMnY0dGZ4ak5SeXhoSAp2Mm1XK084aW5MTkQ5cmNET05tZkM4TmdaT0hUdTJmSStSajNOTnA0azZQTHZCTDJiL2N0dDNNM090Q2FkenAvCnVMdkxUT2d1aTZUU3JvTytwWS93L1BFaGtzMkc3T2xQYk5xazU5b3dTUWJkOUNySlpITjBXVGJFeWFZRitMVFIKaitxVzJrMnBiQmlnVUh5ZXBxYm9NNjFDTGZ3M1FmcTZSL1RuZkFNcFZ2ZWoyM3NqYTdTSVM1TkthdDZtd0wvTwp4Z1ArbWNzQkR6NE1saEhsK0l5ZnZEY3pKQzIrMlFJREFRQUJBb0lDQUZDL3Y1c3VaYjJhTW9lbzZQTXl4RWY0CjZma0xnRzh6b25iYmcxMHBVSEk4WkRwTms4dXQ2V0s5Y05KRUUrQ2NuK3NxdTRJdm5ZOG5rdldmbFVDdG5GTEIKdnVidnhEYWZFQ0lOUXhmdi9nbTFYTjgxc3lkdTUwMmJOd3lpQ0FOZ2lOT0lCbXZVblkwN3EwS1BkSGZiR3g2agowUFd6TWFMOVFKTlZRQXluVkluK29JZjc2WWg0Wm8vRlI2Nmg5bnlUNzUxdTQ5MXRXc1RxaE0rbUNEVlV5MFkyCkFyeldDN3BvUHpDVjlnbk9xWnYzWUN1U0ZIdWhQbU9MTjJWUlpvQXhLZTN3T3VIMysyNlM0VjBLK2VvekttNGsKTFBsbU12NXRoZ1lGTUZFVkk1RVN2cnJFUFYzRUk4ZjIrWFlnK3lJR3c3dDMxUTlkSnFCaWpaZGZ2U240Ti9FSgpwakpyZ0hEMEs4V1RXbW5nZ3lTQjZ2VU9KSmpLTUNhdERNUHlXbEtoTFh2SS9TeVpveVJwMGhVZFdtTWZmOW1nCjJnQmVvaE5HckdDeVJid0xiMWltN3lLU2tOdUJwSFJ0RDdmZHBHazA0S3B1UzlUeW5HTFIxWlgzMk80MUVaTzIKcENkbFZrMmNsM082R2p6QjJrbnpnb2l6Q2doR2NIU3R4eGxhbndFYitBbGV6eUx5MTNkaGNsWVI1STdoOGpPSwpzOW1nTGtoK0VtbmVjbWN6R0J2aGNtYkFSQm1UdjZjOHVPdEtEemdZdDg3NExlZ29mYjNweCtaTHB0TTBTczZLCkJ1bGh3TkdJemNLVlZaaW5EbDBJWGJNU0h4Um53dURONjcvNlhlRmtMcVVNaWlvRk1UNnJsS01pNWVOSUtsWXYKcU9LbkgyNTlmVzg2UExnZ211NEJBb0lCQVFEMktVWWtxKzdMYWF6clNWVEdJZHppeWJpbGZzeXIwTlBvL29BNwpaTEZrdlI2QTBKRkRIdll3clV2QkIrbjNBT0RHSUpPYnFNVGJOTEJXRE9rOGlkUGk4UnkvUHhvcUFNaEdwcjlmCmlzNTB6cm9OamxJQWxLZmZRL2FIRmp1ZVJtaDd5c3UwcmlidkZPMGNZTUZRemd5dys1T1BZSFlTZks1cXd2RDUKdlRPWUQzOTBsdE01T3lxQ2hRNC9zeDVDTG11cUh4Y084bGthZGxMd3pwQy9BUitiM3JCOTU0R29qQmkwbHdSeAo4Q0tGOGZ0UlYvYUVKdGV5RnFRV0xEc3dkNlhNZHBSNW96WkZIK0ZtY1F5aVhwMjVrVS9iMDJlTkJFT2dZTjUwCjcxTTNtMmJvenc5cURPM1pyaUFNbE1CUDBBOFpNSXNXaDVPZkJ6T0lMN3lNRndPckFvSUJBUURBejFSd0ovN3QKL0JTMUdrVTk5aTlTV1NveThWZ0lkV1FKT0dqK3JzVkw0MXdFOS9CZEJidmtGdFNxUjg5dmM2blYwandBWkdqYwpYRU1CTExsMkREcXZhMFNibUx0TW1wZ28yWFY4S21SeUY0QUJTVjJTRjVWcXY5N2dGWms0T0xoVk50Wk9ydHhuCjI0SWk2MUF3a2ZNZFFKNkwvZi9XcWl5ZGI3YmVoM01haktlK0RKY1Myb0wyRG56cUtJYUdzcTQrdXNuTEhzN0MKaVMvNkZuWVdZenFhWWw0eEpmMjVWcjgzdkdmVTd0MmROeEp1RVpuV1lHb3d3UXdDUEZ2K2hIdG1uWkUyNXJrNgpOeVBDcjc0dmJWa0t3VWI2NUUrb0w1d1hleGhKbEN5WStnMVczUDhybjhBYklReGNYZmZaV3hwN09oem4vTzBSCllOdzB5SEpRSzBPTEFvSUJBUUNsVTdNNGpnRWp2U1hXSUxvL0dCOHljaWtCZmRnWXpYaUYwK2hyKzRUcEU5dVkKeUh2SGlOUHdmWE9UZ2EweHAvVlBIRElIS2FLTlZ5WFhwWFJBcEpFYXFyV1QvTjJsdUVES3N0TjFaOVNodnZaVwpoRyt1MUNpcld3b0lVSFphSncrbGxONmJ5eHQ3RjZMb25GTTU0aW5EOUROMjZHSmtxRGk4bTVFZEttV3NpendmCkllMWJVdEdLTjdNS05WTHRRQ0F2Y2hJYWg4b3dhNmZvODlOamRXMjFVaXRYWkZWQXpsY0pjeVFaSWg4TnR5Z0QKeWdCWFlYOGNyUGduckMxVXNBYzYrNmxjeUxGNlc1OFhIblpOMXg0M3M5RGU0MjE0MkpSUzhyeDE3UWNISWVoTQpGRVZXQkxqNnFtZjhDeXZlYnU2MURGVmVIRkNaVGt6ZCtyRzNwUDFoQW9JQkFRQ3FZVXhUZy9SeDV4V0JhQUtTCkc0OTdySkZ1elBpbkdOMWFqSCt6dDB0Zm9UMDZvc0xENFFKRkw2dWtBYXNiNk5ER3cyNEVScmFuSzl5R0dEaVgKU1gwK2NJTURJSGM2M1UzaW95OS9scEtHZzUrNUExVHRlV3V2Rm5oaitwSVlMWDh1eGpPZytrS0lnR0JDYlVEQwpldWFrRGV0TStCcHhYcFhvVmNUNlppVmY2N1Y3YXZMQlZWanZDS1IzNDNIbGE5WXdWcTFsa2diUnY1c20yMXhrCnNqRWlKaFRvUjVNcmlhMldHaWFDOHNYaFhMNHJoK0F5b2FhVkNMS004enV6OE94L0pIUWpXTVdMM1JmN3ZZTkoKczg1QWc4VXVoanloK2Roc28zazE0L3Q0LzFaMFVQd29WNVhTSTJVaDVtUFRyZjc3cjhIRmV5c2U5VUlDWHJNdApodDI3QW9JQkFGYXFxQ0FRbU02MFdxczFTb3hZakl3SlAzZnJmU0lBdTVwTkV6bjBzTGd1QktORjJFRVBvTnlxCndTWWFQQUV1dzRXeGhPK0VCQXNWR0hhc1hCSGxpSnlWRXAwWklhWVZHckY5UmpQS1M1czRvUlVxaE9iWGZaV2oKN3dsOVVVRnp2SEN5RzdXQlZOYWcwWUl6NDJTSEpuaFE1TisrSk1IVmY2WU9CT1g0dC81dkhlMWQ1TDQwM1pORQplQy8xSjdjSngvYWxFc0tXY1ExOFd2aTNVTGNXMHZ3bDM5R1QreWZ2c3JWR0xpWWl6LzZCSndLRjJpTzlRS2dLCjVCbWJTOURvNmFCeE1iOFg2SjBhOHJId011MjZwbWxaYjNxNnNIRkUyK2hBSmVBWXdxUlNOWTUxWjUzSkRIWWYKU29mM0xLTlRkWndLOENOdW1OdkMycmRKNDcxczh2Zz0KLS0tLS1FTkQgUFJJVkFURSBLRVktLS0tLQo=</prv>
+  </cert>
+  <cert uuid="de391df9-96f7-4c6b-b3e9-30270ef80f2a">
+    <refid>692f580a8883e</refid>
+    <descr>SpicyCluck-Certificate</descr>
+    <caref>692f57842dac6</caref>
+    <crt>LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURiekNDQWxlZ0F3SUJBZ0lCQWpBTkJna3Foa2lHOXcwQkFRc0ZBREFOTVFzd0NRWURWUVFHRXdKVlV6QWUKRncweU5URXlNREl5TVRJMk5UTmFGdzB5TmpBek1USXlNVEkyTlROYU1BMHhDekFKQmdOVkJBWVRBbFZUTUlJQgpJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBeHNEU2hycmFQaXlHUnRpck9qT2F3ang3Cis3TnRxTWkxZXphaWZsclcrOFhZb2JJUlIzcVlHN2VNL24yYjMxcnJicW5DRDJYa0dXd2dWb2plaFBpMEJEMEMKTzdmTzJRSm0wVG04UTVHWGhselQ1Z2dCTGdpODhGdGpaeC92cUhtM0l3TDhFU2c3S1c4RC9QYStXYmQ5N1kzdwplUHFoL2toc21qcXQ3cHlCK2NrQXZ6NTJoMVdkL1pla0JWdDZ1RWxRYW84akhxTEpZVlZtMlU0Vy9DRityQWo1CnpYN3NFc2xrcnpqT3pxdHVkMEtaOUZScHh5UHF1SXB5YmY3K0o0aVQ3Q2IxRklSZjhMYUxYOEM3L0N0dXVoeHEKbndGck1VRzZIUXZ2V1lLZlV2M2pHSHUvNWZHQzZCN1FtUGhWRmRjTzg5WDgwV1BtSlVyL0FORkxwcjIyaFFJRApBUUFCbzRIWk1JSFdNQWtHQTFVZEV3UUNNQUF3RVFZSllJWklBWWI0UWdFQkJBUURBZ1pBTURRR0NXQ0dTQUdHCitFSUJEUVFuRmlWUFVFNXpaVzV6WlNCSFpXNWxjbUYwWldRZ1UyVnlkbVZ5SUVObGNuUnBabWxqWVhSbE1CMEcKQTFVZERnUVdCQlRxVWhPUjZUQnVOdnFoRHhTaXBiMGV2NDQwa0RBMUJnTlZIU01FTGpBc2dCVCt1bHFmY1dSNwp0dCtBMVI1blJxa0hENUpqejZFUnBBOHdEVEVMTUFrR0ExVUVCaE1DVlZPQ0FRQXdIUVlEVlIwbEJCWXdGQVlJCkt3WUJCUVVIQXdFR0NDc0dBUVVGQ0FJQ01Bc0dBMVVkRHdRRUF3SUZvREFOQmdrcWhraUc5dzBCQVFzRkFBT0MKQVFFQW1rMHN1cjd2QTUxQVZTbFNPUktXc3IxWnIxSjBMV3ZRa1ZCUTNPOHZRTFpIS1I2WUp1aERRVEwrYXNxdApzUXlDRU9rN3k3WVN2c0t1QitZb0tKb0tPdWJUNXd2UWtEUHFpdS9ieXNOdHNpazFNdCt3RzNpOEx4L1ZpS3ZGCnVyK1dPNlJYK3dDS0ZRaDQ4dXdnNGRSVmRFdkoxNkNTVlUvRkhvZ2p4Z2xIYit2Sk1vNGlBMFpUMWZ1azBaL0IKeDZPSHdWSUE1TE1IVTk4S3FMTjZtdENrVVFGREVaakNhSzJBeW05bklkV29ITjdhWC9zNzJKVDQyejBHcU1RNQpFa0NmRFV0MUFRQk5OMXpEK3JPc3VNVVd3NFZlTGFKU1EyWVNnc3YzamlpZm1RK3h6VXdKWlZIdVp5V1ZnQmxSClVWaFd2dFdlRUZjS2V5dVoxTnF2YkJsQml3PT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=</crt>
+    <csr/>
+    <prv>LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2QUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktZd2dnU2lBZ0VBQW9JQkFRREd3TktHdXRvK0xJWkcKMktzNk01ckNQSHY3czIyb3lMVjdOcUorV3RiN3hkaWhzaEZIZXBnYnQ0eitmWnZmV3V0dXFjSVBaZVFaYkNCVwppTjZFK0xRRVBRSTd0ODdaQW1iUk9ieERrWmVHWE5QbUNBRXVDTHp3VzJObkgrK29lYmNqQXZ3UktEc3Bid1A4CjlyNVp0MzN0amZCNCtxSCtTR3lhT3EzdW5JSDV5UUMvUG5hSFZaMzlsNlFGVzNxNFNWQnFqeU1lb3NsaFZXYloKVGhiOElYNnNDUG5OZnV3U3lXU3ZPTTdPcTI1M1FwbjBWR25ISStxNGluSnQvdjRuaUpQc0p2VVVoRi93dG90Zgp3THY4SzI2NkhHcWZBV3N4UWJvZEMrOVpncDlTL2VNWWU3L2w4WUxvSHRDWStGVVYxdzd6MWZ6UlkrWWxTdjhBCjBVdW12YmFGQWdNQkFBRUNnZ0VBRXpMend6Y0RVUHJORkpHQUdhR3ZITERRY1pweE85cjU3MVFsY3pTZHpGL0UKVXVGK2dNOEU5WUxjM3JqbnNtbHJSSFNuVjJyWExQNnpsOHVNU00wQjJxejAwOFZiWHlRZUprZ00rWHZ6elF6OQo2ZWtaQ2EybmFFV201V2tCcGhIdVJBTS9mc3JKL3FSVW1HUzVBRTl1YW1EV3lDMittQWtrdzdnRCsyY0NVc3hxCnlFVnowY0NJTXBvV2gxdFdUSVdJTlI1cWRnandvcVk0K0orYTRpSkFQcVR3d3BXNWhUdGdydStZdmRRQ0VoMEcKTjA4Sk50emsyT3NZVjhOVEFGTVFLV3g0TWRSQUhlak1OVkN6NEVqYnErUXgzY2xQMndkZDZXSTJUbGF4cWVqVwpMMDJhQnk2YXF5Q3BDRGN3YzI4cmJlVVlRYUp3Qi9oczdDSGJDUk0zeXdLQmdRRDRTaHlBZm9XVUhtZ1V5QUhXCitjQk8rb29WQmwvZ3hoYWdmazFlc2FhbEFaYjFLSUFYTzgzd3ArT3J1Szd2eVA0U3VuL09sSE1sSFdQamtWeGwKam1Ld3ZxU1B5MFlqMmZaR3M2cmhacmNXbVlZRTZMV1hsUzd5ZkJodkZXcFFpNDYyWlBVRGs2M1NDVkI3Vm1VegpqTXhQNVVOd1NBZDVpNlJCQ2VCNGNhc09vd0tCZ1FETTdPWnUwR1pXQk56QThLVWJSOEJ4MjFsWExBb2JVL3pBClI2UmlQKzJpVG5wbm40MlkyaG1laUVjUXluRThKc2Zqc3FnZnFBVkpZRnMxc0tISjdTbkVGZXV4OHNHK3NWTC8KRDl0MlAvaXkvREhjeGlrdGdGczQvSFA0K1pxM09Na2Y5U3R1QVlodjhTZlF5bWFPeE9qTzdCRGJ6a1IwUEFzaApIS1JQVDFUQXR3S0JnQ3JwckRsdEpLc3dBaTh0VGx3WWVHdHVFL1dFVDRmcTFMaFNmQTdVeDRlWFdiN3ZqQXYzCjh5VVg3MXFicGVpZHBZUVpKY1BQbG9NZ3JFWUZ0cUY2MVlYVXZWNTQ5SnQzcllBVXg0RURucnRTTjM2YnRkOEkKRXNBb1FKVGFiN0NTSGsxWjc1cjVxRDQ0QytmMVM3SjRNRXZTeFRBZjB1TG9CckNUQTIvdHZYSGZBb0dBTEhPVwo2S0s4RUJ5dDVneE5SRVdrTVE1cnFzVWF6Q0xEeU5IQmpxNWZWYjNBUDRvVXBQdHFZMEVjYVVBQW9CT3BlSExnCmxUMVZLRDJHaTNidElXZ1lqemhTRUIrZ2QwVHZ3L1FrbnRueGtLRzBEemZNNXRuWTc5dVRMSWE0VU5ZNGluNGMKRlppdmg5aS8wa0tWVEpMYURVaVh2NVpXc3YvelNoTjBjTis4ZXJFQ2dZQVlNUFV0a1R5RTQ4dC9aaUJVcngxWgpxUDRmN2haY0NjVDVXb1BsaU1VUWwwOEdLTnViSXZQS0FBcVJ1WUQ2YWZSdTlRc2QxeUxsL2Rtd1h5UjR1RFpECjdFYkRMTExRZFVLT1dKaGxjdG1HTjF3aGVhNmZVUDJINFFIZmZUclpzR2U3clY5UlM1QURXallPMW9XQ2s2Z24KZ3h1MUEwVEhIdXBJOHEram1wQ0hxUT09Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K</prv>
+  </cert>
+  <cert uuid="690b87c5-37b3-4522-a003-67ea6d806703">
+    <refid>692f5adc4028f</refid>
+    <descr>alberttay-certificate</descr>
+    <caref>692f57842dac6</caref>
+    <crt>LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURaakNDQWs2Z0F3SUJBZ0lCQlRBTkJna3Foa2lHOXcwQkFRMEZBREFOTVFzd0NRWURWUVFHRXdKVlV6QWUKRncweU5URXlNREl5TWpJM05EZGFGdzB5TmpBek1USXlNakkzTkRkYU1DRXhDekFKQmdOVkJBWVRBbFZUTVJJdwpFQVlEVlFRRERBbGhiR0psY25SMFlYa3dnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCCkFRQzRVSEErZVd0TWJWbEJDM0tUSjhJNVV6SUJVb0FLcis5WjNoRjdUUHdvWnB4MCt1czNURnZoOThaaXBOUGcKckQ0bnF4MUd2aEhHc04rd1NEb1QrdXJHa2tDWUoydnRJbERPUndNcFB6WmNQaE03UElsSzhTVzJyLzlyVzdkTApia0dKVmRVSER1Z1I4ZGUzV3JHQVNsNitHRVhrb1hmRGNnbFV2aVljUmVCemhJdThHRi9Sa3MzdEgxaUpTbXNUClJZVndKblZ2YXhXT0FaeFg1Z2NSeGxQaVlnWWozVHBpb2VVQm5RZGVJNFpUNlBsSlMwdkFTekttWHltaG52UEMKRzFVdStqdGdYMmJjaU1wUUoyY1QxWWZwMHZ6VkhaUDUzWEhzWllRZVVoeXVocjh0U1NFWXJ0RVpaamlKQWtkZgpSOFBmemMySGtXVXVLb0xJV1F1Y3dFVHhBZ01CQUFHamdid3dnYmt3Q1FZRFZSMFRCQUl3QURBTEJnTlZIUThFCkJBTUNCZUF3TkFZSllJWklBWWI0UWdFTkJDY1dKVTlRVG5ObGJuTmxJRWRsYm1WeVlYUmxaQ0JEYkdsbGJuUWcKUTJWeWRHbG1hV05oZEdVd0hRWURWUjBPQkJZRUZFUmIvMGR3Y2FRZWZ3YzlpVGR0OGhVRDVvZkJNRFVHQTFVZApJd1F1TUN5QUZQNjZXcDl4Wkh1MjM0RFZIbWRHcVFjUGttUFBvUkdrRHpBTk1Rc3dDUVlEVlFRR0V3SlZVNElCCkFEQVRCZ05WSFNVRUREQUtCZ2dyQmdFRkJRY0RBakFOQmdrcWhraUc5dzBCQVEwRkFBT0NBUUVBZTR5dEduS0MKRkR6RFU3SnA3RVpmazR0cXc0enFkbk5yVXpJZTJIS0JaVThBSmZoc2loR2pEeC9hQ3RuL0dIaTdpTW0xNFpPMApIVkYxUTFVUnhsNmVzd2F2akw2SkwwNCszNU42VjdhenpHeHZ6M0pkakZlSk5kWHVrL2pLcDN3MUo2dXRmTkRQCkd5UG10bzM3RnE0aXhidVJWVEswbGJ4VGVsNE5sYjlRS3N3WXlzaGgySWlQekh6U0YzZ0NQTGQ1ekliZ3hjTkgKTUZmYUJhbFBtTlMyQ1o3bUFzY3Uyb3NnZlVmRklCOGRkY1FlYlIwZSs1Ky8xdjRpU0l1UWk1ejErZWYyUzU0TwpmOFhwTDFGYWRHNmJwZ0x3bThRZUZiejZpbzBRL1N6eE1xRm80WUdNZUdMNWV3d0hvZk1JREJ3TlJ5RkhpRytiCkEwbEU0R3kxQkFGMnJ3PT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=</crt>
+    <csr/>
+    <prv>LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQzRVSEErZVd0TWJWbEIKQzNLVEo4STVVeklCVW9BS3IrOVozaEY3VFB3b1pweDArdXMzVEZ2aDk4WmlwTlBnckQ0bnF4MUd2aEhHc04rdwpTRG9UK3VyR2trQ1lKMnZ0SWxET1J3TXBQelpjUGhNN1BJbEs4U1cyci85clc3ZExia0dKVmRVSER1Z1I4ZGUzCldyR0FTbDYrR0VYa29YZkRjZ2xVdmlZY1JlQnpoSXU4R0YvUmtzM3RIMWlKU21zVFJZVndKblZ2YXhXT0FaeFgKNWdjUnhsUGlZZ1lqM1RwaW9lVUJuUWRlSTRaVDZQbEpTMHZBU3pLbVh5bWhudlBDRzFVdStqdGdYMmJjaU1wUQpKMmNUMVlmcDB2elZIWlA1M1hIc1pZUWVVaHl1aHI4dFNTRVlydEVaWmppSkFrZGZSOFBmemMySGtXVXVLb0xJCldRdWN3RVR4QWdNQkFBRUNnZ0VBSWNZVG0wOFNlMUc2UGpJRHo3VkVZTTYrNWdFaEYxUS96cjdqZ3kyTE16Z0MKU1dsRk9yL1NRbWp0d0Z1bHU1QzBYdjU3QWVDSVQxbFAwL1NZTjlzTnRFOU9hTk1vY3E2TUVoQnZJdHJEY2ttcApxbndnU0V4QjllVHdMOU1CbGwvZ3dIS3E4MzBteDBzQ2xVV1lLd0wxczIydE9RVGhkajNxT2M0U0c3SXVPOXhwClJueXNnTk01NjJmZUo5dnNqamF1d0cyT3ZrYm1vMzhuYmhQNW96aU9aUXlyeUJ2VGk5cGQ3Y1FuV3FqWmtmWlEKUiszSXI1OGhsVFRKVWs1Vnl2aisrRkZDSTYwalVabjZSd3gxT0srMzJ2djBlNVFmK0dTYUxYOWhVOXprK01ucQpRZ0YrVFgwdXdEQW02ZkgrQ3FjbC9nQ0dwVXdRMitmNEpKRVZZK0FxbFFLQmdRRGFxNzhWOVYvYkdud2RWYTIxCjJya3dXUjRMazlBdXk2WHBqR1Q0YTdlcjExcGQ1SGc5WkFxaHhGbG9CcWlyUHZXTFd3OTFVdVRVOGtzRk1IWjEKeWJabHRrWCt2ZllPb1NmV1RiWHlUUTRMeEV2S3FUMWFRSFZRaUxnNktwVnhOVGFCa2hPdm5scytKMC9iZW94QQp2Z05QZ3l6SnQ0c1NTM3BIeHlsYUJxZng2d0tCZ1FEWHgwQ3dRZzhlbUZ4TDVoODBMeDd1dU1MUENKSXB3RXQ2ClBDM1JyVWVhYmdGRC96SHJWRW5YdTZ5Ym1BWkVMaXY2cVp5Z1pvb2gxazUwa211cE1mK05Kak40YU42OVNCN0QKOERqMW5ZMkM5QU1QcGJFSjJ4TnlIYk9VeXNnWmRQSWZvc0txQXdZMVQ5MUxkN1R2QkpTeldmUUlPcU9PbzN4egpHYmU5N2c5Umt3S0JnUUNNLzRVOUVYVDNnSUpiSCszY2Z1WStTSmhZK3J5WUQvUXhQYmUxZnk5MWZHem1jZlVlCkVLM1NWUnNaT29IenVhcjJhb2J6TGJvam5QL0dudE1qYkNkU09rK3p6S1VtRmIvc0xUdU91eVM5YlpzNVdCc1oKWU1yRVhRUDliWXZpN1Y3eCtWRDhRbTJ2REFZd0RUcjJYQThpYkFDcktOQmh3WTFkVHd4WTRrWFVkUUtCZ0VlOAplb2tlclNBaXp5eDhpUXMwVHpoV1BJM1A3NmZwd2k0Vks3WjF3VVJhSmhtUkVldUd6alhtc3UvWGp0M0Q2K01kCjJIQ0xKb2t4VWt2M0VjdmlUMitCcjhMc09vRDdKUjlIRWVpMlJJR3cxZ094dGpYc20zNW8yWGN5STJ3ek1QdkwKaEtRNDlTdHNMY29WTmhYd2srODhqS0RmdmRpQ0NiSEtid2U1eVdYNUFvR0FOaURRanZyRkpYbENLV01PK3hmSQowamlJWDRWTHdOVmlMb21ZcDVPckJGLzFoNVZWTVBwUzFKSktCUVJ1SUlVcWlhanV2RnhOazgxd1YySnhUcTR2CmdWRG1lRVgybmNBek5BMXYwYVpTMUFTNmtSZ3NyeUdNRUFPY04ySFRRUTgwbjRJQ3Rwa1NNTWZQTnluNXpaTnkKbTJ1TmplMXJ5dUFCNHh0WnhUVGtKMkU9Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K</prv>
+  </cert>
+  <cert uuid="5ea065a3-d394-4e75-9a90-95d0eeb866cf">
+    <refid>692f6d5d8525c</refid>
+    <descr>root-certificate</descr>
+    <caref>692f57842dac6</caref>
+    <crt>LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURZVENDQWttZ0F3SUJBZ0lCQnpBTkJna3Foa2lHOXcwQkFRc0ZBREFOTVFzd0NRWURWUVFHRXdKVlV6QWUKRncweU5URXlNREl5TWpVeE5URmFGdzB5TnpBeE1ETXlNalV4TlRGYU1Cd3hDekFKQmdOVkJBWVRBbFZUTVEwdwpDd1lEVlFRRERBUnliMjkwTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUFsZVYvCnNpNG8xNE5zVHlqQXY4dk9xUTA2eGt4cGdSbTVUNEkzcEJuRno4ekhaL3lONGlWeXFydWk2bXBaZXFjWm56ZlIKK3JlY0VwbE1OdFBFMmF6R3ZJRzFWMDMvWFVDWWdEeHYwZmUzSDZCcXg4VUVyS2pPYVczYXdZemtjOHJRcTFqcwozOHIvcHdiSExpSTM1STJUWGtEM2VhUzdMdWZiellEeUdmZVdUZllJU3VUYnhDTkdiS1VnMXZDN25PMmJHUm9lCi9HNDZGNldNU2tQaUd0RzF2a25vcjBhQUhwWmRleUViZDF0MFFqaGhvcDlKenQyT0gySE9zVUVuWnN5NytKd2kKSDJSUGloZ2FmWFIvNVA3Z3BNZU1pcGhXb3JsQ3pZZzliRFhtSVVjbEdORkYzcXc4NjYrNDlIblZ3YnFIblNvRgpZck1ld28weC94MlpmS3doZ3dJREFRQUJvNEc4TUlHNU1Ba0dBMVVkRXdRQ01BQXdDd1lEVlIwUEJBUURBZ1hnCk1EUUdDV0NHU0FHRytFSUJEUVFuRmlWUFVFNXpaVzV6WlNCSFpXNWxjbUYwWldRZ1EyeHBaVzUwSUVObGNuUnAKWm1sallYUmxNQjBHQTFVZERnUVdCQlFYTzgwOWNGYmVpa0dRMllpOFc4emoxVWRBWkRBMUJnTlZIU01FTGpBcwpnQlQrdWxxZmNXUjd0dCtBMVI1blJxa0hENUpqejZFUnBBOHdEVEVMTUFrR0ExVUVCaE1DVlZPQ0FRQXdFd1lEClZSMGxCQXd3Q2dZSUt3WUJCUVVIQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFJOUxOSVZQOVRSSEVGZ3gKWnFDZ1JRaWR2UDdLWXNUem5aOTY1eEtveSszSHJHM1FTQjJrWUFFR0RFdERNVnVRMUdWMHlMMU5sNE5FbzVXegpydFNTNm53SkJxOFZ5dFo2dVptdWprV0RiNkZtLytzcnQ1SjRxeDBZVDAyQjZtVWQzWkJseGU3V1VzMzdTN1hHCjNNdkpOT0RGWnFRM3FMQnl0bGE0RW9CL09wWjJxSTZpeXNNa0NJN09DRjNFTGtHeFplTUtVbFlaOFZta1hkakQKU0RmSGtIU251a1FwRHVKZjgxMnMyVWdmZEEzQUwxdFJyT3RiU1pzVmlzUDVDQm16WmV5WTZwckh0T3BucUxPYwpPZW4ybjlBQWlLd3dNN3hEUGxnZ3JDaHBtZ3lIYTRLTTMvK2pzUEtlTDh4bnNNRXQ3UlpWS2pwdjNmbTE4d1gvCjFTWW8yL2M9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K</crt>
+    <csr/>
+    <prv>LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ1Y1WCt5TGlqWGcyeFAKS01DL3k4NnBEVHJHVEdtQkdibFBnamVrR2NYUHpNZG4vSTNpSlhLcXU2THFhbGw2cHhtZk45SDZ0NXdTbVV3MgowOFRack1hOGdiVlhUZjlkUUppQVBHL1I5N2Nmb0dySHhRU3NxTTVwYmRyQmpPUnp5dENyV096Znl2K25Cc2N1CklqZmtqWk5lUVBkNXBMc3U1OXZOZ1BJWjk1Wk45Z2hLNU52RUkwWnNwU0RXOEx1Yzdac1pHaDc4YmpvWHBZeEsKUStJYTBiVytTZWl2Um9BZWxsMTdJUnQzVzNSQ09HR2luMG5PM1k0ZlljNnhRU2Rtekx2NG5DSWZaRStLR0JwOQpkSC9rL3VDa3g0eUttRmFpdVVMTmlEMXNOZVloUnlVWTBVWGVyRHpycjdqMGVkWEJ1b2VkS2dWaXN4N0NqVEgvCkhabDhyQ0dEQWdNQkFBRUNnZ0VBQm9OMHJuWnZiUmt4RktublIrR0FVTlZ6dkN0aGRLd1dGZkw4YXNiZjdLQkoKbEZuS0hpYjdvR1drNlVQNk1KdWdQLytHd2lGR1lrKzJteHdhcDRCb3N5MTlVNVo0Umc3aXQvZk92b0V1aU95dgp5bHg5ZzA4d0lQdDgzUUNpSFlVdTF1WjNVdmxsMDd4cGR1bUpWd2J2RjJ3Q0ZQVzA4aWtMRmVQN2g1dFZtMGt1Cnk3ODkzWkQzek9FY0NseHV5WjlsckxwVFVwYlZ2TUhJY3NYTzNVZ29pZVRCYmt3REpLSnJJQk8zTE1BUkdhNFIKZXU5OU9PTVhsY1JwQ3ZVWW1oU2dYVU5FMWFXVG5xeWVjKzdNQU9tMjdQZGxCTldBb1BFZGRja0ROVVJ0d0FwUQpxdExzTkEzdjdTWE9kZC9IaVN6SXdPTUllYzdtNWQzSkpzSldaaWduV1FLQmdRRExWOG9JYU1BcE54QWw0ZGJNClpBMUgrc242WEZkT0oxOEFTaXhBeDEyQ2FQKzBMVUxTZmk3QVg0ZUh1UnExb0NWMnZPTjB6MGx3OTJEcW5FL1AKbU43S2kvRzYrc2dKZk5aRWR4QVZYeElmTU5kZGNFamYxVmpETko2a2t5Sk5kbExvTmpNUVB1cGZ0UDR4ZXJ1QwpyR280SWVwUW9maU05di9yZ0N2T3NQTUFud0tCZ1FDOHRwVzFveWZPR1M3K2E4WFEraFBscHZ6ZzlmcGd2MXpKClFoSEVDUEtnSXRuVGxGbE92NURBdHhoRTNVTTRuNzFPWDZzclkzbjNYQWpXTCtZQWhQeXA1WmFIRUIwVjc1dE8KRjNlMmk2cmNKT1NFWDZUSktMdHo5TDNhOHVRS2Q2TC8veDJEekVLWUQwRUpBV2huSzI5UDllSWwxZklkUzZBUAp4ZjBheG1OQW5RS0JnREpTc0pveUtsUkkzME13eC9MZlUvWWJWNzhRK1Q1TE9oU2RScVJsY252aXRsMkYwZ0s3CjNhQVlSRGRQbFErYjZZbWdKMzV5Q2svZHVPdDI4YjJEcktkZHlONG9VRGNnNFBvaXFTVlEyUEJGS3hkaHdYYzcKbW5MODQ4SUE4NzFONmlpenVTRnRJSjI4OGllV295OHNza0RnQzlnV3JhZGRQV3F2MXFlWlhSb3JBb0dCQUxOMApwZlZ1ekFHUHJVTEFWZ01lYlNGc3BQbUFzTEtrQjZaVHIvVk4xUHczYUJGdDkyZU5nQ2ZqZGE2M0FwK3NPQ2Q1CmpwcmFKRGY0UzJiemNiTjR3NVVGQVJvN1ZvMXZwNjZoWG5RM2FTbWo0N09HQ0h4S3djZkpLMm8wcEdyWHppZkgKQU5nK3UrMUNSRVErRkh4WHI2aklXR0JHamRFU0E0bzhheTYxRGRsNUFvR0FFUXRhL1oyblhESnlVTXVSaElCdApXV0ZSYnVwaCtWaDl1dStzUWYrZUk3YzR2MDR4L2NyK05lUkRBRGRCcFNDcDZCZFFLVmxWanFGcjZiS2JlbWY2CmZ5cjR1TUxXaVFrMVYyaHJ0bHN1VDRoTmFHdnB6MXlkSUgyRWo0WmhZcnB3N2hWMjdORFkrZm1PQ280eitVR2oKUXRsTWprMkRxcjBiZFVETTlvT0RidFU9Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K</prv>
+  </cert>
+</opnsense>
