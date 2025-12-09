@@ -138,6 +138,8 @@ VPN access restrictions.
 Endpoint protection enforcement.
 File server permissions.
 
+VPN access will be restricted to employees with remote workstations only. Our TrueNAS file server uses role-based access to ensure that users can only access files that their group is allowed to view, write to, or execute.
+
 ## Network Diagrams
 Physical network diagram
 ![physical network diagram](physical_network.png)
@@ -151,4 +153,4 @@ In order to back up the file server configuration log into the TrueNAS web porta
 ## Change Log: Track all updates to Group Policies, firewall rules, and system configurations.
 
 ### Firewall Rule Updates
-We added ports to allow traffic for the File Server, specifically ports 137-139 and 445. These ports are necessary for TrueNAS to function as intended. Each of these ports was allowed for each VLAN, and no other rules were added so that the principle of least privilege was followed as closely as possible.
+We added ports to allow traffic for the File Server, specifically ports 137-139 and 445. We also allowed inbound traffic on ports 1514 and 1515 for our SIEM. These ports are necessary for TrueNAS to function as intended. Each of these ports was allowed for each VLAN, and no other rules were added so that the principle of least privilege was followed as closely as possible.
