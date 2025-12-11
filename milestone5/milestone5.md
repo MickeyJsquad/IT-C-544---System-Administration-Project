@@ -64,6 +64,7 @@ All backup, recovery, and data-handling processes at Spicy Cluck Co. must comply
     - Schedule periodic reviews of the backup policy
     - Conduct simulation tests to validate procedures 
 
+
 ## Disaster Recovery Policy
 
 #### Risk Assessment and Business Impact Analysis (BIA)
@@ -123,25 +124,26 @@ Backup and Restoration Policies and Procedures can be found in MS2 Backup, MS3 A
 If the Spicy Cluck Co. building is not availiable, the DR team will meet at the BYU Crabtree CSRL. They may use the server room equiptment, networking, and any IT Surplus devices in the room. If laptops are needed for use as workstations, student laptops may be taken. As all used software is free or open source, it may be downloaded from each vendor's site.
 
 #### Hardware and Software Inventory
-    - Maintain an inventory of servers, networking devices, workstations, and applications
-    - Ensure compatible replacement equipment is available
+Spicy Cluck Co. will maintain a comprehensive and continuously updated inventory of all hardware and software assets that support business operations. This inventory includes servers, networking devices, workstations, operating systems, licensed applications, configuration details, and vendor support information. To ensure rapid restoration during a disaster, compatible replacement hardware will either be maintained in stock or made quickly accessible through pre-arranged vendor agreements. Inventory records will be reviewed regularly to ensure accuracy and alignment with current system configurations.
+
 #### Network Infrastructure
-    - Document network topology, VPN access, firewall rules, and routing
-    - Include procedures to restore connectivity after an outage
+Spicy Cluck Co. will maintain detailed documentation describing the organization’s network architecture. This documentation includes network topology diagrams, VPN access configurations, firewall rules, routing tables, and VLAN assignments. Disaster recovery procedures will outline the specific actions required to restore secure network connectivity, validate segmentation, reapply firewall rules, and re-establish remote access services. These procedures will be tested on a recurring basis to ensure network recovery steps can be executed efficiently and without errors.
+
 #### Application Recovery Procedures
-    - List critical applications and dependencies
-    - Provide instructions for reinstalling or restoring application data
+Each critical application will have clearly defined recovery procedures that describe installation requirements, dependencies, configuration settings, storage locations, and the necessary steps to restore application data. These procedures will also describe how to verify that a restored application is operating correctly. Applications will be prioritized based on business impact and the organization’s recovery objectives. High-impact applications must have thoroughly validated and repeatable recovery processes capable of meeting Spicy Cluck Co.’s required RTO and RPO thresholds.
+
 #### Testing and Maintenance
-    - Conduct scheduled DR drills and tabletop exercises
-    - Update DR plans based on test results
+Spicy Cluck Co. will conduct scheduled disaster recovery exercises to validate readiness, confirm the accuracy of recovery documentation, and identify any weaknesses in existing procedures. These exercises may include tabletop scenario walkthroughs, partial restoration tests, or full recovery simulations depending on system criticality. All test results will be documented, including successes, failures, delays, and remediation activities. Lessons learned from each exercise will be used to update and improve the disaster recovery plan, ensuring continuous refinement and operational resilience.
+
 #### Training and Awareness
-    - Educate staff on their roles during a disaster
-    - Conduct periodic refresher training
+Personnel assigned disaster recovery responsibilities will receive structured training to ensure they understand their roles and are capable of performing required tasks during an incident. New team members will receive disaster recovery training during onboarding, and all relevant staff will participate in periodic refresher sessions to ensure retained proficiency. Training programs will include an overview of recovery procedures, communication expectations, escalation paths, and hands-on participation in scheduled drills whenever appropriate. Spicy Cluck Co. requires all DR participants to demonstrate competency in their assigned responsibilities.
+
 #### Vendor and Supplier Contingency Plans
-    - Ensure third-party vendors have recovery capabilities
-    - Include service-level agreements (SLAs) for critical services
+Spicy Cluck Co. will verify that all critical vendors maintain sufficient disaster recovery capabilities to meet operational requirements. This includes reviewing vendor service-level agreements, confirming contractual recovery expectations, documenting emergency contact information, and ensuring that escalation paths are clearly defined. When necessary, alternative suppliers will be identified to maintain operational consistency in the event of a vendor failure or an excessive outage. Vendor DR capabilities will be reassessed periodically to make sure they are in alignment with organizational needs.
+
 #### Financial and Legal Considerations
-    - Include insurance, compliance obligations, and potential financial impact
+The Disaster Recovery Plan for Spicy Cluck Co. incorporates all relevant financial, legal, and regulatory obligations associated with business disruptions, data loss, or extended outages. This includes identifying compliance requirements such as the California Consumer Privacy Act (CCPA/CPRA), the Utah Consumer Privacy Act (UCPA), and data-protection requirements enforced by the Federal Trade Commission (FTC), as well as documenting insurance coverage for cyber incidents, data breaches, and business interruption scenarios. Financial impact assessments will be performed periodically to evaluate potential risks and ensure adequate insurance and resource planning. All recovery efforts must adhere to applicable regulatory and legal standards, and documentation must be maintained to demonstrate compliance during audits or investigations.
+
 #### Emergency Response Procedures
     - Define immediate actions to take during incidents (power failure, cyberattack, natural disaster)
 #### Incident Reporting and Escalation
@@ -151,4 +153,4 @@ If the Spicy Cluck Co. building is not availiable, the DR team will meet at the 
     - Ensure stakeholders are informed throughout recovery
 #### Post-Recovery Evaluation
     - Conduct a review after disaster events or drills
-#### Identify lessons learned and update policies accordingly    
+    - Identify lessons learned and update policies accordingly    
