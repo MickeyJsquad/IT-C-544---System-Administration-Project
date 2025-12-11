@@ -58,10 +58,27 @@ To ensure the security of backup files at rest, we will use cryptography and asy
 ## Disaster Recovery Policy
 
 - Risk Assessment and Business Impact Analysis (BIA)
-    - Identify threats and vulnerabilities to IT systems
-    - Determine which systems are critical for operations
+
+    The following systems are critical for operations: DNS, Active Directory, Web Server, and File Server. There are virtually infinite threats to our IT systems. These include attacks on Active Directory which could lead to access to most of our systems. Some other examples would be attacks on the web server such as Denial of Service, Cross Site Scripting, and SQL Injection. Another threat would be unauthorized access to our file server, leading to disclosure of information. In addition, an attacker may target our workstations and servers and then attempt to escalate their privileges giving them access to additional systems and information. These attacks could lead to breaches of confidentiality, integrity, and availability.
+
 - Recovery Objectives and Priorities
-    - Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) for each system
+
+    Below are the Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) for each of our systems:
+
+    | System |  RTO | RPO |
+    |---|---|---|
+    | DNS Server | 1 Hour | 30 Minutes |
+    | Active Directory | 1 Hour | 15 Minutes |
+    | Database Server | 1 Hour | 15 Minutes |
+    | Web Server | 2 Hours | 30 Minutes |
+    | File Server | 2 Hours | 15 Minutes |
+    | Workstations | 4 Hours | 24 Hours |
+    | VPN Server | 1 Hour | 30 Minutes |
+    | DHCP Server | 1 Hour | 30 Minutes |
+    | SIEM Server | 4 Hours | 1 Hour |
+    | Metric Server | 24 Hours | 1 Hour |
+    | Vulnerability Scanner | 24 Hours | 1 Hour |
+
 - Roles and Responsibilities
     - Assign a DR team with clear responsibilities for executing recovery procedures
 - Contact Information
