@@ -1,34 +1,20 @@
 # Milestone 5
 
 ## Backup Policy
+
 #### Data retention
-    - Define retention periods for different data types (e.g., configurations, financial, marketing, sales, etc.)
-    - Ensure retention meets legal, compliance, and operational requirements     
+
+Basic configurations will be kept indefinitely in case a system needs to be rebuilt quickly. Financial data will be kept for varying amounts of time. Tax data will be kept for at least seven years to ensure our ability to comply with IRS auditing of the last three years. Data such as bank statements will be kept for one year.   
 
 #### Frequency of backups
-    - Critical servers and databases
-    - Workstations and less critical systems
-
-#### Backup Types
-    - Full backups, incremental backups, and differential backups
-    - Choose type based on recovery objectives and storage efficiency
-
-#### Storage Media
-    - Local disks, NAS, SAN, or cloud storage
-    - Ensure redundancy across multiple storage locations
-
-#### Off-site Backups
-    - Maintain off-site copies for disaster recovery
-
-#### Encryption and Security 
-    - Encrpyt all backup files in transit and at rest
-    - Restrict access using role-based access controls
-
-
-Basic configurations will be kept indefinitely in case a system needs to be rebuilt quickly. Financial data will be kept for varying amounts of time. Tax data will be kept for at least seven years to ensure our ability to comply with IRS auditing of the last three years. Data such as bank statements will be kept for one year.
 
 Full backups will be made once every six months. Incremental backups will be made once each month. Differential backups will be made once each week. Critical servers and databases will be backed up no less than twice per month. Workstations will be backed up no less than once per month. 
+
+#### Backup Types, Storage Media, and Off-Site Backups
+
 We have an NAS on a physical machine that will act as our on-site backup. Our file server is also a NAS, however, it is hosted on a virutal machine. The active system, on-site, and off-site backups ensure that we have three copies of our system for redundancy. 
+
+#### Encryption and Security 
 
 To ensure the security of backup files at rest, we will use cryptography and asynchronous encryption. The encryption keys will be stored separately from the data at rest. Crypto-shredding will be used at the end of a hardware cycle to ensure that old keys are no longer usable. Executives and the IT manager will be the only users with access to the backup, whether in transit or at rest.
 
