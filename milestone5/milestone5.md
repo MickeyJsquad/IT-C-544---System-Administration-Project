@@ -76,13 +76,40 @@ To ensure the security of backup files at rest, we will use cryptography and asy
     | VPN Server | 1 Hour | 30 Minutes |
     | DHCP Server | 1 Hour | 30 Minutes |
     | SIEM Server | 4 Hours | 1 Hour |
-    | Metric Server | 24 Hours | 1 Hour |
     | Vulnerability Scanner | 24 Hours | 1 Hour |
 
 - Roles and Responsibilities
-    - Assign a DR team with clear responsibilities for executing recovery procedures
+
+    In case of an event requiring recovery, the following individuals constitute the "Disaster Recovery" team and will have specific responsibilities to execute: 
+
+    | Name | Responsibility
+    |---|---|
+    | Emily Brown | Contact the DR team and coordinate the recovery. Notify Director of Fried Chicken and keep them up to date. |
+    | Karen Taylor | Notify customers, partners, and the public as needed. |
+    | Albert Tay | Advise on relevant legal and complience action. |
+    | Alex Patel | Coordinate with IT staff to restore AD, Database, Web Server, File Server, Workstations, SIEM, Vulnerability Scanner. Document the DR process. |
+    | Eric Nguyen | Restore network insfrastructure, DNS, DHCP, VPN. |
+
 - Contact Information
-    - Maintain up-to-date contact info for internal staff, vendors, and emergency services
+
+    | Name | Contact | Role |
+    |---|---|---|
+    | Emily Brown | emilybrown@cluck.com | CTO |
+    | Albert Tay | alberttat@cluck.com | Director of Fried Chicken |
+    | Rachel Nguyen | rachelnguyen@cluck.com | HR Manager |
+    | Alex Patel | alexpatel@cluck.com | IT Manager |
+    | Karen Taylor | karen.taylor@cluck.com | Customer Service Manager |
+    | Jessica Rodriguez | jessicarodriguez@cluck.com | Content Writer |
+    | Ryan Lee | ryanlee@cluck.com | Graphic Designer |
+    | Ben Anderson | benanderson@cluck.com | Sales Representative |
+    | Olivia Davis | oliviadavis@cluck.com | Data Analyst |
+    | Eric Nguyen | ericnguyen@cluck.com | Network Administrator |
+    | Emergency Dispatch | 911 | Emergency Only |
+    | OPNSense | https://docs.opnsense.org/support.html | Router, Firewall, VPN, DHCP |
+    | Wazuh | https://wazuh.com/services/professional-support/ | SIEM |
+    | Apache | https://httpd.apache.org/support.html | Web Server |
+    | TrueNAS | https://www.truenas.com/support/ | File Server |
+    
 - Data Backup and Restoration Procedures
     - Reference backup policy for data restoration methods
     - Define step-by-step procedures for restoring critical systems
