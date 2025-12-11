@@ -26,28 +26,37 @@
 
 
 Basic configurations will be kept indefinitely in case a system needs to be rebuilt quickly. Financial data will be kept for varying amounts of time. Tax data will be kept for at least seven years to ensure our ability to comply with IRS auditing of the last three years. Data such as bank statements will be kept for one year.
+
 Full backups will be made once every six months. Incremental backups will be made once each month. Differential backups will be made once each week. Critical servers and databases will be backed up no less than twice per month. Workstations will be backed up no less than once per month. 
 We have an NAS on a physical machine that will act as our on-site backup. Our file server is also a NAS, however, it is hosted on a virutal machine. The active system, on-site, and off-site backups ensure that we have three copies of our system for redundancy. 
+
 To ensure the security of backup files at rest, we will use cryptography and asynchronous encryption. The encryption keys will be stored separately from the data at rest. Crypto-shredding will be used at the end of a hardware cycle to ensure that old keys are no longer usable. Executives and the IT manager will be the only users with access to the backup, whether in transit or at rest.
 
 
 #### Testing and Verification
-    - Peridically restore backups to verify integrity and functionality
-    - Document the success/failure of test restores
+
+ The organization will perform periodic test restores on a scheduled basis to confirm the integrity, completeness, and functionality of backup data. These tests will include both file-level and system-level restorations, depending on the criticality of the workload. All test restore activities must be documented, including the date of the test, systems involved, results, and any remediation required. Repeated test failures must be escalated to leadership and addressed through root-cause analysis.
+
 #### Backup Automation
-    - Automate backup tasks using scripts or management tools
-    - Ensure logs are maintained and reviewed regularly
+
+Wherever feasible, backup processes will be automated using enterprise backup platforms, scripts, orchestration tools, or system-native scheduling utilities. Automation reduces human error and ensures consistency across all protected systems. Backup logs will be automatically generated and retained, and responsible personnel must review these logs on a defined schedule (e.g., daily for production systems). Any anomalies, failures, or irregularities detected during log reviews must be remediated promptly.
+
 #### Monitoring and Alerts
-    - Generate notifications for backup completion, failures, or errors
-   - Maintain audit trails for compliance
+
+The backup environment must be continuously monitored to provide real-time or near-real-time visibility into the success or failure of backup operations. Automated alerts will be configured to notify administrators of completion statuses, errors, missed backups, or backup infrastructure failures. Audit trails documenting all backup activities, administrative actions, and system events will be maintained in accordance with the organization's security and compliance requirements. These audit trails must remain tamper-evident and readily accessible for internal or external review.
+
 #### Documentation and Review
-    - Record backup schedules, storage locations, encryption methods, and retention policies
-    - Update documentation regularly
+
+Complete and accurate documentation is critical to maintain clarity and governance over the backup program. Documentation will include backup schedules, data classification tiers, storage repositories, encryption implementations, retention periods, and restoration procedures. This documentation will be reviewed and updated on a recurring basis or whenever significant changes occur in infrastructure, applications, regulatory requirements, or business processes. All updates must be version-controlled and approved by designated stakeholders.
+
 #### Scalability and Growth
-    - Ensure backup infrastructure can scale with increasing data volume
-    - Regularly review storage capacity and upgrade as needed
+
+IT teams will regularly review storage capacity, network throughput, and backup window performance to ensure that the backup environment remains efficient and scalable. As business data increases or new systems are introduced, the organization will expand storage capacity, adjust backup schedules, or upgrade hardware/software as required.
+
 #### Compliance and Regulatory Requirements
-    - Align backups with industry-specific standards (e.g., HIPAA, GDPR, SOX)
+
+All backup, recovery, and data-handling processes at Spicy Cluck Co. must comply with applicable regulatory and industry requirements, including the General Data Protection Regulation (GDPR) for EU operations and U.S. state privacy laws such as the Utah Consumer Privacy Act (UCPA) and the California Consumer Privacy Act (CCPA/CPRA), ensuring that personal data in backups is encrypted, access-controlled, retained only as necessary, and handled in accordance with regional data-protection rules; if payment card information is processed through the company’s website or retail systems, backup and logging activities must also meet PCI DSS requirements by preventing unnecessary storage of cardholder data and enforcing segmentation, encryption, and monitoring; and, to strengthen overall compliance readiness, the organization will align its practices with recognized security frameworks such as the NIST Cybersecurity Framework, CIS Benchmarks, and ISO 27001, ensuring secure configurations, proper auditing, retention management, and resilience across all systems involved in data storage, monitoring, and recovery.
+
 #### Disaster Recovery Planning
     - Integrate backups with disaster recovery procedures
     - Define recovery point objectives (RPO) and recovery time objectives (RTO)
