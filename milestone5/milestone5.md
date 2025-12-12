@@ -44,12 +44,12 @@ IT teams will regularly review storage capacity, network throughput, and backup 
 All backup, recovery, and data-handling processes at Spicy Cluck Co. must comply with applicable regulatory and industry requirements, including the General Data Protection Regulation (GDPR) for EU operations and U.S. state privacy laws such as the Utah Consumer Privacy Act (UCPA) and the California Consumer Privacy Act (CCPA/CPRA), ensuring that personal data in backups is encrypted, access-controlled, retained only as necessary, and handled in accordance with regional data-protection rules; if payment card information is processed through the company’s website or retail systems, backup and logging activities must also meet PCI DSS requirements by preventing unnecessary storage of cardholder data and enforcing segmentation, encryption, and monitoring; and, to strengthen overall compliance readiness, the organization will align its practices with recognized security frameworks such as the NIST Cybersecurity Framework, CIS Benchmarks, and ISO 27001, ensuring secure configurations, proper auditing, retention management, and resilience across all systems involved in data storage, monitoring, and recovery.
 
 #### Disaster Recovery Planning
-    - Integrate backups with disaster recovery procedures
-    - Define recovery point objectives (RPO) and recovery time objectives (RTO)
-#### Regular Review and Testing
-    - Schedule periodic reviews of the backup policy
-    - Conduct simulation tests to validate procedures 
 
+Spicy Cluck Co. integrates its backup strategy directly into all disaster recovery procedures to ensure that critical systems and data can be restored quickly and accurately following a disruption. Restoring systems from backups helps meet company Recovery Point Objectives (RPO) and Recovery Time Objectives (RTO) more efficiently. RPOs and RTOs are assigned based on priority of mission-critical systems. Mission-critical services require an RTO of 1–4 hours and an RPO of 15 minutes to one hour, ensuring minimal disruption and data loss. Important business systems target an RTO of 4–12 hours and an RPO of 4–12 hours, while non-critical systems have an RTO of 24–72 hours and an RPO of up to 24 hours.
+
+#### Regular Review and Testing
+
+Spicy Cluck Co. conducts periodic reviews of the Backup Policy to ensure ongoing alignment with operational requirements, technological changes, and regulatory compliance. The policy is reviewed annually, with additional reviews triggered by significant infrastructure changes, audit findings, or updates to business continuity requirements. In conjunction with these reviews, the IT department performs structured simulation tests, such as file-level restores and full system recoveries each quarter to validate the accuracy, integrity, and reliability of backup and recovery procedures. Test results are documented and used to refine backup schedules and configurations. 
 
 ## Disaster Recovery Policy
 
