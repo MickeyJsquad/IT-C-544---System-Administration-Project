@@ -115,6 +115,7 @@ Logical network diagram
 ## DNS Configuration
 
 ## File Server
+I can do this - Chris
 
 ## Active Directory Integration
 
