@@ -235,7 +235,9 @@ It may take a minute or two to connect. If you have any issues, contact Eric Ngu
 
 Separate Files to Include:
 
-Switch configuration & VLAN database
+Switch configuration & VLAN database:
+[VLANs](m6_screenshots/VLANs.png)
+
 
 DNS server configuration
 
