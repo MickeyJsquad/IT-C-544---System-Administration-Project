@@ -104,9 +104,9 @@
 
 ## Network Diagrams
 Physical network diagram
-![physical network diagram](physical_network.png)
+![physical network diagram](m6_screenshots/diagrams/physical_network.png)
 Logical network diagram
-![logical network diagram](logical_network.png)
+![logical network diagram](m6_screenshots/diagrams/logical_network.png)
 
 ## Network Tables
 
@@ -119,12 +119,50 @@ All firewall rules can be viewed in [this config file](config.xml).
 
 ## DNS Configuration
 
+The DNS server is configured on alpha-1 which runs BIND9 on an Ubuntu Server and has the IP Address 192.168.2.2. The Domain Controller is set as the authoritative server for the domain "sysadmin.local" whereas the DNS server is set as the primary DNS that forwards any local domain requests to the DC. The DNS server also forwards all external domain resolution to the IP addresses 1.1.1.1 and 8.8.8.8. 
+
+
+The records on the DC including manually added ones and hostnames from devices connected to the domain.
+![Records on the DC](m6_screenshots/DNS/AD_DNS.png)
+
+The config that forwards all local domain resolution requests to the DC.
+![named.conf.local](m6_screenshots/DNS/dns_zones.png)
+
+The config that forwards all external domain resolution to external DNS servers.
+![named.conf.options](m6_screenshots/DNS/named.conf.options.png)
+
+The router assigns DNS servers to the devices as it gives DHCP leases. alpha-2 can see what DNS server it is using.
+![alpha-2 dns server](m6_screenshots/DNS/alpha-2_dns_server.png)
+
+alpha-2 has no problem resolving the local domain "www.sysadmin.local" and the public domain "google.com" and reaching both.
+![alpha-2 pinging local and public domain](m6_screenshots/DNS/alpha-2_pings.png)
+
+
 ## File Server
 I can do this - Chris
 
 ## Active Directory Integration
 
 ## Vulnerability Management
+
+#### Setup and Configuration
+We are using Nessus, an easy to install and intuitive vulnerability scanner, to scan the network for vulnerabilities. Nessus can be installed by going to the Downloads page and selecting the right download package for your Operating System. This can also be done via the command line using wget. Then you install the package and let it configure itself and install all of the necessary plugins. Once it is done it will deploy a web interface on port 8834. It will walk you through the steps of creating an admin account. It will eventually bring you to the login page where you can log in with the account you just created.
+![Nessus login page](m6_screenshots/nessus/nessus_login.png)
+
+Once logged in and all plugins are installed, you can click the New Scan button in the top right corner to Configure a scan of your machines.
+
+We have a scan of all machines in our Servers VLAN along with the router that is scheduled to scan once a week.
+![Nessus scheduled scan](m6_screenshots/nessus/nessus_schedule.png)
+
+#### Scan Results
+Here are the results of the scan of our main servers.
+![Main Servers Scan](m6_screenshots/nessus/main_servers.png)
+
+Windows Credentialed Scan
+![Windows Creds](m6_screenshots/nessus/windows_creds.png)
+
+Linux Credentialed Scan
+![Linux Creds](m6_screenshots/nessus/linux_creds.png)
 
 ## VPN Access
 
