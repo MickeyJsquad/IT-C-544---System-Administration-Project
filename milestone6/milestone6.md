@@ -99,9 +99,6 @@
 * **Browser:** Chrome, Edge, Firefox
 * **Code Editor:** VS Code
 
---more here? eg did we install office anywhere (or "plan to.") if not delete--
-
-
 ## Network Diagrams
 Physical network diagram
 ![physical network diagram](m6_screenshots/diagrams/physical_network.png)
@@ -139,7 +136,53 @@ alpha-2 has no problem resolving the local domain "www.sysadmin.local" and the p
 
 
 ## File Server
-I can do this - Chris
+#### Folder structure and mapping to groups
+We are using TrueNAS on a VM in Proxmox for our file server. There is a secondary virtual drive other than the boot drive which has a pool called "general." Under general there are directories mapped to our three groups: executives (exec), IT (it), and Employees (empl). There is an SMB share for each of these directories.
+
+TrueNAS SMB Shares
+
+![TrueNAS SMB Shares](m6_screenshots/smb_proof/shares.png)
+
+#### Access rights per folder
+The TrueNAS file server is joined to AD for access control. The shares can only be mapped by the appropriate individuals. Additionally, acess can be set as read, change, and full (we do not currently have any that are read-only). Below is the access allowed for each share:
+
+exec
+    -Executives: change
+    -Alex Patel: full
+
+it
+    -IT: full
+
+empl
+    -IT: full
+    -Executives: change
+    -Employees: change
+
+
+ACL For Executive Share
+
+![ACL For Executive Share](m6_screenshots/smb_acl/exec_acl.PNG)
+
+ACL For IT Share
+
+![ACL For IT Share](m6_screenshots/smb_acl/it_acl.PNG)
+
+ACL For Employee Share
+
+![ACL For Employee Share](m6_screenshots/smb_acl/empl_acl.PNG)
+
+Example: Alex Patel can access all three shares
+
+![Alex Patel can access all three shares](m6_screenshots/smb_proof/alex_has_all_3.PNG)
+
+Example: Ben Anderson can access Employee share but is denied connecting to IT share
+
+![Ben Anderson can access Employee share but is denied connecting to IT share](m6_screenshots/smb_proof/ben_has_empl_but_denied_it.PNG)
+
+#### Troubleshooting tips
+When using TrueNAS in Proxmox and adding a pool on a virtual drive, you must assign the virtual drive a serial number. This can be done by adding ```serial=<make up a serial>``` to the end of the line in the config file for the drive on the host's shell.
+
+Also be sure to sync the time between the domain controller and TrueNAS machine (and all machines).
 
 ## Active Directory Integration
 
