@@ -73,11 +73,6 @@
     |   42  |   delta-3 |
     |   43  |   delta-4 |
 
-#### Backup
-* Main backup server is alpha-
-
-    --more here? if not delete--
-
 #### VM Tagging and Pooling Strategy
 * Descriptive, role based tags: dhcp, firewall, router, vpn, backup-server, dns, web-server, active-directory, db-server, metric-server, siem, vulnerability-scanner, file-server, workstation
 * 2 pools: Servers-alpha & Workstations-beta
