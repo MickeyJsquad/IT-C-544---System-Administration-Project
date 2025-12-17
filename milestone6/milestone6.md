@@ -238,12 +238,14 @@ Separate Files to Include:
 Switch configuration & VLAN database:
 [VLANs](m6_screenshots/VLANs.png)
 
+We didn't save the switch configurations. Here are the details we configured through PuTTY. Ports 1 and 2 are configured as a trunked uplink and are bundled together using an EtherChannel for increased bandwidth and redundancy. They serve as the connection to the internet gateway with VLAN 1 and 202 as the only permitted VLAN. Ports 3 through 48 are configured as access ports allowing only VLAN 202. These ports are intended for end-user workstation devices.
+
 
 DNS server configuration
 
 Database schema in SQL format (wiki database)
 
-Web server configuration
+Web server configuration: We didn't save the configuration file. Here are the details. Installed with: apt install apache2. Default HTTP only (port 80). Document root: /var/www/html/ Default site config: /etc/apache2/sites-available/000-default.conf No custom changes — stock Apache installation.
 
 File server configuration:
 [TrueNAS Configuration](ALPHA3-25.10.0.1-20251206184633.tar)
