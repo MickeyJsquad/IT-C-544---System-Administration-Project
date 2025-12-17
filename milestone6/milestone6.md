@@ -166,6 +166,19 @@ Linux Credentialed Scan
 
 ## VPN Access
 
+
+We are using OpenVPN because it is the VPN service we were most familiar with. It is also easier to set up than other services and integrates nicely with OPNsense.
+
+To connect to the VPN, contact Eric Nguyen (Network Administrator). He will send you a .ovpn file for you to download and import into OpenVPN. You will then click Connect and be brought to the following login page where you will use your company credentials.
+
+![Log in](m6_screenshots/vpn/entercredentials.png)
+
+If your credentials are invalid, please contact Eric again and he can help you. After logging in, you should be prompted to set up a multi-factor authenticator app. Do so and enjoy your remote connection! If connected successfully, you should see a screen like the following.
+
+![You're in the VPN!](m6_screenshots/vpn/successgraph.png)
+
+It may take a minute or two to connect. If you have any issues, contact Eric Nguyen (Network Administrator).
+
 ## Backup & Disaster Recovery Policy
 
 
