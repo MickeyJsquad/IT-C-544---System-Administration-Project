@@ -2,6 +2,13 @@
 
 ## Introduction
 
+
+This document provides the complete technical documentation for Spicy Cluck Co.’s fully deployed and validated multi-VLAN, enterprise-grade hybrid infrastructure. Throughout this project, our team designed, implemented, and secured a production-ready environment that reflects the architecture, operational workflows, and security requirements of a modern organization.
+
+This infrastructure integrates physical hardware, virtualized servers, centralized identity and access management, network segmentation, role-based access controls, firewall enforcement based on least privilege, DNS services, secure remote access, vulnerability management, and resilient file storage.
+
+The goal of this deployment is to provide a scalable, maintainable, and security-focused environment that supports the company’s operational needs while aligning with industry best practices. All systems documented here have been tested and validated for functionality, security, and interoperability.
+
 ## Asset Inventory
 #### Physical Workstations & Peripherals
 * 7 Desktop computers
