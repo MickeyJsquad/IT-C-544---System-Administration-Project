@@ -205,7 +205,13 @@ Linux Credentialed Scan
 ## VPN Access
 
 
-We are using OpenVPN because it is the VPN service we were most familiar with. It is also easier to set up than other services and integrates nicely with OPNsense.
+We are using OpenVPN because it is the VPN service we were most familiar with. It is also easier to set up than other services and integrates nicely with OPNsense. To make this work, we created a firewall rule to allow traffic coming to the WAN from anywhere on port 1347. The image below shows this as a floating rule applied to all interfaces. This is overly permissive, and we would restrict this rule to just the WAN interface, but since we no longer have access to the IT&C VPN, this is the best representation we have.
+
+![Firewall](m6_screenshots/vpn/firewallrules.png)
+
+We also created a port forwarding rule from our WAN to our router/vpn server.
+
+![Port Forwarding](m6_screenshots/vpn/portforward.png)
 
 To connect to the VPN, contact Eric Nguyen (Network Administrator). He will send you a .ovpn file for you to download and import into OpenVPN. You will then click Connect and be brought to the following login page where you will use your company credentials.
 
@@ -239,5 +245,7 @@ Risk assessment
 
 Most recent vulnerability scan reports
 
-VPN server configuration
+VPN server configuration:
+[OpenVPN Configuration](VPN_Access_Server_alberttay.ovpn)
+
 
