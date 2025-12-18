@@ -188,6 +188,39 @@ Also be sure to sync the time between the domain controller and TrueNAS machine 
 
 ## Active Directory Integration
 
+The computer network at Spicy Cluck Co. is unified by Windows Active Directory on the Spicy Cluck domain. Employees can login to any workstation computer available with the same domain credentials and access resources based on their specific role. 
+
+To add a Windows computer to the domain, simply open Settings, navigate to `System > About`, open the link `Domain or workgroup`, then click the `Change` button on the new System Properties window next to the text `To rename this computer, click Change`. Clicking `Change` will bring up a new window displaying text boxes to change the hostname, domain, or workgroup. Enter a new hostname in the first text box according to the company's naming convention (Alpha for servers, Beta for virtual workstations, Delta for physical workstations, and Gamma for hybrid workstations). Next, select the Domain dialogue button option under the `Member of` box, then enter `sysadmin.local` into the associated text box. Afterwards, you will be prompted to enter credentials; enter the Domain Administrator credentials and allow time for some brief loading. Finally, restart the computer. 
+
+To add a Linux based computer to the domain, the exact details for packages and configurations differ slightly according to the distro, but these are the general guidelines. First, change the hostname according to the aforementioned naming scheme. Next, add the fully qualified domain name and new hostname to a newline in the hosts file under `127.0.0.1 localhost`: `127.0.1.1 hostname.sysadmin.local hostname`. Next, edit the `resolv.conf` file to point to the Domain Controller as only DNS server and add the domain (`sysadmin.local`), then restart. Ensure that the computer is synchronized with the Domain Controller (recommended to use package `chrony`). Install all of the following packages or alternatives: `realmd`, `sssd`, `sssd-tools`, `krb5-user`, `adcli`, `oddjob`, `oddjob-mkhomedir`, and `samba-common-bin`. Next, ensure that the `krb5.conf` file resembles:
+```
+[libdefaults]
+    default_realm = SYSADMIN.LOCAL
+    dns_lookup_realm = true
+    dns_lookup_kdc = true
+    rdns = false
+    ticket_lifetime = 24h
+    forwardable = true
+    permitted_enctypes = aes256-cts-hmac-sha1-96 aes128-cts-hmac-sha1-96 rc4-hmac
+
+[realms]
+    SYSADMIN.LOCAL = {
+        kdc = alpha-4.sysadmin.local
+        admin_server = alpha-4.sysadmin.local
+    }
+
+[domain_realm]
+    .sysadmin.local = SYSADMIN.LOCAL
+    sysadmin.local = SYSADMIN.LOCAL
+
+```
+Afterwards, run `klist` and `kinit Administrator` to ensure that Kerberos is working. Finally, run the following (with putting in credentials and restarting after) to join the domain:
+```
+sudo realm join -U Administrator --verbose sysadmin.local
+
+```
+
+
 ## Vulnerability Management
 
 #### Setup and Configuration
