@@ -277,6 +277,8 @@ It may take a minute or two to connect. If you have any issues, contact Eric Ngu
 
 Our entire Backup & Disaster Recovery Policy can be viewed [here](/milestone5/milestone5.md). 
 
+## [Final Presentation](/milestone6/Sysadmin_final_pres.pdf)
+
 ### Separate Files to Include:
 
 Switch configuration & VLAN database:
