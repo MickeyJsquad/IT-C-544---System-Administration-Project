@@ -289,9 +289,9 @@ Our entire Backup & Disaster Recovery Policy can be viewed [here](/milestone5/mi
 
 - DNS server configuration (see `DNS Configuration` above)
 
-- Database schema in SQL format (wiki database)
+- Database schema in SQL format ([wiki database](freenas-v1.db)
 
-- Web server configuration: We didn't save the configuration file, so here are the details. Installed with: apt install apache2. Default HTTP only (port 80). Document root: /var/www/html/ Default site config: /etc/apache2/sites-available/000-default.conf No custom changes — stock Apache installation.
+- Web server configuration: We didn't save the configuration file, so here are the details. Installed with: `apt install apache2`. Default HTTP only (port 80). Document root: /var/www/html/ Default site config: /etc/apache2/sites-available/000-default.conf No custom changes — stock Apache installation.
 
 - File server configuration:
 [TrueNAS Configuration](ALPHA3-25.10.0.1-20251206184633.tar)
