@@ -285,7 +285,7 @@ Switch configuration & VLAN database:
 We didn't save the switch configurations, so here are the details we configured through PuTTY. Ports 1 and 2 are configured as a trunked uplink and are bundled together using an EtherChannel for increased bandwidth and redundancy. They serve as the connection to the internet gateway with VLAN 1 and 202 as the only permitted VLAN. Ports 3 through 48 are configured as access ports allowing only VLAN 202. These ports are intended for end-user workstation devices.
 
 
-DNS server configuration
+DNS server configuration (see `DNS Configuration` above)
 
 Database schema in SQL format (wiki database)
 
@@ -298,7 +298,7 @@ AD configuration: We didn't save the configurations, so here are the details. Th
 
 Risk assessment
 
-Most recent vulnerability scan reports
+Most recent vulnerability scan reports (see `Scan Results` under `Vulnerability Management` above)
 
 VPN server configuration:
 [OpenVPN Configuration](VPN_Access_Server_alberttay.ovpn)
