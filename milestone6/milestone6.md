@@ -281,28 +281,28 @@ Our entire Backup & Disaster Recovery Policy can be viewed [here](/milestone5/mi
 
 ### Separate Files to Include:
 
-Switch configuration & VLAN database:
+- Switch configuration & VLAN database:
 [VLANs](m6_screenshots/VLANs.png)
 
-We didn't save the switch configurations, so here are the details we configured through PuTTY. Ports 1 and 2 are configured as a trunked uplink and are bundled together using an EtherChannel for increased bandwidth and redundancy. They serve as the connection to the internet gateway with VLAN 1 and 202 as the only permitted VLAN. Ports 3 through 48 are configured as access ports allowing only VLAN 202. These ports are intended for end-user workstation devices.
+- We didn't save the switch configurations, so here are the details we configured through PuTTY. Ports 1 and 2 are configured as a trunked uplink and are bundled together using an EtherChannel for increased bandwidth and redundancy. They serve as the connection to the internet gateway with VLAN 1 and 202 as the only permitted VLAN. Ports 3 through 48 are configured as access ports allowing only VLAN 202. These ports are intended for end-user workstation devices.
 
 
-DNS server configuration (see `DNS Configuration` above)
+- DNS server configuration (see `DNS Configuration` above)
 
-Database schema in SQL format (wiki database)
+- Database schema in SQL format (wiki database)
 
-Web server configuration: We didn't save the configuration file, so here are the details. Installed with: apt install apache2. Default HTTP only (port 80). Document root: /var/www/html/ Default site config: /etc/apache2/sites-available/000-default.conf No custom changes — stock Apache installation.
+- Web server configuration: We didn't save the configuration file, so here are the details. Installed with: apt install apache2. Default HTTP only (port 80). Document root: /var/www/html/ Default site config: /etc/apache2/sites-available/000-default.conf No custom changes — stock Apache installation.
 
-File server configuration:
+- File server configuration:
 [TrueNAS Configuration](ALPHA3-25.10.0.1-20251206184633.tar)
 
-AD configuration: We didn't save the configurations, so here are the details. The Security Groups are: Executives, IT, and Employees. The Employees group has basic user permissions. The Executives group has protected user permissions. The IT group has administrator privileges. The users for Albert Tay and Emily Brown are in the Executives group. The users for Alex Patel and Eric Nguyen are in the IT group. The users for Ben Anderson, Jessica Rodriguez, Karen Taylor, Olivia Davis, Rachel Nguyen, and Ryan Lee are in the Employees group. The Organizational Units and listed machines are: Backups (ALPHA-5), Executives (BETA-0, BETA-1, BETA-2), Servers (ALPHA-0, ALPHA-1, ALPHA-2, ALPHA-3), Workstations (BETA-3, DELTA-0, DELTA-1, GAMMA-0, GAMMA-1), and Domain Controllers (ALPHA-4). According to Group Policy: only users from the IT group can login to machines every OU; users from the Executives group can login to machines in the Executives and Workstations OUs; Employees can only login to the Workstations OU. 
+- AD configuration: We didn't save the configurations, so here are the details. The Security Groups are: Executives, IT, and Employees. The Employees group has basic user permissions. The Executives group has protected user permissions. The IT group has administrator privileges. The users for Albert Tay and Emily Brown are in the Executives group. The users for Alex Patel and Eric Nguyen are in the IT group. The users for Ben Anderson, Jessica Rodriguez, Karen Taylor, Olivia Davis, Rachel Nguyen, and Ryan Lee are in the Employees group. The Organizational Units and listed machines are: Backups (ALPHA-5), Executives (BETA-0, BETA-1, BETA-2), Servers (ALPHA-0, ALPHA-1, ALPHA-2, ALPHA-3), Workstations (BETA-3, DELTA-0, DELTA-1, GAMMA-0, GAMMA-1), and Domain Controllers (ALPHA-4). According to Group Policy: only users from the IT group can login to machines every OU; users from the Executives group can login to machines in the Executives and Workstations OUs; Employees can only login to the Workstations OU. 
 
-Risk assessment
+- Risk assessment
 
-Most recent vulnerability scan reports (see `Scan Results` under `Vulnerability Management` above)
+- Most recent vulnerability scan reports (see `Scan Results` under `Vulnerability Management` above)
 
-VPN server configuration:
+- VPN server configuration:
 [OpenVPN Configuration](VPN_Access_Server_alberttay.ovpn)
 
 
