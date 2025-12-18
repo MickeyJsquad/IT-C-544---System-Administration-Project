@@ -229,7 +229,7 @@ Modifying and disabling user accounts can initially done in creating a new user,
 
 The Microsoft supported method of backing up Active Directory (running on a Windows Server) is with a System State Backup, installed in Powershell with `Install-WindowsFeature Windows-Server-Backup`. Then you would run the backup with `wbadmin start systemstatebackup -backupTarget:\SERVER\Backups -quiet` (\SERVER\ could also be replaced with a local hard drive, such as D:). To run a non-authoritative restore (where one domain controller goes down), boot into Directory Services Restore Mode on the downed DC and run `wbadmin start systemstaterecovery -version: -backupTarget:D: -quiet`. After rebooting, the downed DC will update by replicating from an active Domain Controller.
 
-Finally, many permissions associated with OUs are assigned through `Group Policy`. Please refer to the group policies and associated company policies for assigning permissions for computers in the OUs. 
+Finally, many permissions associated with OUs are assigned through `Group Policy`, accessible on the Domain Controller. Please refer to the group policies and associated company policies for assigning permissions for computers in the OUs. 
 
 ## Vulnerability Management
 
