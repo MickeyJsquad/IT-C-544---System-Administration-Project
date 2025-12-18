@@ -229,7 +229,7 @@ Modifying and disabling user accounts can initially done in creating a new user,
 
 The Microsoft supported method of backing up Active Directory (running on a Windows Server) is with a System State Backup, installed in Powershell with `Install-WindowsFeature Windows-Server-Backup`. Then you would run the backup with `wbadmin start systemstatebackup -backupTarget:\SERVER\Backups -quiet` (\SERVER\ could also be replaced with a local hard drive, such as D:). To run a non-authoritative restore (where one domain controller goes down), boot into Directory Services Restore Mode on the downed DC and run `wbadmin start systemstaterecovery -version: -backupTarget:D: -quiet`. After rebooting, the downed DC will update by replicating from an active Domain Controller.
 
-Finally, many permissions associated with OUs are assigned through `Group Policy`, accessible on the Domain Controller. Please refer to the group policies and associated company policies for assigning permissions for computers in the OUs. 
+Finally, many permissions associated with OUs are assigned through `Group Policy`, accessible on the Domain Controller. Please refer to the existing group policies and official company policies for assigning permissions to the OUs. 
 
 ## Vulnerability Management
 
@@ -293,7 +293,7 @@ Web server configuration: We didn't save the configuration file, so here are the
 File server configuration:
 [TrueNAS Configuration](ALPHA3-25.10.0.1-20251206184633.tar)
 
-AD configuration
+AD configuration: We didn't save the configurations, so here are the details. The Security Groups are: Executives, IT, and Employees. The Employees group has basic user permissions. The Executives group has protected user permissions. The IT group has administrator privileges. The users for Albert Tay and Emily Brown are in the Executives group. The users for Alex Patel and Eric Nguyen are in the IT group. The users for Ben Anderson, Jessica Rodriguez, Karen Taylor, Olivia Davis, Rachel Nguyen, and Ryan Lee are in the Employees group. The Organizational Units and listed machines are: Backups (ALPHA-5), Executives (BETA-0, BETA-1, BETA-2), Servers (ALPHA-0, ALPHA-1, ALPHA-2, ALPHA-3), Workstations (BETA-3, DELTA-0, DELTA-1, GAMMA-0, GAMMA-1), and Domain Controllers (ALPHA-4). According to Group Policy: only users from the IT group can login to machines every OU; users from the Executives group can login to machines in the Executives and Workstations OUs; Employees can only login to the Workstations OU. 
 
 Risk assessment
 
